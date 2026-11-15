@@ -47,6 +47,12 @@ incluyen en orden.
 | Cita en bloque | `\begin{cita}` | |
 | Cuadros +/– | `\mas`, `\menos`, `\masmenos`; columnas `C`, `L`, `Y{ancho}` | |
 | Glosario general | `\begin{glosariogeneral}\item[Término:] ...` | dos columnas |
+| Ítem resuelto | `\respuesta{...}` | respuesta en color |
+| Renglones para completar | `\completar[n]` | n líneas punteadas |
+| Palabra subrayada | `\subrayado{...}` | |
+| Texto de lectura | `\begin{textolectura}[Título]` | cuentos, fragmentos |
+| Figura sin imagen | `\figurapendiente{Epígrafe}{fig:etiqueta}` | |
+| Duda del original | `\pendiente{...}` | marca roja en el PDF |
 | Secciones finales | `\lecturasrecomendadas`, `\solucionario` + `solucion{n}`, `\glosariocapitulo` + `glosario`, `\referenciascapitulo` | |
 
 ## Bibliografía

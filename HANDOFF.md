@@ -1,6 +1,6 @@
 # Handoff — Manual de gramática del español
 
-Última actualización: 2026-11-15.
+Última actualización: 2026-11-15 (capítulo 1).
 
 ## Objetivo
 
@@ -17,7 +17,8 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Portada | `preliminares/portada.tex` | faltan título definitivo y responsables |
 | Prólogo | `preliminares/prologo.tex` | pendiente (Prólogo.docx) |
 | Siglario | `preliminares/siglario.tex` | pendiente (02-siglario.docx) |
-| Capítulos 1-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
+| Capítulo 1 | `capitulos/cap01.tex` | cargado; faltan 4 imágenes y revisar marcas `\pendiente` |
+| Capítulos 2-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
 | Glosario general | `finales/glosario.tex` | estructura a dos columnas; contenido pendiente (18-glosario.docx) |
 | Versión online | — | no empezada |
 
@@ -42,11 +43,33 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
   Coord./Dir./Comp.
 - Referencias por capítulo según las listas de los autores (palabras clave del
   .bib), no según lo citado.
-- Numeración de secciones con punto final (2.1.), como en los originales.
+- Secciones numeradas sin el número de capítulo y con punto final (2.1.,
+  2.3.1.), como en los originales.
+- Ejercicios en cuerpo menor y con 6 mm antes y después (pedido en los
+  comentarios del cap. 1).
+- Figuras sin imagen todavía: `\figurapendiente{epígrafe}{etiqueta}`; las
+  imágenes van en `figuras/capNN/`.
+- Dudas del original marcadas en el PDF con `\pendiente{...}` (texto rojo).
 - Tablas numeradas por capítulo sin prefijo («Tabla 1»).
 - Glosario general a dos columnas; glosarios de capítulo a una.
 
 ## Pendientes y dudas
+
+### Capítulo 1
+- Imágenes: fig. 1 (Donatela, Raznovich), fig. 2 (metáfora del conmutador),
+  fig. 4 (lectura hipertextual), fig. 5 (viñeta de Colón). Las figs. 3 y 6 se
+  rehicieron en TikZ.
+- Nota «lectos» sin texto en el original.
+- Jakobson (1984) citado, pero no está en la bibliografía del capítulo.
+- §3.1: el ejemplo dice *vivía*; el comentario, *vive*.
+- §4.2.1: «rasgos ‘masculino’ y ‘singular’» de *viajeros* (debería ser plural).
+- Tabla 1: epígrafe repetido («personas gramaticales y las personas gramaticales»).
+- Ej. (6b): falta el dominio del enlace; ej. (11b): fecha confusa.
+- Se eliminó el párrafo duplicado de la cita de Bosque y Gutiérrez-Rexach
+  (2009, p. 13): quedó solo en el recuadro.
+- Las referencias del texto van con biblatex (formato APA: «Saussure (1916/1945)»).
+
+### General
 
 - Citas: el formato APA da «Saussure (1916/1945)»; los originales usan
   «1945 [1916]». Definir si se adapta.

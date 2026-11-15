@@ -44,6 +44,7 @@
 
 % --- Listas y recuadros -----------------------------------------------
 \usepackage{enumitem}
+\usepackage[normalem]{ulem}  % \uline: palabras subrayadas en consignas
 \usepackage{multicol}     % glosario general a dos columnas
 \usepackage[most]{tcolorbox}
 \usepackage{etoolbox}
@@ -56,6 +57,7 @@
 \usepackage{forest}      % árboles sintácticos
 \useforestlibrary{linguistics}
 \usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
 
 % --- Bibliografía -----------------------------------------------------
 \usepackage[backend=biber,
@@ -65,6 +67,10 @@
             uniquename=false,
             uniquelist=false]{biblatex}
 \DeclareLanguageMapping{spanish}{spanish-apa}
+
+% --- URL largas: corte en cualquier carácter ------------------------
+\usepackage{xurl}
+\urlstyle{same}
 
 % --- Hipervínculos (al final) -----------------------------------------
 \usepackage[hidelinks,
