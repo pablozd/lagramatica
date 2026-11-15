@@ -1,6 +1,6 @@
 # Handoff — Manual de gramática del español
 
-Última actualización: 2026-11-15 (capítulo 1).
+Última actualización: 2026-11-15 (capítulo 2).
 
 ## Objetivo
 
@@ -18,7 +18,8 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Prólogo | `preliminares/prologo.tex` | pendiente (Prólogo.docx) |
 | Siglario | `preliminares/siglario.tex` | pendiente (02-siglario.docx) |
 | Capítulo 1 | `capitulos/cap01.tex` | cargado; faltan 4 imágenes y revisar marcas `\pendiente` |
-| Capítulos 2-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
+| Capítulo 2 | `capitulos/cap02.tex` | cargado; revisar marcas `\pendiente` |
+| Capítulos 3-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
 | Glosario general | `finales/glosario.tex` | estructura a dos columnas; contenido pendiente (18-glosario.docx) |
 | Versión online | — | no empezada |
 
@@ -68,6 +69,23 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 - Se eliminó el párrafo duplicado de la cita de Bosque y Gutiérrez-Rexach
   (2009, p. 13): quedó solo en el recuadro.
 - Las referencias del texto van con biblatex (formato APA: «Saussure (1916/1945)»).
+
+### Capítulo 2
+- §4: la cita larga sobre aceptabilidad se atribuye a Chomsky 1974a [1957],
+  pp. 6-7, pero el texto la presenta como de *Aspectos* (1970 [1965]).
+- §5 remite a «la cita de Chomsky (§3)»; la cita está en §4.
+- §5.3: el texto remitía a (15a), (15b) y (16); con las etiquetas, las
+  remisiones apuntan a los ejemplos correctos (16a), (16b) y (17).
+- Ej. 7, resuelto: la paráfrasis menciona «escultura de porcelana», pero el
+  ítem 1 no dice «de porcelana».
+- Solucionario ej. 1: falta la fila «remite al uso lingüístico de ciertos
+  grupos sociales».
+- Solucionario ej. 4 a): la respuesta trata 4a/4b, pero la consigna pregunta
+  por 3a/3b.
+- Ej. (18b): «versión de L. Carreter» → se puso F. Lázaro Carreter.
+- Corregido: «(2a)-(1b)» → «2a-2b» en el solucionario del ej. 3.
+- En ejercicios y solucionarios, las remisiones a ítems van sin paréntesis
+  (1a, 3b), coherente con la numeración de ejercicios.
 
 ### General
 

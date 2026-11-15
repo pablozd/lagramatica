@@ -21,6 +21,7 @@
 \linespread{1.06}
 \frenchspacing
 \setlength{\emergencystretch}{1.5em}
+\raggedbottom   % sin estirar el espacio vertical entre ejemplos y recuadros
 
 % ---------------------------------------------------------------------
 % 2. Fuentes (Libertinus: incluida en TeX Live, con versalitas reales)
@@ -233,7 +234,7 @@
   parbox=false,
 }
 \NewDocumentEnvironment{ejercicio}{o}
-  {\par\refstepcounter{ejercicio}%
+  {\par\needspace{8\baselineskip}\refstepcounter{ejercicio}%
    \begin{cajaejercicio}{Ejercicio~\theejercicio%
        \IfValueT{#1}{\enskip{\mdseries\color{gristexto}·\enskip #1}}}%
    \modoejercicio\setlength{\parindent}{0pt}\setlength{\parskip}{.5\baselineskip}}
@@ -368,6 +369,7 @@
 \newcommand*{\solucionario}{\seccionfinal{Solucionario}}
 \NewDocumentEnvironment{solucion}{m}
   {\par\addvspace{\medskipamount}%
+   \needspace{4\baselineskip}%
    \noindent{\sffamily\bfseries\color{acento}Ejercicio~#1}\par\nobreak
    \small\modoejercicio\setlength{\parindent}{0pt}\setlength{\parskip}{.4\baselineskip}}
   {\par}
