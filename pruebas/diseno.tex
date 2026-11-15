@@ -1,0 +1,16 @@
+% =====================================================================
+%  pruebas/diseno.tex — Documento de prueba del diseño
+%  Compila el capítulo de muestra (fragmentos del cap. 2) con la misma
+%  configuración del libro. Desde la raíz del repo:
+%      latexmk -lualatex pruebas/diseno.tex
+% =====================================================================
+\documentclass[fontsize=10.5pt, twoside, open=right, chapterprefix=true,
+               numbers=noendperiod]{scrbook}
+\input{config/paquetes}
+\input{config/estilo}
+\addbibresource{bib/referencias.bib}
+\begin{document}
+\nocite{*}
+\setcounter{chapter}{1}   % se numera como cap. 2 para tomar sus referencias
+\input{pruebas/muestra}
+\end{document}

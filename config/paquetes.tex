@@ -1,0 +1,74 @@
+% =====================================================================
+%  config/paquetes.tex — Paquetes del manual
+%  Motor: XeLaTeX o LuaLaTeX  |  Bibliografía: biblatex + biber
+%  Solo carga paquetes y fija opciones de paquete; el diseño y los
+%  entornos propios están en config/estilo.tex.
+% =====================================================================
+
+% --- Detección de motor ----------------------------------------------
+\RequirePackage{iftex}
+\RequireTUTeX  % aborta con pdfLaTeX: el proyecto requiere XeLaTeX o LuaLaTeX
+
+% --- Idioma, fuentes y tipografía -------------------------------------
+\usepackage{fontspec}
+\usepackage[spanish,
+            es-tabla,          % «Tabla» en lugar de «Cuadro»
+            es-noshorthands,   % evita conflictos de " < > con TikZ/forest
+            es-nolists,        % no altera las listas (gb4e, enumitem)
+            es-noquoting]{babel}
+\usepackage{csquotes}     % \enquote{...}: comillas “ ” y ‘ ’ como en los originales
+\DeclareQuoteStyle{manual}
+  {\textquotedblleft}{\textquotedblright}
+  {\textquoteleft}{\textquoteright}
+\setquotestyle{manual}
+
+\ifLuaTeX
+  \usepackage[protrusion=true,expansion=true]{microtype}
+\else
+  \usepackage[protrusion=true]{microtype}
+\fi
+
+% --- Página, encabezados y color --------------------------------------
+\usepackage{geometry}
+\usepackage[automark,headsepline=0.4pt]{scrlayer-scrpage}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{graphicx}
+
+% --- Tablas -----------------------------------------------------------
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{makecell}
+
+% --- Listas y recuadros -----------------------------------------------
+\usepackage{enumitem}
+\usepackage{multicol}     % glosario general a dos columnas
+\usepackage[most]{tcolorbox}
+\usepackage{etoolbox}
+\usepackage{xparse}
+
+% --- Lingüística ------------------------------------------------------
+\usepackage{gb4e}        % ejemplos numerados y glosas (\gll ... \glt)
+\noautomath              % gb4e no debe activar _ y ^ fuera de modo matemático
+\usepackage{leipzig}     % abreviaturas de glosa (versalitas): \Acc, \Dat, \Pl...
+\usepackage{forest}      % árboles sintácticos
+\useforestlibrary{linguistics}
+\usepackage{tikz}
+
+% --- Bibliografía -----------------------------------------------------
+\usepackage[backend=biber,
+            style=apa,
+            sortcites=true,
+            maxcitenames=2,
+            uniquename=false,
+            uniquelist=false]{biblatex}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+
+% --- Hipervínculos (al final) -----------------------------------------
+\usepackage[hidelinks,
+            pdfusetitle,
+            bookmarksnumbered,
+            bookmarksopen]{hyperref}
+\usepackage{bookmark}

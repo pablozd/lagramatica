@@ -1,0 +1,187 @@
+% =====================================================================
+%  capitulos/muestra.tex — Capítulo de muestra del diseño
+%  Fragmentos del cap. 2 usados solo para mostrar cada componente.
+% =====================================================================
+\capitulo{Las reglas de la gramática}{Augusto M. Trombetta}
+
+\section{Introducción}
+
+Las reglas de la gramática no parecen ser todas iguales: unas definen las
+características constitutivas propias de los objetos de una lengua, otras
+establecen normas de corrección y etiqueta propias del uso social de esa
+lengua. En un caso, las reglas se descubren (por ejemplo, \forma{la oración
+consta de un sujeto y un predicado}); en el otro, las reglas se fijan (por
+ejemplo, \forma{no debe haber coma entre el sujeto y el predicado}).\footnote{En
+  su ensayo de 1969, \textit{Actos de habla}, Searle retoma su distinción entre
+  reglas regulativas y constitutivas \parencite[48--49]{searle1994}.}
+
+\section{Concepciones de la gramática}
+
+La valoración de una combinación de la lengua como \termino{correcta} o
+\termino{incorrecta} solo adquiere sentido en el marco de una gramática
+normativa. En contraste, una gramática descriptiva valora las estructuras como
+\termino{gramaticales} o \termino{agramaticales} \parencite[29]{bosque2009}:
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabularx}{\linewidth}{@{}>{\itshape}l C C@{}}
+    \toprule
+    Concepciones de la gramática & Normativa o prescriptiva & Descriptiva o científica \\
+    \midrule
+    Tipos de reglas          & Regulativas (externas)  & Constitutivas (internas) \\
+    Criterios de evaluación  & Corrección/Incorrección & Gramaticalidad/\hspace{0pt}Agramaticalidad \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Concepciones de la gramática}
+  \label{tab:concepciones}
+\end{table}
+
+\begin{ejercicio}
+Considere las siguientes definiciones, representativas de las dos concepciones
+señaladas sobre la gramática, y complete con los valores «\mas» o «\menos» el
+cuadro presentado más abajo, como se muestra en el ejemplo resuelto~(1).
+
+\begin{exe}
+  \ex\label{ej1:salva} La \textit{gramática de la actual lengua castellana} no es
+      otra cosa que \textit{el conjunto ordenado de las reglas de lenguaje que
+      vemos observadas en los escritos o conversación de las personas doctas}
+      \parencite[1]{salva1852}.
+  \ex La gramática de L será, pues, un ingenio que genere todas las secuencias
+      gramaticales de L y ninguna de las agramaticales \parencite[27]{chomsky1974a}.
+\end{exe}
+
+\begin{tabularx}{\linewidth}{@{}L Y{1.2cm} Y{1.2cm}@{}}
+  \toprule
+  De acuerdo con las definiciones dadas, la gramática de una lengua\ldots & 1 & 2 \\
+  \midrule
+  \ldots\ remite al uso lingüístico de ciertos grupos sociales.            & \mas   & \\
+  \ldots\ constituye un mecanismo capaz de producir estructuras.          & \menos & \\
+  \ldots\ conforma una disciplina normativa o prescriptiva.               & \mas   & \\
+  \bottomrule
+\end{tabularx}
+
+\textit{Nota}: la columna correspondiente a 1 muestra el ejemplo resuelto.
+\end{ejercicio}
+
+\section{Ambigüedad}
+
+Una secuencia posee ambigüedad estructural «cuando puede corresponderle más de
+una estructura sintáctica, y por tanto más de una interpretación»
+\parencite[35]{bosque2009}. Una oración como \exref{ex:secarropa} admite dos
+lecturas:
+
+\begin{exe}
+  \ex\label{ex:secarropa} Por favor, cuando termine de usar el secarropa, limpie el
+      filtro de pelusas.
+\end{exe}
+
+En \exref{ex:secarropa} se puede considerar que [\forma{el filtro}] y
+[\forma{de pelusas}] son dos modificadores independientes del verbo
+\exref{ex:lectura1}, o bien que [\forma{de pelusas}] modifica a [\forma{el
+filtro}] \exref{ex:lectura2}:
+
+\begin{exe}
+  \ex\label{ex:lectura1}
+    \begin{xlist}
+      \ex Por favor, cuando termine de usar el secarropa, limpie [el filtro] [de pelusas].
+      \ex Por favor, cuando termine de usar el secarropa, limpie [de pelusas] [el filtro].
+    \end{xlist}
+  \ex\label{ex:lectura2}
+    \begin{xlist}
+      \ex Por favor, cuando termine de usar el secarropa, limpie [el filtro de pelusas].
+      \ex[*]{Por favor, cuando termine de usar el secarropa, limpie [de pelusas el filtro].}
+    \end{xlist}
+\end{exe}
+
+La estructura de \exref{ex:lectura2} puede representarse así:
+
+\begin{arbol}
+  [SV [V [limpie]] [SD [D [el]] [SN [N [filtro]] [SP [de pelusas, roof]]]]]
+\end{arbol}
+
+Ejemplo glosado (Leipzig), con duplicación de clítico rioplatense:
+
+\begin{exe}
+  \ex\label{ex:glosa}
+    \gll Lo vi a Juan.\\
+         \Acc.3\Sg.\M{} ver.\Pst.1\Sg{} \Dom{} Juan\\
+    \glt ‘Vi a Juan.’
+\end{exe}
+
+\begin{ejercicio}[Ambigüedad]
+Considere las siguientes oraciones y conteste las preguntas que se formulan
+abajo, como se muestra en el ejemplo resuelto~(1).
+
+\begin{exe}
+  \ex\label{ej7:escultura} Me trajeron esta escultura de Francia.
+  \ex Antes de salir a navegar, acomodaron correctamente las velas.
+  \ex Yo no recibiría a tu hermano en mi oficina.
+\end{exe}
+
+\begin{consignas}
+  \item Las tres oraciones pueden tener más de una interpretación. Realice
+        paráfrasis que pongan de relieve los diferentes significados.
+  \item ¿Observa alguna mala formación de estructura gramatical?
+\end{consignas}
+
+\begin{resuelto}
+\ref{ej7:escultura} (a) La oración está bien formada y es gramatical, aunque
+resulte ambigua: [Me trajeron [esta escultura [de Francia]]] / [Me trajeron
+[esta escultura] [de Francia]]. (b) La ambigüedad se podría resolver
+reestructurando el orden de los constituyentes.
+\end{resuelto}
+\end{ejercicio}
+
+Después del ejercicio, la numeración del texto continúa:
+
+\begin{exe}
+  \ex Si nos matamos, nos matamos.
+\end{exe}
+
+\begin{recuadro}[Reflexión final]
+Las tipologías referidas a las diferentes variedades lingüísticas coexisten en
+cada individuo que articula una oración en su variedad de lengua, una variedad
+que es a la vez temporal, geográfica y social, y que se produce en un
+determinado contexto situacional.
+\end{recuadro}
+
+\begin{destacado}
+\textbf{Gramaticalidad} y \textbf{aceptabilidad} son nociones distintas: la
+primera pertenece a la teoría de la competencia; la segunda, a la de la
+actuación.
+\end{destacado}
+
+% --- Secciones finales -------------------------------------------------
+\lecturasrecomendadas
+
+\solucionario
+
+\begin{solucion}{1}
+\begin{tabularx}{\linewidth}{@{}L Y{1.2cm}@{}}
+  \toprule
+  De acuerdo con las definiciones dadas, la gramática de una lengua\ldots & 2 \\
+  \midrule
+  \ldots\ constituye un mecanismo capaz de producir estructuras. & \textbf{\mas} \\
+  \bottomrule
+\end{tabularx}
+\end{solucion}
+
+\begin{solucion}{2}
+Las tres oraciones del ejercicio están bien formadas, aunque son ambiguas. En
+(2), la ambigüedad es léxica; en (3), sintáctica.
+\end{solucion}
+
+\glosariocapitulo
+\begin{glosario}
+  \item[Aceptabilidad:] Condición de aceptación de las estructuras de una lengua.
+        Asociada a la actuación lingüística, involucra factores internos y externos.
+  \item[Distribución]\subterminos
+    \begin{glosario}
+      \item[complementaria:] Distribución de unidades que ocurren en contextos
+            alternativos.
+      \item[contrastiva:] Distribución de unidades que contrastan significado
+            en un mismo contexto.
+    \end{glosario}
+\end{glosario}
+
+\referenciascapitulo

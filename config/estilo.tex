@@ -1,0 +1,395 @@
+% =====================================================================
+%  config/estilo.tex — Diseño y entornos propios del manual
+%  Requiere config/paquetes.tex cargado antes.
+% =====================================================================
+\makeatletter
+
+% ---------------------------------------------------------------------
+% 1. Página
+% ---------------------------------------------------------------------
+\geometry{
+  paperwidth  = 170mm,
+  paperheight = 240mm,
+  inner       = 20mm,
+  outer       = 22mm,
+  top         = 24mm,
+  bottom      = 26mm,
+  headsep     = 7mm,
+  footskip    = 11mm,
+}
+\setlength{\parindent}{1.2em}
+\linespread{1.06}
+\frenchspacing
+\setlength{\emergencystretch}{1.5em}
+
+% ---------------------------------------------------------------------
+% 2. Fuentes (Libertinus: incluida en TeX Live, con versalitas reales)
+% ---------------------------------------------------------------------
+\setmainfont{LibertinusSerif}[
+  Extension      = .otf,
+  UprightFont    = *-Regular,
+  ItalicFont     = *-Italic,
+  BoldFont       = *-Semibold,
+  BoldItalicFont = *-SemiboldItalic,
+  Ligatures      = TeX,
+  Numbers        = Lining]
+\setsansfont{LibertinusSans}[
+  Extension      = .otf,
+  UprightFont    = *-Regular,
+  ItalicFont     = *-Italic,
+  BoldFont       = *-Bold,
+  Ligatures      = TeX,
+  Scale          = MatchLowercase]
+\newfontfamily\versalitasespaciadas{LibertinusSans}[
+  Extension = .otf, UprightFont = *-Regular, BoldFont = *-Bold,
+  LetterSpace = 12, Scale = MatchLowercase]
+
+% ---------------------------------------------------------------------
+% 3. Colores
+% ---------------------------------------------------------------------
+\definecolor{acento}{HTML}{1B5E6B}       % petróleo: títulos, ejercicios
+\definecolor{acentoclaro}{HTML}{EAF2F3}  % fondo de recuadros
+\definecolor{acento2}{HTML}{A4502A}      % terracota: ejemplos resueltos
+\definecolor{gristexto}{HTML}{555555}
+
+% ---------------------------------------------------------------------
+% 4. Títulos (KOMA-Script)
+% ---------------------------------------------------------------------
+\setkomafont{disposition}{\sffamily\bfseries\color{acento}}
+\setkomafont{chapterprefix}{\normalsize\versalitasespaciadas\bfseries\color{acento}}
+\setkomafont{chapter}{\sffamily\bfseries\LARGE\color{black}}
+\setkomafont{section}{\sffamily\bfseries\Large}
+\setkomafont{subsection}{\sffamily\bfseries\large}
+\setkomafont{subsubsection}{\sffamily\bfseries\normalsize}
+
+\renewcommand*{\chapterformat}{\MakeUppercase{\chaptername}~\thechapter}
+\renewcommand*{\chapterlinesformat}[3]{%
+  \Ifstr{#1}{chapter}{%
+    \raggedright
+    \Ifstr{#2}{}{}{{\usekomafont{chapterprefix}#2}\par\nobreak\vspace{.5\baselineskip}}%
+    #3\par
+  }{\@hangfrom{#2}{#3}}}
+\RedeclareSectionCommand[beforeskip=10mm, afterskip=4mm]{chapter}
+\RedeclareSectionCommand[beforeskip=-2.2ex plus -.5ex minus -.2ex,
+                         afterskip=1.1ex plus .2ex]{section}
+\RedeclareSectionCommand[beforeskip=-1.8ex plus -.4ex minus -.2ex,
+                         afterskip=.8ex plus .1ex]{subsection}
+\setcounter{secnumdepth}{\subsubsectionnumdepth}
+\setcounter{tocdepth}{\sectiontocdepth}
+
+% \capitulo[título corto]{Título}{Autor/es}
+%   Abre un capítulo numerado con firma de autor (en el cuerpo y en el índice).
+\NewDocumentCommand{\capitulo}{o m m}{%
+  \IfNoValueTF{#1}{\chapter{#2}}{\chapter[#1]{#2}}%
+  \gdef\autorcapitulo{#3}%
+  {\raggedright\normalfont\large\itshape #3\par}%
+  \vspace{2mm}\noindent{\color{acento}\rule{\linewidth}{.6pt}}\par
+  \vspace{7mm}%
+  \addtocontents{toc}{\protect\autorentoc{#3}}%
+  \@afterindentfalse\@afterheading}
+\newcommand*{\autorcapitulo}{}
+\newcommand*{\autorentoc}[1]{%
+  \par\nopagebreak
+  {\leftskip=1.5em\relax\rightskip=\@tocrmarg\relax
+   \small\itshape\color{gristexto}#1\par}%
+  \addvspace{2pt}}
+
+% Secciones finales de capítulo (no numeradas, fuera del índice,
+% con marcador PDF): Lecturas, Solucionario, Glosario, Referencias.
+\newcounter{seccionfinal}
+\newcommand*{\seccionfinal}[1]{%
+  \stepcounter{seccionfinal}%
+  \addsec*{#1}%
+  \pdfbookmark[1]{#1}{seccionfinal.\theseccionfinal}%
+  \markright{#1}}
+
+% ---------------------------------------------------------------------
+% 5. Encabezados y pies
+% ---------------------------------------------------------------------
+\setkomafont{pageheadfoot}{\small\sffamily\color{gristexto}}
+\setkomafont{pagenumber}{\small\sffamily\bfseries\color{acento}}
+\renewcommand*{\chaptermarkformat}{\thechapter.\enskip}
+\renewcommand*{\sectionmarkformat}{\thesection\enskip}
+\automark[section]{chapter}
+\clearpairofpagestyles
+\ohead{\pagemark}
+\ihead{\headmark}
+\cfoot[\pagemark]{}   % páginas «plain» (apertura de capítulo)
+\KOMAoptions{headsepline=false}
+
+% ---------------------------------------------------------------------
+% 6. Notas al pie, epígrafes de tablas y figuras
+% ---------------------------------------------------------------------
+\deffootnote[1.2em]{1.2em}{1em}{\textsuperscript{\thefootnotemark}\,}
+\setfootnoterule[.4pt]{3cm}
+\addtokomafont{footnote}{\linespread{1}\selectfont}
+
+\renewcommand*{\thetable}{\arabic{table}}     % «Tabla 1», reinicia por capítulo
+\renewcommand*{\thefigure}{\arabic{figure}}
+\renewcommand*{\captionformat}{.\enskip}
+\setkomafont{caption}{\small}
+\setkomafont{captionlabel}{\small\sffamily\bfseries\color{acento}}
+\setcapindent{0pt}
+\KOMAoptions{captions=tablesignature}         % epígrafe debajo de la tabla
+
+% Tablas: columnas centradas y cuerpo en \small
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Y}[1]{>{\centering\arraybackslash}p{#1}}
+\AtBeginEnvironment{tabularx}{\small\renewcommand{\arraystretch}{1.2}}
+\AtBeginEnvironment{tabular}{\small\renewcommand{\arraystretch}{1.2}}
+% Valores de los cuadros de ejercicios
+\newcommand*{\mas}{+}
+\newcommand*{\menos}{\textendash}
+\newcommand*{\masmenos}{+/\textendash}
+% Encabezado de columna en cursiva (como en los originales)
+\newcommand*{\enc}[1]{\textit{#1}}
+
+% ---------------------------------------------------------------------
+% 7. Ejemplos (gb4e)
+%    Texto:      numeración continua por capítulo, entre paréntesis: (1), (2a)
+%    Ejercicios: numeración propia, reinicia en cada ejercicio, sin
+%                paréntesis: 1., 2. a.
+% ---------------------------------------------------------------------
+\counterwithin*{exx}{chapter}
+\newcounter{ejx}
+\newcommand*{\exnumcounter}{exx}
+\newcommand*{\exlabelformat}[1]{(#1)}
+
+\patchcmd{\@exe}{(\thexnumi)}{\exlabelformat{\thexnumi}}{}%
+  {\PackageError{estilo}{No se pudo adaptar gb4e (\string\@exe)}{}}
+\patchcmd{\@exe}{\setcounter{xnumi}{\value{exx}}}%
+                {\setcounter{xnumi}{\value{\exnumcounter}}}{}%
+  {\PackageError{estilo}{No se pudo adaptar gb4e (contador)}{}}
+\patchcmd{\endexe}{\setcounter{exx}{\value{xnumi}}}%
+                  {\setcounter{\exnumcounter}{\value{xnumi}}}{}%
+  {\PackageError{estilo}{No se pudo adaptar gb4e (\string\endexe)}{}}
+
+% Modo «ejercicio»: contador ejx, etiqueta sin paréntesis
+\newcommand*{\modoejercicio}{%
+  \setcounter{ejx}{0}%
+  \renewcommand*{\exnumcounter}{ejx}%
+  \renewcommand*{\exlabelformat}[1]{##1.}%
+  \exewidth{99.}}
+
+% Remisiones: \exref{ex:ambig} → (7);  \exrefs{ex:a}{ex:b} → (7)-(9)
+\newcommand*{\exref}[1]{(\ref{#1})}
+\newcommand*{\exrefs}[2]{(\ref{#1})-(\ref{#2})}
+
+% Juicio en línea: \juicio{*}{haiga} → *haiga
+\newcommand*{\juicio}[2]{#1#2}
+
+% Abreviaturas de glosa propias (leipzig): \Dom
+\newleipzig{dom}{dom}{marcado diferencial de objeto}
+
+% Formas mencionadas y significados
+\newcommand*{\forma}[1]{\textit{#1}}               % lengua objeto
+\newcommand*{\sig}[1]{\textquoteleft#1\textquoteright} % ‘significado’
+\newcommand*{\termino}[1]{\textit{#1}}             % término técnico introducido
+\newcommand*{\concepto}[1]{\textsc{\MakeLowercase{#1}}} % VERSALITA de las citas
+
+% Bloques de cita (APA, ≥ 40 palabras)
+\newenvironment{cita}
+  {\begin{quote}\small\linespread{1}\selectfont}
+  {\end{quote}}
+
+% ---------------------------------------------------------------------
+% 8. Árboles (forest)
+% ---------------------------------------------------------------------
+\forestset{
+  gramatica/.style={
+    for tree={
+      parent anchor=south, child anchor=north,
+      s sep=6mm, l sep=4mm, inner sep=1pt,
+      font=\small, align=center,
+    },
+  },
+  triangulo/.style={roof},
+}
+\NewDocumentEnvironment{arbol}{+b}
+  {\par\medskip\begin{center}\begin{forest}gramatica #1\end{forest}\end{center}\medskip}{}
+
+% ---------------------------------------------------------------------
+% 9. Ejercicios
+%    \begin{ejercicio}[subtítulo opcional] ... \end{ejercicio}
+%    \begin{resuelto}[Ejemplo resuelto] ... \end{resuelto}
+% ---------------------------------------------------------------------
+\newcounter{ejercicio}[chapter]
+\renewcommand*{\theejercicio}{\arabic{ejercicio}}
+
+\newtcolorbox{cajaejercicio}[1]{%
+  enhanced, breakable, blanker,
+  borderline west={2.2pt}{0pt}{acento},
+  left=4mm, right=0mm, top=0mm, bottom=1mm,
+  before skip=4mm plus 1mm, after skip=4mm plus 1mm,
+  title={#1}, coltitle=acento,
+  fonttitle=\sffamily\bfseries,
+  attach title to upper={\par\smallskip},
+  parbox=false,
+}
+\NewDocumentEnvironment{ejercicio}{o}
+  {\par\refstepcounter{ejercicio}%
+   \begin{cajaejercicio}{Ejercicio~\theejercicio%
+       \IfValueT{#1}{\enskip{\mdseries\color{gristexto}·\enskip #1}}}%
+   \modoejercicio\setlength{\parindent}{0pt}\setlength{\parskip}{.5\baselineskip}}
+  {\end{cajaejercicio}}
+
+\NewDocumentEnvironment{resuelto}{O{Ejemplo resuelto}}
+  {\par\smallskip\small\noindent
+   {\sffamily\bfseries\color{acento2}#1.}\enskip\ignorespaces}
+  {\par}
+
+% Preguntas o consignas internas del ejercicio: a), b)...
+\newlist{consignas}{enumerate}{1}
+\setlist[consignas]{label=\alph*), leftmargin=1.8em, topsep=.3\baselineskip,
+                    itemsep=.2\baselineskip}
+
+% ---------------------------------------------------------------------
+% 10. Recuadros destacados
+%    \begin{recuadro}[Título] ... \end{recuadro}  (con título)
+%    \begin{destacado} ... \end{destacado}         (sin título)
+% ---------------------------------------------------------------------
+\newtcolorbox{recuadro}[1][]{%
+  enhanced, breakable,
+  colback=acentoclaro, colframe=acento,
+  boxrule=0pt, toprule=1.4pt, bottomrule=0pt, leftrule=0pt, rightrule=0pt,
+  arc=0pt, outer arc=0pt,
+  left=5mm, right=5mm, top=3mm, bottom=3mm,
+  before skip=5mm, after skip=5mm,
+  fontupper=\small,
+  title={#1}, coltitle=acento, fonttitle=\sffamily\bfseries,
+  attach title to upper={\par\smallskip},
+}
+\newtcolorbox{destacado}{%
+  enhanced, breakable, colback=acentoclaro, frame hidden,
+  arc=0pt, left=5mm, right=5mm, top=2.5mm, bottom=2.5mm,
+  before skip=4mm, after skip=4mm,
+}
+
+% ---------------------------------------------------------------------
+% 11. Secciones finales del capítulo
+% ---------------------------------------------------------------------
+% Clave del capítulo para filtrar la bibliografía: cap01, cap02...
+\newcommand*{\capclave}{\two@digits{\value{chapter}}}
+
+\defbibheading{seccionfinal}[]{\seccionfinal{#1}}
+\newcommand*{\referenciascapitulo}{%
+  \begingroup
+  \edef\x{\noexpand\printbibliography[keyword=cap\capclave,
+          heading=seccionfinal, title={Referencias bibliográficas}]}%
+  \x\endgroup}
+\newcommand*{\lecturasrecomendadas}{%
+  \begingroup
+  \edef\x{\noexpand\printbibliography[keyword=lect\capclave,
+          heading=seccionfinal, title={Lecturas recomendadas}]}%
+  \x\endgroup}
+
+% Tipos de editor en español: editortype = {coordinator|director|compiler}
+%   → (Coord./Coords.), (Dir./Dirs.), (Comp./Comps.)
+\csdef{tipoeditor@coordinator}{Coord\adddot}
+\csdef{tipoeditor@coordinators}{Coords\adddot}
+\csdef{tipoeditor@director}{Dir\adddot}
+\csdef{tipoeditor@directors}{Dirs\adddot}
+\csdef{tipoeditor@compiler}{Comp\adddot}
+\csdef{tipoeditor@compilers}{Comps\adddot}
+\renewbibmacro*{apaeditorstrg}[1]{%
+  \iffieldundef{#1type}
+    {\ifthenelse{\value{#1}>1\OR\ifandothers{#1}}
+       {\bibcpstring{editors}}
+       {\bibcpstring{editor}}}
+    {\edef\tipoed@{\thefield{#1type}}%
+     \ifthenelse{\value{#1}>1\OR\ifandothers{#1}}
+       {\ifcsdef{tipoeditor@\tipoed@ s}
+          {\csuse{tipoeditor@\tipoed@ s}}
+          {\bibcpstring{type\thefield{#1type}s}}}
+       {\ifcsdef{tipoeditor@\tipoed@}
+          {\csuse{tipoeditor@\tipoed@}}
+          {\bibcpstring{type\thefield{#1type}}}}}}
+
+% APA en español: «y» en lugar de «&»; «Obra original publicada en»;
+% partícula pospuesta («Saussure, F. de»)
+\ExecuteBibliographyOptions{useprefix=false}
+\DeclareDelimFormat[bib,biblist]{finalnamedelim}{%
+  \ifthenelse{\value{listcount}>\maxprtauth}
+    {}
+    {\addspace y\space}}
+\DeclareDelimFormat[parencite,fullcite,fullcitebib]{finalnamedelim}{\addspace y\space}
+\renewbibmacro*{origyear}{%
+  \ifboolexpr{%
+    not test {\iffieldundef{origyear}}
+    and not test {\iffieldundef{labelyear}}
+    and not test {\iffieldsequal{labelyear}{origyear}}}
+    {\printtext[parens]{Obra original publicada en\addnbspace\printorigdate}%
+     \renewcommand*{\finentrypunct}{\relax}}
+    {}}
+
+% Dos autores sin coma antes de «y» (Bosque, I. y Demonte, V.); con tres
+% o más, coma entre todos salvo antes de «y».
+\renewcommand*{\apablx@ifrevnameappcomma}{%
+  \iftoggle{apablx@wantcomma}
+    {\ifboolexpr{test {\ifnumless{\value{listcount}}{\value{liststop}-1}}
+                 or test \ifmorenames}}
+    {\@secondoftwo}}
+
+% Capítulos de libro: (Vol. 2, pp. 23-45), como en APA 7
+\renewbibmacro*{addinfo1}{%
+  \printtexte[parens]{%
+    \usebibmacro{editor+trans+narr}%
+    \setunit*{\addsemicolon\addspace}%
+    \printfield{edition}%
+    \setunit*{\addcomma\addspace}%
+    \ifthenelse{\ifentrytype{report}\OR\ifentrytype{unpublished}\OR
+                \ifentrytype{dataset}\OR\ifentrytype{software}\OR
+                \ifentrytype{audio}\OR\ifentrytype{patent}\OR
+                \ifentrytype{image}}{\usebibmacro{addinfo3}}{}%
+    \setunit*{\addcomma\addspace}%
+    \ifthenelse{\ifentrytype{book}\OR\ifentrytype{inbook}}{\printfield{volumes}}{}%
+    \setunit*{\addcomma\addspace}%
+    \ifthenelse{\ifentrytype{book}\OR\ifentrytype{inbook}}{\printfield{volume}}{}%
+    \setunit*{\addcomma\addspace}%
+    \ifentrytype{inbook}{\printfield{pages}}{}}}
+
+% Bibliografía: sangría francesa y cuerpo menor
+\setlength{\bibhang}{1.5em}
+\renewcommand*{\bibfont}{\small\raggedright}
+
+% Solucionario
+\newcommand*{\solucionario}{\seccionfinal{Solucionario}}
+\NewDocumentEnvironment{solucion}{m}
+  {\par\addvspace{\medskipamount}%
+   \noindent{\sffamily\bfseries\color{acento}Ejercicio~#1}\par\nobreak
+   \small\modoejercicio\setlength{\parindent}{0pt}\setlength{\parskip}{.4\baselineskip}}
+  {\par}
+
+% Glosario (por capítulo y general)
+\newlist{glosario}{description}{2}
+\setlist[glosario]{font=\normalfont\bfseries\itshape, leftmargin=1.5em,
+                   labelindent=0pt, itemsep=.35\baselineskip,
+                   style=sameline, before=\small}
+\setlist[glosario,2]{leftmargin=1.5em, labelindent=0pt, topsep=.2\baselineskip}
+% Término con subentradas: \item[Distribución]\subterminos  (fuerza salto de línea)
+\newcommand*{\subterminos}{\mbox{}}
+\newcommand*{\glosariocapitulo}{\seccionfinal{Glosario}}
+
+% Glosario general (finales/glosario.tex): dos columnas
+%   \begin{glosariogeneral} \item[Término:] Definición. \end{glosariogeneral}
+\setlength{\columnsep}{7mm}
+\setlength{\columnseprule}{0pt}
+\NewDocumentEnvironment{glosariogeneral}{}
+  {\begin{multicols}{2}\raggedcolumns\begin{glosario}[before=\small\raggedright]}
+  {\end{glosario}\end{multicols}}
+
+% Siglario
+\newlist{siglario}{description}{1}
+\setlist[siglario]{font=\normalfont\sffamily\bfseries, labelwidth=4.5em,
+                   leftmargin=5.5em, labelsep=1em, align=left,
+                   itemsep=.15\baselineskip, style=standard}
+
+% ---------------------------------------------------------------------
+% 12. Índice general
+% ---------------------------------------------------------------------
+\setkomafont{chapterentry}{\sffamily\bfseries}
+\RedeclareSectionCommand[tocindent=0pt, tocnumwidth=1.5em]{chapter}
+\RedeclareSectionCommand[tocindent=1.5em, tocnumwidth=2.3em]{section}
+
+\makeatother

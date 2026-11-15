@@ -1,0 +1,60 @@
+% =====================================================================
+%  capitulos/capNN.tex — Plantilla de capítulo
+%  Copiar como capNN.tex y agregar \include{capitulos/capNN} en main.tex.
+%  Las referencias se filtran por la palabra clave capNN del .bib;
+%  las lecturas recomendadas, por lectNN.
+% =====================================================================
+\capitulo{Título del capítulo}{Nombre del autor}
+
+\section{Introducción}
+
+Texto. Ejemplo numerado del texto (numeración continua en el capítulo):
+
+\begin{exe}
+  \ex\label{ex:NN-uno} Oración de ejemplo.
+  \ex\label{ex:NN-dos}
+    \begin{xlist}
+      \ex Variante a.
+      \ex[*]{Variante b agramatical.}
+    \end{xlist}
+\end{exe}
+
+Remisión: \exref{ex:NN-uno}, \exrefs{ex:NN-uno}{ex:NN-dos}.
+
+\begin{ejercicio}
+Consigna del ejercicio (la numeración de sus ejemplos se reinicia y va sin
+paréntesis).
+
+\begin{exe}
+  \ex Primer ítem.
+  \ex Segundo ítem.
+\end{exe}
+
+\begin{consignas}
+  \item Primera pregunta.
+  \item Segunda pregunta.
+\end{consignas}
+
+\begin{resuelto}
+Resolución del ítem 1.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{recuadro}[Título del recuadro]
+Contenido destacado.
+\end{recuadro}
+
+% --- Secciones finales -------------------------------------------------
+\lecturasrecomendadas
+
+\solucionario
+\begin{solucion}{1}
+Respuestas.
+\end{solucion}
+
+\glosariocapitulo
+\begin{glosario}
+  \item[Término:] Definición.
+\end{glosario}
+
+\referenciascapitulo
