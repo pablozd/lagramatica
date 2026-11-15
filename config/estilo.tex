@@ -84,6 +84,7 @@
 \NewDocumentCommand{\capitulo}{o m m}{%
   \IfNoValueTF{#1}{\chapter{#2}}{\chapter[#1]{#2}}%
   \label{cap:\capclave}%
+  \xappto\capsincluidos{\capclave,}%
   \gdef\autorcapitulo{#3}%
   {\raggedright\normalfont\large\itshape #3\par}%
   \vspace{2mm}\noindent{\color{acento}\rule{\linewidth}{.6pt}}\par
@@ -288,11 +289,27 @@
 \newcommand*{\capclave}{\two@digits{\value{chapter}}}
 
 \defbibheading{seccionfinal}[]{\seccionfinal{#1}}
-\newcommand*{\referenciascapitulo}{%
-  \begingroup
-  \edef\x{\noexpand\printbibliography[keyword=cap\capclave,
-          heading=seccionfinal, title={Referencias bibliográficas}]}%
-  \x\endgroup}
+
+% Bibliografía general (al final del libro): entradas de los capítulos
+% incluidos (palabras clave capNN y lectNN) más todo lo citado con \cite.
+% Las entradas marcadas «nobib» (duplicados para lecturas) se omiten.
+\newcommand*{\capsincluidos}{}
+\DeclareBibliographyCategory{citados}
+\AtEveryCitekey{\addtocategory{citados}{\thefield{entrykey}}}
+\newcommand*{\bib@chequearcap}[1]{%
+  \ifkeyword{cap#1}{\def\bib@ok{1}}{}%
+  \ifkeyword{lect#1}{\def\bib@ok{1}}{}}
+\defbibcheck{libro}{%
+  \ifkeyword{nobib}
+    {\skipentry}
+    {\def\bib@ok{0}%
+     \ifcategory{citados}{\def\bib@ok{1}}{}%
+     \forcsvlist{\bib@chequearcap}{\capsincluidos}%
+     \ifnum\bib@ok=0 \skipentry\fi}}
+\newcommand*{\bibliografiageneral}{%
+  \printbibliography[check=libro, heading=bibintoc,
+                     title={Referencias bibliográficas}]}
+
 \newcommand*{\lecturasrecomendadas}{%
   \begingroup
   \edef\x{\noexpand\printbibliography[keyword=lect\capclave,
@@ -378,11 +395,13 @@
   {\par}
 
 % Glosario (por capítulo y general)
-\newlist{glosario}{description}{2}
+\newlist{glosario}{description}{4}
 \setlist[glosario]{font=\normalfont\bfseries\itshape, leftmargin=1.5em,
                    labelindent=0pt, itemsep=.35\baselineskip,
                    style=sameline, before=\small}
-\setlist[glosario,2]{leftmargin=1.5em, labelindent=0pt, topsep=.2\baselineskip}
+\setlist[glosario,2]{leftmargin=1.2em, labelindent=0pt, topsep=.2\baselineskip}
+\setlist[glosario,3]{leftmargin=1.2em, labelindent=0pt, topsep=.2\baselineskip}
+\setlist[glosario,4]{leftmargin=1.2em, labelindent=0pt, topsep=.2\baselineskip}
 % Término con subentradas: \item[Distribución]\subterminos  (fuerza salto de línea)
 \newcommand*{\subterminos}{\mbox{}}
 \newcommand*{\glosariocapitulo}{\seccionfinal{Glosario}}

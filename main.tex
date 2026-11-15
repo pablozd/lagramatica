@@ -33,8 +33,9 @@
 
 \begin{document}
 
-% Todas las entradas del .bib quedan disponibles; cada capítulo imprime
-% solo las que llevan su palabra clave (cap01, cap02... / lect01...).
+% Todas las entradas del .bib quedan disponibles. La bibliografía general
+% (al final) imprime las de los capítulos incluidos y todo lo citado; las
+% lecturas recomendadas de cada capítulo se filtran por lectNN.
 \nocite{*}
 
 \frontmatter
@@ -49,7 +50,7 @@
 \include{capitulos/cap01}
 \include{capitulos/cap02}
 \include{capitulos/cap03}
-% \include{capitulos/cap04}
+\include{capitulos/cap04}
 % \include{capitulos/cap05}
 % \include{capitulos/cap06}
 % \include{capitulos/cap07}
@@ -64,7 +65,6 @@
 
 \backmatter
 \include{finales/glosario}
-% Bibliografía general (opcional): todas las referencias del libro
-% \printbibliography[title={Bibliografía general}]
+\bibliografiageneral
 
 \end{document}

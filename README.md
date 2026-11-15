@@ -19,7 +19,7 @@ bib/referencias.bib         bibliografía (biblatex-apa, palabras clave por cap�
 preliminares/               portada, prólogo, siglario
 capitulos/capNN.tex         un archivo por capítulo (cap01 … cap15)
 capitulos/plantilla-capitulo.tex   plantilla para copiar
-finales/glosario.tex        glosario general, a dos columnas
+finales/glosario.tex        glosario único, alfabético, a dos columnas
 pruebas/diseno.tex          documento de prueba del diseño (capítulo de muestra)
 .github/workflows/pdf.yml   compila el PDF en cada push (artefacto «manual-pdf»)
 HANDOFF.md                  estado del proyecto y próximos pasos
@@ -53,14 +53,16 @@ incluyen en orden.
 | Texto de lectura | `\begin{textolectura}[Título]` | cuentos, fragmentos |
 | Figura sin imagen | `\figurapendiente{Epígrafe}{fig:etiqueta}` | |
 | Duda del original | `\pendiente{...}` | marca roja en el PDF |
-| Secciones finales | `\lecturasrecomendadas`, `\solucionario` + `solucion{n}`, `\glosariocapitulo` + `glosario`, `\referenciascapitulo` | |
+| Secciones finales | `\lecturasrecomendadas`, `\solucionario` + `solucion{n}` | glosario y bibliografía van al final del libro | |
 
 ## Bibliografía
 
 Cada entrada lleva `keywords = {capNN, ...}` (referencias del capítulo NN) y,
-si corresponde, `lectNN` (lecturas recomendadas). `\referenciascapitulo` y
-`\lecturasrecomendadas` filtran por el número del capítulo en curso, así que
-el orden de `\include` en `main.tex` tiene que coincidir con la numeración.
+si corresponde, `lectNN` (lecturas recomendadas); `nobib` excluye una entrada
+de la bibliografía final. `\lecturasrecomendadas` filtra por el número del
+capítulo en curso, así que el orden de `\include` en `main.tex` tiene que
+coincidir con la numeración. `\bibliografiageneral` (al final del libro)
+imprime lo citado más las entradas `capNN`/`lectNN` de los capítulos incluidos.
 
 Ajustes sobre biblatex-apa: «y» en lugar de «&», sin coma antes de «y» con dos
 autores, «Obra original publicada en», partícula pospuesta (Saussure, F. de),

@@ -20,8 +20,10 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 1 | `capitulos/cap01.tex` | cargado; faltan 4 imágenes y revisar marcas `\pendiente` |
 | Capítulo 2 | `capitulos/cap02.tex` | cargado; revisar marcas `\pendiente` |
 | Capítulo 3 | `capitulos/cap03.tex` | cargado; faltan imágenes, audios y la letra de la canción |
-| Capítulos 4-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
-| Glosario general | `finales/glosario.tex` | estructura a dos columnas; contenido pendiente (18-glosario.docx) |
+| Capítulo 4 | `capitulos/cap04.tex` | cargado; faltan imágenes, el texto de *El País* y la letra de la canción |
+| Capítulos 5-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
+| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos del cap. 4) |
+| Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
 | Versión online | — | no empezada |
 
 ## Flujo por capítulo
@@ -30,7 +32,11 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 2. Ejemplos del texto con `exe` fuera de ejercicios; ítems de ejercicios con
    `exe` dentro de `ejercicio` (numeración sin paréntesis, reinicia).
 3. Verificar que todas las obras citadas tengan `capNN` en `keywords`; agregar
-   `lectNN` para las lecturas recomendadas (y crear las entradas que falten).
+   `lectNN` para las lecturas recomendadas (y crear las entradas que falten;
+   `nobib` si duplica otra entrada).
+3b. Agregar a `finales/glosario.tex` solo los términos que falten, en orden
+   alfabético. El capítulo no lleva glosario ni referencias propias.
+3c. Pasar a `\ref` las remisiones de capítulos anteriores a secciones del nuevo.
 4. Descomentar `\include{capitulos/capNN}` en `main.tex`.
 5. Compilar con LuaLaTeX y XeLaTeX sin errores ni cajas desbordadas.
 6. Un commit por capítulo: `Capítulo NN: <título>`.
@@ -43,8 +49,9 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 - biblatex-apa con ajustes para el español: «y», sin coma antes de «y» con dos
   autores, «Obra original publicada en», «Saussure, F. de», (Vol., pp.),
   Coord./Dir./Comp.
-- Referencias por capítulo según las listas de los autores (palabras clave del
-  .bib), no según lo citado.
+- Bibliografía única al final del libro (`\bibliografiageneral`): entra toda
+  obra citada en el texto o con `capNN`/`lectNN` de un capítulo incluido;
+  `nobib` la excluye. Las lecturas recomendadas siguen al final de cada capítulo.
 - Secciones numeradas con el número de capítulo y sin punto final (2.1,
   2.3.1), a pedido del autor (opción `es-nosectiondot` de babel).
 - Enlaces en color (`colorlinks`): remisiones, citas, notas, URL e índice.
@@ -62,7 +69,7 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
   imágenes van en `figuras/capNN/`.
 - Dudas del original marcadas en el PDF con `\pendiente{...}` (texto rojo).
 - Tablas numeradas por capítulo sin prefijo («Tabla 1»).
-- Glosario general a dos columnas; glosarios de capítulo a una.
+- Un solo glosario, al final, a dos columnas, sin términos repetidos.
 
 ## Pendientes y dudas
 
@@ -114,6 +121,21 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 - Cuadro del solucionario del ej. 21: revisar orden de sílabas y celdas.
 - Cap. 1: el microrrelato *El cautivo* (Borges) también quedó como texto a
   incorporar a mano.
+
+### Capítulo 4
+- Fragmento de *El País* (ej. 1) y letra de *La luna y tú* (ej. 11): incorporar a mano.
+- Imágenes: ej. 6 (-ardo), ej. 14 (ítems 2-7), fig. 1 (viñeta *afortunado*), ej. 17 (ítem 1).
+- Remisiones internas corregidas: §5.4 → §4.4.6; §5.3 → §4.4.5; §7.1 → §4.8.1 (conversión).
+- Albano y Giammatteo (2000) citado; en la bibliografía figura 2002.
+- Fábregas (2015) citado; en la bibliografía figura 2013.
+- Darmesteter (1877) citado a través de Serrano-Dolader (1999): no tiene entrada propia.
+- Correcciones marcadas: «sonido lateral» (incluye *irracional*); «los derivativos se realizan
+  exclusivamente como sufijos» → flexivos; GNC = «Gas Natural Comprimido».
+- Faltan ejemplos en el original: *antitranspirar* (ej. 12), *UNA* (ej. 15), *teligente* (ej. 16);
+  enlace repetido en FIFA/AFA.
+- Solucionario del ej. 10 (parasíntesis) no corresponde a las consignas.
+- Solucionario del ej. 11: temas de *cursada* invertidos; ej. 12: categoría de *espectador*.
+- Lecturas: verificar título del capítulo de Adelstein y Nercesián y URL de MORFORETEM.
 
 ### General
 
