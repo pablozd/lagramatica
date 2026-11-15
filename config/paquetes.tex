@@ -15,7 +15,8 @@
             es-tabla,          % «Tabla» en lugar de «Cuadro»
             es-noshorthands,   % evita conflictos de " < > con TikZ/forest
             es-nolists,        % no altera las listas (gb4e, enumitem)
-            es-noquoting]{babel}
+            es-noquoting,
+            es-nosectiondot]{babel}  % 2.1 (sin punto final)
 \usepackage{csquotes}     % \enquote{...}: comillas “ ” y ‘ ’ como en los originales
 \DeclareQuoteStyle{manual}
   {\textquotedblleft}{\textquotedblright}
@@ -74,7 +75,7 @@
 \urlstyle{same}
 
 % --- Hipervínculos (al final) -----------------------------------------
-\usepackage[hidelinks,
+\usepackage[colorlinks,
             pdfusetitle,
             bookmarksnumbered,
             bookmarksopen]{hyperref}

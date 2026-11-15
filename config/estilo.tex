@@ -76,15 +76,14 @@
 \RedeclareSectionCommand[beforeskip=-1.8ex plus -.4ex minus -.2ex,
                          afterskip=.8ex plus .1ex]{subsection}
 \setcounter{secnumdepth}{\subsubsectionnumdepth}
-% Secciones numeradas sin el número de capítulo, como en los originales:
-% 1., 2.1., 2.3.1. (las remisiones usan «capítulo 4: §7.3»)
-\renewcommand*{\thesection}{\arabic{section}}
+% Secciones numeradas con el número de capítulo: 2.1, 2.3.1
 \setcounter{tocdepth}{\sectiontocdepth}
 
 % \capitulo[título corto]{Título}{Autor/es}
 %   Abre un capítulo numerado con firma de autor (en el cuerpo y en el índice).
 \NewDocumentCommand{\capitulo}{o m m}{%
   \IfNoValueTF{#1}{\chapter{#2}}{\chapter[#1]{#2}}%
+  \label{cap:\capclave}%
   \gdef\autorcapitulo{#3}%
   {\raggedright\normalfont\large\itshape #3\par}%
   \vspace{2mm}\noindent{\color{acento}\rule{\linewidth}{.6pt}}\par
@@ -168,6 +167,10 @@
 \patchcmd{\endexe}{\setcounter{exx}{\value{xnumi}}}%
                   {\setcounter{\exnumcounter}{\value{xnumi}}}{}%
   {\PackageError{estilo}{No se pudo adaptar gb4e (\string\endexe)}{}}
+
+% Dentro de ejercicios, cada bloque exe reinicia la numeración
+\pretocmd{\exe}{\ifdefstring{\exnumcounter}{ejx}{\setcounter{ejx}{0}}{}}{}%
+  {\PackageError{estilo}{No se pudo adaptar gb4e (\string\exe)}{}}
 
 % Modo «ejercicio»: contador ejx, etiqueta sin paréntesis
 \newcommand*{\modoejercicio}{%
@@ -443,5 +446,41 @@
       \sffamily\small\color{gristexto}Imagen pendiente\\[2pt]\footnotesize #1}}
     \caption{#1}\label{#2}
   \end{figure}}
+
+% ---------------------------------------------------------------------
+% 14. Enlaces
+% ---------------------------------------------------------------------
+\hypersetup{
+  linkcolor = acento,     % ejemplos, secciones, notas, índice
+  citecolor = acento2,    % citas bibliográficas
+  urlcolor  = acento,     % direcciones web
+}
+
+% Remisión a otro capítulo: \capref{4} → «capítulo 4», con enlace si ese
+% capítulo ya está incluido en el libro; texto plano si todavía no.
+\newcommand*{\capref}[1]{%
+  \@ifundefined{r@cap:\two@digits{#1}}%
+    {capítulo~#1}%
+    {\hyperref[cap:\two@digits{#1}]{capítulo~#1}}}
+% Variante abreviada: \Capref{4} → «cap. 4»
+\newcommand*{\Capref}[1]{%
+  \@ifundefined{r@cap:\two@digits{#1}}%
+    {cap.~#1}%
+    {\hyperref[cap:\two@digits{#1}]{cap.~#1}}}
+
+% Transcripción fonética [ ] y fonológica / /
+\newcommand*{\fon}[1]{[#1]}
+\newcommand*{\fonol}[1]{/#1/}
+
+% Imagen o audio que todavía no está en figuras/ (no flotante, para
+% ejercicios): \imagenpendiente[alto]{Descripción}
+\NewDocumentCommand{\imagenpendiente}{O{22mm} m}{%
+  \par\smallskip\noindent\fcolorbox{gristexto}{white}{\parbox[c][#1][c]{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\centering
+    \sffamily\footnotesize\color{gristexto}#2}}\par\smallskip}
+
+% Texto ajeno que se incorpora desde el original (letras de canciones,
+% textos literarios completos): deja un recuadro con la indicación.
+\newcommand*{\textoaincorporar}[1]{%
+  \imagenpendiente[18mm]{Incorporar aquí #1 desde el original}}
 
 \makeatother

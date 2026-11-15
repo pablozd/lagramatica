@@ -1,6 +1,6 @@
 # Handoff — Manual de gramática del español
 
-Última actualización: 2026-11-15 (capítulo 2).
+Última actualización: 2026-11-15 (capítulo 3).
 
 ## Objetivo
 
@@ -19,7 +19,8 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Siglario | `preliminares/siglario.tex` | pendiente (02-siglario.docx) |
 | Capítulo 1 | `capitulos/cap01.tex` | cargado; faltan 4 imágenes y revisar marcas `\pendiente` |
 | Capítulo 2 | `capitulos/cap02.tex` | cargado; revisar marcas `\pendiente` |
-| Capítulos 3-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
+| Capítulo 3 | `capitulos/cap03.tex` | cargado; faltan imágenes, audios y la letra de la canción |
+| Capítulos 4-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
 | Glosario general | `finales/glosario.tex` | estructura a dos columnas; contenido pendiente (18-glosario.docx) |
 | Versión online | — | no empezada |
 
@@ -44,8 +45,17 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
   Coord./Dir./Comp.
 - Referencias por capítulo según las listas de los autores (palabras clave del
   .bib), no según lo citado.
-- Secciones numeradas sin el número de capítulo y con punto final (2.1.,
-  2.3.1.), como en los originales.
+- Secciones numeradas con el número de capítulo y sin punto final (2.1,
+  2.3.1), a pedido del autor (opción `es-nosectiondot` de babel).
+- Enlaces en color (`colorlinks`): remisiones, citas, notas, URL e índice.
+- Remisiones a otros capítulos con `\capref{N}` / `\Capref{N}`: enlazan si
+  el capítulo ya está incluido; si no, texto plano. Las remisiones a
+  secciones de otro capítulo («capítulo 4: §7.3») siguen como texto y deben
+  pasar a `\ref` (con la numeración nueva: §4.7.3) al cargar ese capítulo.
+- Transcripciones: `\fon{...}` = [ ], `\fonol{...}` = / /.
+- Dentro de un ejercicio, cada bloque `exe` reinicia la numeración.
+- Textos protegidos completos (letras de canciones, cuentos enteros) no se
+  transcriben: quedan con `\textoaincorporar{...}` para pegarlos a mano.
 - Ejercicios en cuerpo menor y con 6 mm antes y después (pedido en los
   comentarios del cap. 1).
 - Figuras sin imagen todavía: `\figurapendiente{epígrafe}{etiqueta}`; las
@@ -86,6 +96,24 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 - Corregido: «(2a)-(1b)» → «2a-2b» en el solucionario del ej. 3.
 - En ejercicios y solucionarios, las remisiones a ítems van sin paréntesis
   (1a, 3b), coherente con la numeración de ejercicios.
+
+### Capítulo 3
+- Letra de *El viento* (Manu Chao): incorporar a mano en el ej. 1.
+- Figuras 1 y 2 (aparato fonatorio, salida oral/nasal): no están en el
+  original. Figs. 3-8 son imágenes pendientes (las tablas del AFI se pueden
+  rehacer en TikZ). La fig. 9 (sílaba) se rehízo con forest.
+- Imágenes de los ejercicios 2, 18 y 25; audios de los ejercicios 15 y 16;
+  enlace al video del ejercicio 17.
+- Hualde (2013) se cita en el texto; en la bibliografía figura 2014.
+- Kouti (2010), citado en el solucionario del ej. 19, no está en la bibliografía.
+- Ej. (1) de §10: se corrigieron acento y vibrantes de las transcripciones.
+- Solucionario ej. 1: se cambió [ç] por [x] (*gema*, *g* ante e/i).
+- Solucionario ej. 6e: [ɛ] figuraba como «redondeada».
+- Solucionario ej. 6f: *tejado* no está en la consigna.
+- Solucionario ej. 14: remitía a §8.1.2 (inexistente); ahora a §3.10.
+- Cuadro del solucionario del ej. 21: revisar orden de sílabas y celdas.
+- Cap. 1: el microrrelato *El cautivo* (Borges) también quedó como texto a
+  incorporar a mano.
 
 ### General
 
