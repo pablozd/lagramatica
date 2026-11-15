@@ -13,6 +13,8 @@ jobs:
         with:
           root_file: main.tex
           latexmk_use_lualatex: true
+          # \include con -output-directory necesita las subcarpetas creadas
+          pre_compile: mkdir -p build/preliminares build/capitulos build/finales
       - uses: actions/upload-artifact@v4
         with:
           name: manual-pdf
