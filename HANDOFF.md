@@ -30,6 +30,7 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 11 | `capitulos/cap11.tex` | cargado; faltan textos de Infobae (ej. 2) y Tato Bores (ej. 3) |
 | Capítulo 12 | `capitulos/cap12.tex` | cargado; falta la referencia de la nota sobre Meta (ej. 9) |
 | Capítulo 13 | `capitulos/cap13.tex` | cargado; faltan los paratextos periodísticos (ej. 8); siglas a confirmar |
+| Capítulo 14 | `capitulos/cap14.tex` | cargado; faltan las letras de canciones (ej. 1) |
 | Capítulos 11-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
 | Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 10) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
@@ -280,6 +281,23 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
   cansado*; ej. 7 (3) *para* «sociativo»; (10) «insrumental», (11) «maera»; ej. 6 (16) OS/AS →
   OR/AS; ej. 8 (3) *comprometerse a* con «valor final».
 - Martínez García (1996) no figura en la bibliografía. Moreno Cabrera (1991) agregado a cap13.
+
+### Capítulo 14
+- El docx dice «CAPÍTULO 12» en el encabezado: es el 14.
+- Ej. 1: letras de Calle 13 y J. Drexler → `\textoaincorporar` (solo formas destacadas). Las letras
+  de los apartados no coinciden entre enunciado (a, b, c, e, f, g) y solucionario (a–f).
+- Comentarios de revisión pendientes: autora (no volver sobre oración/enunciado en §2); F. Carranza
+  (precisar futuro narrativo, evidencialidad y presuposición); A. Kaller (boquilla «6*» → «6º»,
+  verificar).
+- Correcciones: «sudanés» → sundanés; «macedónicas, turcas»; «Willet» → Willett; remisiones a
+  Cap. 11 §5.4 → modales, Cap. 10 §5.1.1/5.1.4 → mediopasivas/impersonales, Cap. 13 §5.1 →
+  condicionales, «cap. 11; §5.1» → cap. 13 §5.2; doble (12) y doble (38); (33)-(34) citados como
+  ejemplo de aspecto/fuerza ilocutiva → (31) y (34); «por lo visto y evidentemente» → *al parecer*;
+  «Marcovecchio, 2015, p. 2020».
+- García Negroni (2016) → entrada García Negroni y Marcovecchio (2016). Casado (1991) no figura en
+  la bibliografía. Fuente de los ejemplos orales (41)-(43) sin consignar.
+- Ej. 4: el solucionario no resuelve la oración 3 y numera 2-5; ej. 5: juicio *tuviera que hacer;
+  ej. 6: el solucionario repetía el resuelto 1 (comentario de la autora) y no resuelve la 6.
 
 ### General
 
