@@ -23,8 +23,9 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 4 | `capitulos/cap04.tex` | cargado; faltan imágenes, el texto de *El País* y la letra de la canción |
 | Capítulo 5 | `capitulos/cap05.tex` | cargado; faltan textos de Bioy Casares, Litvin, Saki, Cortázar y *La naturaleza* |
 | Capítulo 6 | `capitulos/cap06.tex` | cargado; faltan los textos de Peyrou y Asimov |
-| Capítulos 7-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
-| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4, 5 y 6) |
+| Capítulo 7 | `capitulos/cap07.tex` | cargado; faltan los textos de «Emma Zunz», Hilbert y Cantor |
+| Capítulos 8-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
+| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 7) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
 | Versión online | — | no empezada |
 
@@ -165,6 +166,18 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 - Ej. 3: la numeración de oraciones del solucionario no coincide con la del texto.
 - «Cortázar, R.» → J. Cortázar (*Rayuela*). Peyrou figura como «Peyroú (2020)».
 - Glosario: se completó la definición de *Foco* con la del capítulo.
+
+### Capítulo 7
+- Textos a incorporar a mano: «Emma Zunz» de Borges (ejs. 3, 4, 5, 7, 8 y 9), el texto sobre
+  Hilbert (ej. 6) y el de Cantor (ej. 7). En cada lugar se anotaron los subrayados.
+- Árboles (11) y (31): las imágenes no venían en el .docx; se rehicieron con forest.
+- Citas: «Hale y Kayser» → Hale y Keyser; «Williams 1981» → 1980; «Bello (1928)» → bello2002.
+- Lect.: Hualde et al. figura con Oxford UP (2011); la 2.ª ed. es de Cambridge UP (2010). Revisar.
+- Glosas italianas del recuadro: agregadas (el original solo traducía).
+- Solucionario: ej. 1 numera (8) y (9) para los ítems 7 y 8; ej. 2 da por gramatical
+  «llegó contento su casa»; ej. 3 analiza *a la hija del muerto* como COD; ej. 5 dice
+  «una carta y el sobre»; ej. 7 da *precisión matemática* como específico.
+- La numeración repetida de ejemplos del original (32-33) se resolvió con la numeración automática.
 
 ### General
 

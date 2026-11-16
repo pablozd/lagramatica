@@ -1,0 +1,1125 @@
+% =====================================================================
+%  capitulos/cap07.tex — Capítulo 7. De la estructura argumental a las
+%  funciones sintácticas
+%  Autora: Laura Ferrari
+%  Fuente: Capitulo_07_normalizado.docx
+% =====================================================================
+\capitulo[De la estructura argumental a las funciones sintácticas]%
+  {De la estructura argumental a las funciones sintácticas}{Laura Ferrari}
+
+\section{Introducción}
+
+¿Cuáles son las relaciones entre la sintaxis y la semántica? ¿Qué incidencia
+posee el léxico en la configuración sintáctica de la oración? ¿Qué tipo de
+información está contenida en el nivel léxico? En este capítulo nos proponemos
+dar respuesta a estas preguntas. Para ello, partimos del estudio de las
+funciones semánticas para ir adentrándonos en las cuestiones sintácticas. En
+primer lugar, mostramos cómo el contenido semántico de las palabras que
+constituyen una oración determina mayormente sus propiedades combinatorias. Esto
+significa que del contenido semántico depende el número de argumentos
+seleccionados por un núcleo verbal dentro de su proyección sintagmática. Así, un
+verbo como \forma{capturar} necesita de dos SSNN para la buena formación de la
+oración que constituye, como en \forma{El policía capturó al ladrón}; en cambio,
+\forma{caminar} solo selecciona un SN, como en \forma{Mario camina}. En segunda
+instancia, presentamos la \termino{estructura temática}, es decir, las funciones
+semánticas de los argumentos que el predicado selecciona, y damos cuenta de la
+lista de papeles temáticos. En función de la distinción entre complementos y
+adjuntos en el sintagma verbal, desarrollamos las nociones de transitividad
+directa e indirecta y distinguimos dos tipos de verbos intransitivos:
+inergativos e inacusativos.
+
+\section{Relaciones entre la sintaxis y la semántica}\label{sec:07-sintsem}
+
+\subsection{Predicados y argumentos}\label{sec:07-predicados}
+
+La noción de predicación es semántica y tiene sus orígenes en el análisis
+lógico-filosófico. Es un concepto que hace referencia a una condición relativa
+al significado de las expresiones. Es decir, la estructura predicativa de las
+oraciones es una parte sustancial de su significado. La relación de predicación
+se establece entre un predicado y un argumento, como ya se ha señalado en el
+capítulo anterior (§\ref{sec:06-predicativa}) respecto del vínculo que se
+establece entre el SN sujeto y el SV que predica de él.
+
+\begin{destacado}
+Un \termino{predicado} es todo aquel elemento léxico que denota una acción,
+proceso o estado y que selecciona un conjunto o red de argumentos en función de
+su significado léxico \parencite{rodriguezramalle2005}.
+\end{destacado}
+
+Un \termino{argumento} se puede definir como el participante de una acción,
+proceso o estado imprescindible para que esta pueda llevarse a cabo.
+
+\begin{destacado}
+Los argumentos son «expresiones referenciales que permiten identificar entidades
+del mundo extralingüístico» \parencite[102]{ditullio2014}.
+\end{destacado}
+
+El ejemplo típico de predicado es el verbo, mientras que los argumentos suelen
+ser SSNN.
+
+\begin{exe}
+  \ex\label{ex:07-visito} {}[\etq{Arg.~1} El mandatario de Canadá] [\etq{V}
+      visitó] [\etq{Arg.~2} el Jardín Japonés].
+\end{exe}
+
+\forma{Visitar} en \exref{ex:07-visito} funciona como un predicado que debe
+construirse con dos SSNN, que constituyen sus argumentos. El evento de
+\forma{visitar} relaciona dos argumentos: x (= \forma{el mandatario de Canadá})
+e y (= \forma{el Jardín Japonés}). Para que una oración esté completa, el
+elemento seleccionador, en este caso el verbo, debe haberse combinado con todos
+los argumentos que selecciona.
+
+\begin{ejercicio}\label{ej:07-agramatical}
+Explique la agramaticalidad o el carácter ambiguo de las siguientes oraciones,
+según se muestra en los ejemplos resueltos.
+
+\begin{exe}
+  \ex María prestó a su hijo.
+  \ex La comisión respaldó durante el receso parlamentario.
+  \ex José colocó.
+  \ex El viento provocó.
+  \ex El vocero presidencial anunció gelatina.
+  \ex El presidente reclamó a los bancos.
+  \ex Los cóndores habitan.
+  \ex Lucía va todas las semanas.
+\end{exe}
+
+\begin{resuelto}[Ejemplos resueltos]
+1. Es ambigua: a) se puede interpretar que lo prestado por \forma{María} es
+\forma{su hijo} y queda implícito \sig{a quién}; b) es agramatical porque falta
+el argumento referido a \sig{lo que María le prestó a su hijo}. 2. Es
+agramatical porque falta el argumento referido a \sig{lo respaldado por la
+comisión}.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:07-seleccion}
+Algunas de las oraciones que siguen, por diversas razones, no respetan los
+requisitos de selección de los verbos que las conforman. Haga una lectura atenta
+y responda lo pedido en las consignas, según se muestra en los ejemplos
+resueltos de abajo.
+
+\begin{consignas}
+  \item Explique el porqué de la buena o mala formación de cada una de las
+        oraciones.
+  \item Luego especifique la estructura argumental de \forma{regresar} y
+        \forma{llegar}.
+\end{consignas}
+
+\begin{exe}
+  \ex El viajero regresó contento a su casa y trajo muchos regalos a sus
+      familiares.
+  \ex El viajero llegó contento a su casa y trajo muchos regalos.
+  \ex Llegó contento a su casa y trajo muchos regalos.
+  \ex El viajero llegó oblongo a su casa y trajo muchos regalos a sus familiares.
+  \ex El viajero llegó contento su casa y trajo muchos regalos a sus familiares.
+  \ex El viajero llegó contento a su aceituna y trajo muchos regalos a sus
+      familiares.
+\end{exe}
+
+\begin{resuelto}[Ejemplos resueltos]
+a) 1 es gramatical porque ambos verbos tienen todos sus argumentos. 4 es
+agramatical porque \forma{oblongo} no es compatible desde el punto de vista
+léxico-semántico con el sujeto ni con el verbo \forma{llegar}. b)
+\forma{Llegar} [Arg.~1 SN, Arg.~2 SP].
+\end{resuelto}
+\end{ejercicio}
+
+\subsubsection{La valencia verbal}\label{sec:07-valencia}
+
+El número de argumentos que necesita un verbo para que esté completo o saturado
+se denomina \termino{valencia verbal}. Pero ¿cuál es el número de argumentos de
+un predicado? El número y el tipo de argumentos de un predicado dependen de cómo
+se conceptualiza lingüísticamente el evento. Y ¿cuántos argumentos puede exigir
+un verbo? Para \textcite{hale1998}:
+
+\begin{cita}
+Los verbos de una lengua natural, generalmente la más rica categoría al
+respecto, son extremadamente limitados en la variedad y complejidad de las
+estructuras argumentales que despliegan, y estas se conforman a una tipología
+altamente restricta. \textbf{Pocos verbos tienen más de tres argumentos}\ldots{}
+(Traducción nuestra)
+\end{cita}
+
+Según el número de argumentos que exigen, los verbos se clasifican en:
+
+\begin{itemize}
+  \item \termino{cero-ádicos} o \termino{avalentes}: \forma{Continúa granizando
+        (en el sur)};\footnote{Los paréntesis indican los adjuntos.}
+        \forma{Llovió (torrencialmente) (toda la noche)};
+  \item \termino{monádicos} o \termino{monovalentes}: \forma{[El ministro de
+        economía] viajó (ayer)}; \forma{Hay [café]};
+  \item \termino{diádicos} o \termino{bivalentes}: \forma{[El juez] redactó [la
+        sentencia]}; \forma{[Mi vecino] había perdido [las llaves]};
+  \item \termino{triádicos} o \termino{trivalentes}: \forma{[El fiscal] entregó
+        [sus informes] [a la justicia]}; \forma{[El periodista] solicitó
+        [información] [a la embajada]}.
+\end{itemize}
+
+Los predicados seleccionan sus argumentos en función de su significado. El
+conjunto de argumentos de un predicado representa un esqueleto de su propia
+definición y constituye su \termino{estructura argumental}.
+
+\begin{ejercicio}\label{ej:07-valencia}
+Lea atentamente el siguiente fragmento de «Emma Zunz», de J.~L.~Borges, y luego
+resuelva lo pedido en las consignas, según se muestra en el ejemplo resuelto de
+abajo.
+
+% Fragmento literario protegido: se incorpora a mano desde el original.
+\textoaincorporar{el primer párrafo de «Emma Zunz», de J.~L.~Borges (\textit{El
+Aleph}), desde «El catorce de enero de 1922» hasta «\ldots{}que se dirigía a la
+hija del muerto»}
+
+\begin{consignas}
+  \item Según la cantidad de argumentos que selecciona, determine a qué clase
+        pertenece cada verbo (monádico, triádico, etc.).
+  \item Luego identifique los argumentos seleccionados por cada verbo.
+\end{consignas}
+
+\begin{resuelto}
+\forma{Hallar}: a) es un V triádico porque selecciona tres argumentos; b) los
+argumentos seleccionados son \forma{Emma Zunz} (sujeto), \forma{una carta,
+fechada en el Brasil} (COD) y \forma{en el fondo del zaguán} (CCL).
+\end{resuelto}
+\end{ejercicio}
+
+\subsection{Complementos y adjuntos}\label{sec:07-compadj}
+
+Como ya se introdujo en el \capref{6}, §\ref{sec:06-externo}, existe una
+diferencia entre el \termino{argumento externo} o sujeto, que por su relación
+estructural prominente es el que mantiene con el verbo la relación de
+predicación, y los argumentos internos o complementos verbales, que permanecen
+dentro del SV \parencite{williams1980}.\pendiente{El original dice «Williams
+1981»}
+
+Los argumentos internos al SV seleccionados por el predicado se denominan
+\termino{complementos}. Los complementos y el argumento externo (sujeto)
+introducen información exigida por el significado de los predicados, como
+\forma{el señor Maier} (argumento externo / sujeto) y \forma{una fuerte dosis de
+veronal} (argumento interno / COD) en \exref{ex:07-maier-a}. Por otra parte, los
+modificadores no seleccionados por el predicado se denominan
+\termino{adjuntos}, como los que aparecen entre paréntesis en
+\exref{ex:07-maier-a}. Generalmente los adjuntos pueden omitirse y la oración
+sigue siendo gramatical \exref{ex:07-maier-b}. Los adjuntos también pueden
+agregarse en una oración con gran libertad \exref{ex:07-maier-c}; en cambio,
+cada complemento puede ser realizado exclusivamente por un único argumento. En
+otras palabras, un verbo puede tener varios complementos, siempre y cuando
+realicen diferentes funciones sintácticas. Como se puede apreciar,
+\exref{ex:07-maier-d} es agramatical porque hay dos SSNN no coordinados que
+realizan la función de OD. No obstante, algunos argumentos pueden quedar
+implícitos, esto quiere decir que forman parte de la estructura argumental del
+verbo, pero no se manifiestan necesariamente en la sintaxis
+\exref{ex:07-fruta}.
+
+\begin{exe}
+  \ex\label{ex:07-maier}
+    \begin{xlist}
+      \ex\label{ex:07-maier-a} {}[El señor Maier] había ingerido (por error) [una
+          fuerte dosis de veronal] y había fallecido (el tres del corriente) (en
+          el hospital de Bagé).
+      \ex\label{ex:07-maier-b} {}[El señor Maier] había ingerido [una fuerte
+          dosis de veronal].
+      \ex\label{ex:07-maier-c} {}[El señor Maier] había ingerido (por error) [una
+          fuerte dosis de veronal] (con gran repugnancia) (esa mañana).
+      \ex[*]{\label{ex:07-maier-d} [El señor Maier] había ingerido [una fuerte
+          dosis de veronal] [veneno para ratas].}
+    \end{xlist}
+  \ex\label{ex:07-fruta} ---¿Comés fruta?\\
+      ---No, no como. (El COD de \forma{comer} está implícito).
+\end{exe}
+
+\begin{ejercicio}\label{ej:07-compadj}
+Lea atentamente el siguiente fragmento de «Emma Zunz» y resuelva lo pedido en
+las consignas, según se muestra en el modelo de abajo.
+
+% Fragmento literario protegido: se incorpora a mano desde el original.
+\textoaincorporar{el fragmento de «Emma Zunz» que va de «En abril cumpliría
+diecinueve años» hasta «\ldots{}se acostó y se obligó a dormir»}
+
+\begin{consignas}
+  \item Identifique los complementos internos al sintagma verbal y los adjuntos
+        presentes en los predicados.
+  \item Indique si alguno de los verbos posee un argumento implícito.
+\end{consignas}
+
+\begin{resuelto}
+a) \forma{Cumpliría}: \forma{diecinueve años} (complemento) y \forma{en abril}
+(adjunto). \forma{Inspiraban}: \forma{los hombres}, \forma{le} y \forma{un temor
+casi patológico} (complementos); \forma{aún} (adjunto). b) \forma{Cumpliría}
+tiene el argumento sujeto tácito o implícito.
+\end{resuelto}
+\end{ejercicio}
+
+\section{La estructura temática}\label{sec:07-tematica}
+
+Además de la información acerca de la cantidad y características de los
+argumentos requeridos por un verbo, es necesario reconocer que los distintos
+argumentos cumplen diferentes funciones semánticas, conocidas como papeles
+temáticos, es decir, que los predicados asignan un valor semántico a los
+argumentos que seleccionan. ¿Cómo definimos los papeles temáticos?
+
+\begin{destacado}
+Los \termino{papeles temáticos} dan cuenta de la relación establecida por cada
+participante en el evento descripto por el verbo.
+\end{destacado}
+
+\subsection{La estructura temática como esqueleto del significado: los papeles temáticos}\label{sec:07-papeles}
+
+La \termino{estructura temática} de un predicado es la variante enriquecida de
+su estructura argumental, es decir, contiene información sobre la semántica de
+los argumentos que el predicado selecciona.
+
+Los predicados otorgan a sus argumentos distintos papeles temáticos que expresan
+su participación en el evento. Si bien no hay acuerdo generalizado respecto de
+cuántos y cuáles son los papeles temáticos, en la siguiente lista incluimos los
+más reconocidos y en los que hay mayormente consenso.
+
+\begin{itemize}
+  \item \textbf{Agente}: el que voluntariamente causa o realiza una acción, como
+        \forma{Emma} en \forma{Emma recogió el papel}. El agente es típicamente
+        \sig{animado}. Cuando el causante de la acción no tiene el rasgo
+        \sig{animado} se identifica como \textbf{Causa} o \textbf{Fuerza}, como
+        \forma{el fuego} en \forma{El fuego destruyó la cabaña}, o como
+        \textbf{Instrumento} ---el medio u objeto empleado para realizar la
+        acción---, como \forma{el revólver} en \forma{Emma mató a Loewenthal con
+        un revólver}.
+  \item \textbf{Tema}: el objeto efectuado, afectado o trasladado, o cuya
+        existencia o posición se predica, como \forma{la verja} en \forma{Emma
+        empujó la verja}. Cuando es \sig{animado} suele denominarse
+        \textbf{Paciente}, como \forma{el marinero} en \forma{Emma buscó al
+        marinero}.
+  \item \textbf{Experimentante}: el que experimenta un estado psicológico o
+        cognitivo determinado, como \forma{Emma} en \forma{Emma sintió asco}.
+  \item \textbf{Beneficiario}: el que recibe beneficio o daño
+        ---\textbf{Maleficiario}--- de un suceso, como \forma{Perla} en
+        \forma{Perla perdió su trabajo}.
+  \item \textbf{Locativo}: el que designa una ubicación en relación con el
+        evento, como \forma{en Almagro} en \forma{Pedro vivía en Almagro}.
+  \item \textbf{Fuente} (u \textbf{Origen}): entidad o lugar a partir del cual se
+        origina la actividad, como \forma{su socio} en \forma{Recibió el arma de
+        su socio} o \forma{el Río de la Plata} en \forma{El viaje empieza en el
+        Río de la Plata}.
+  \item \textbf{Meta}: la entidad o lugar hacia el que se dirige la actividad,
+        como \forma{la empleada} en \forma{Entregó los informes a la empleada} o
+        \forma{la estación} en \forma{La avenida llegaba hasta la estación}.
+  \item \textbf{Vía}: el lugar de tránsito del movimiento, como \forma{por la
+        avenida 9 de Julio} en \forma{Llegó hasta el puerto por la avenida 9 de
+        Julio}.
+  \item \textbf{Cantidad} o \textbf{Medida}: la medida espacial o temporal del
+        evento, como \forma{veinte centímetros} en \forma{Creció veinte
+        centímetros}.
+\end{itemize}
+
+\begin{destacado}
+\textbf{Criterios de reconocimiento}
+\begin{itemize}
+  \item Cada argumento recibe un solo papel temático.
+  \item Cada papel temático se asigna a un solo argumento.
+  \item Los papeles temáticos no coinciden con las funciones sintácticas
+        tradicionales.
+  \item Los adjuntos no forman parte de la estructura argumental.
+\end{itemize}
+\end{destacado}
+
+\begin{ejercicio}\label{ej:07-papeles}
+En el fragmento de «Emma Zunz» del ejercicio~\ref{ej:07-valencia}, señale los
+papeles temáticos de los sintagmas subrayados e indique cuál es el predicado que
+los selecciona, según se muestra en el ejemplo resuelto de abajo.
+
+\textoaincorporar{los subrayados del primer párrafo de «Emma Zunz»: \textit{de la
+fábrica de tejidos Tarbuch y Loewenthal; una carta; su padre; el sello y el
+sobre; la letra desconocida; Emma; el señor Maier; un compañero de pensión de su
+padre; la noticia; a la hija del muerto}}
+
+\begin{resuelto}
+\forma{De la fábrica de tejidos Tarbuch y Loewenthal} tiene el papel temático de
+fuente y es seleccionado por el predicado \forma{volver}.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{recuadro}[Para ampliar]
+\textcite{bosque2009} señalan algunos beneficios de trabajar con estructuras
+temáticas, pero también advierten que este enfoque presenta algunos
+inconvenientes.
+
+\medskip\textbf{Ventajas de postular estructuras temáticas}
+\begin{itemize}
+  \item La estructura temática muestra la correspondencia entre papeles
+        temáticos y construcciones estructurales canónicas; por ejemplo, SN para
+        Agente y para Tema (encabezado por \forma{a}) y SP para Meta.
+  \item La estructura temática permite deslindar la información sintáctica y la
+        información semántica.
+  \item Las estructuras temáticas permiten considerar clases semánticas
+        naturales. Por ejemplo, podemos analizar los verbos del tipo [A, T, L]
+        (Agente, Tema, Locativo) como una clase que agrupa a verbos tales como
+        \forma{situar, colocar, ocultar, poner}, en lugar de asignarle
+        individualmente una estructura temática a cada predicado.
+  \item Las estructuras temáticas no informan sobre los adjuntos, sino sobre los
+        argumentos. Algunas nociones pueden manifestarse como complementos con
+        ciertos verbos y como adjuntos con otros predicados, lo que confirma que
+        tiene importancia caracterizar a estos modificadores en relación con el
+        predicado en el que participan. Por ejemplo, si comparamos
+        \forma{Colocó los libros en la mesa del comedor} con \forma{Hizo la tarea
+        en la mesa del comedor}, \forma{en la mesa del comedor} es complemento
+        (argumento) en el primer caso y adjunto en el segundo.
+\end{itemize}
+
+\textbf{Inconvenientes de postular estructuras temáticas}
+\begin{itemize}
+  \item ¿Cuántos papeles temáticos tenemos exactamente? Lo que se pone en duda
+        actualmente es que cada argumento de cada predicado tenga que recibir
+        una etiqueta semántica que represente un concepto definido entre las
+        nociones que articulan la teoría de la gramática.
+  \item Algunos papeles temáticos son demasiado abarcadores. El ejemplo más
+        claro lo representa el papel de Tema, que refiere tanto a OD canónicos,
+        como en \forma{Comió una milanesa}, como a nociones menos específicas,
+        como en \forma{Miró la pantalla de su celular}, donde el objeto no es ni
+        afectado, ni efectuado, ni trasladado.
+  \item ¿Cómo estar seguros de que identificamos el papel temático correcto? No
+        siempre hay garantías demasiado claras y existen casos que pueden ser
+        menos transparentes para su reconocimiento.
+\end{itemize}
+\end{recuadro}
+
+En la estructura temática, los dos papeles de mayor centralidad son el agente y
+el tema, que son los pilares de la oración transitiva, si bien también están
+presentes en otros tipos de esquemas oracionales que revisaremos.
+
+\subsection{La noción de agentividad}\label{sec:07-agentividad}
+
+Las propiedades que permiten caracterizar a los agentes prototípicos son
+\sig{intencionalidad}, \sig{control consciente sobre la acción}, \sig{origen,
+causa o iniciador del proceso} y \sig{autonomía} (es decir, que el agente
+preexiste al evento). Por otra parte, para identificar el agente se puede
+aplicar una paráfrasis con el verbo \forma{hacer}. Así, en \exref{ex:07-juan},
+esta prueba confirma que \forma{Juan} es agente.
+
+\begin{exe}
+  \ex\label{ex:07-juan}
+    \begin{xlist}
+      \ex {}[Juan] trabajó toda la tarde.
+      \ex Lo que hizo Juan fue trabajar toda la tarde.
+    \end{xlist}
+\end{exe}
+
+En cambio, en \exref{ex:07-telon}, si aplicamos esta prueba comprobamos que
+\forma{el telón} no es agente, sino tema.
+
+\begin{exe}
+  \ex\label{ex:07-telon}
+    \begin{xlist}
+      \ex Cayó [el telón].
+      \ex[*]{Lo que hizo el telón fue caer.}
+    \end{xlist}
+\end{exe}
+
+Asimismo, solo una oración que posee un sujeto agentivo admite las paráfrasis
+con construcciones finales, que indican la intencionalidad de quien realiza la
+acción.
+
+\begin{exe}
+  \ex {}[Juan] trabajó para aumentar sus ingresos.
+  \ex {}[Juan] camina para hacer ejercicio.
+  \ex[*]{[El telón] cayó para terminar la función.}
+  \ex[*]{[Juan] palideció para hacer ejercicio.}
+\end{exe}
+
+Los sujetos de los verbos de acción normalmente representan una «causa
+externa», es decir que la transformación que puede sufrir el tema o paciente
+tiene su origen en una causa que ejerce control sobre el evento y que puede ser
+un agente que realiza deliberadamente esa acción. Por ejemplo, en \forma{Los
+chicos arreglaron su cuarto}, el sujeto agente ejerce el control sobre el evento
+y realiza deliberadamente la acción de \forma{arreglar el cuarto}. También puede
+darse el caso de una causa desencadenante no animada que provoque una situación
+determinada, como en \forma{El viento derribó el toldo}. O incluso un
+instrumento que, por medio de un agente no manifiesto, origina un determinado
+estado de cosas, como en \forma{El camión embistió el portón de hierro}, que
+supone un conductor implícito.
+
+\begin{ejercicio}\label{ej:07-agente}
+Indique en el texto siguiente si los SSNN subrayados poseen el papel temático de
+agente o no. Justifique su respuesta a partir de la aplicación de las pruebas
+pertinentes, según se muestra en el ejemplo resuelto de abajo.
+
+% Texto periodístico protegido: se incorpora a mano desde el original.
+\textoaincorporar{el texto sobre la conferencia de David Hilbert en la Sorbona
+(1900) y «los problemas de Hilbert», con los SSNN subrayados: \textit{un alemán
+llamado David Hilbert; Hilbert; la legendaria lista}}
+
+\begin{resuelto}
+\forma{Un alemán llamado David Hilbert} es agente. Acepta la paráfrasis con
+\forma{hacer} (\forma{Lo que hizo X fue ponerles a los asistentes la tarea de
+matemáticas\ldots}) y la construcción final (\forma{Un alemán llamado David
+Hilbert les puso a los asistentes la tarea de matemáticas (\ldots) para lograr
+su propósito}).
+\end{resuelto}
+\end{ejercicio}
+
+\section{El esquema transitivo}\label{sec:07-transitivo}
+
+La noción de \termino{objeto directo} o \termino{complemento objeto directo}
+(COD) es una herencia de la tradición gramatical, para la cual «el complemento
+directo recibe la acción del verbo, e incluso [\ldots] esta pasa al objeto o se
+manifiesta en él» \parencite[§\,34.1e]{rae2025}. Por ejemplo, en
+\exref{ex:07-albaniles}, el SN \forma{la pared} constituye el objeto efectuado
+por la acción expresada por el verbo y cumple la función sintáctica de COD.
+
+\begin{exe}
+  \ex\label{ex:07-albaniles} Los albañiles construyeron [la pared].
+\end{exe}
+
+Desde el punto de vista categorial, el objeto directo es un SN (\forma{El
+cocinero preparó \textbf{la comida}}) o una oración
+subordinada\footnote{La noción de oración subordinada se trata en el
+\capref{13}.} (\forma{Los directores dijeron \textbf{que no les había gustado el
+reglamento}}).
+
+La definición tradicional de transitividad se basa en la existencia de acciones
+realizadas por un agente (sujeto) que pasan o se trasladan a un objeto tema o
+paciente. Sin embargo, existe una importante vaguedad e imprecisión en estos
+conceptos, dado que no son aplicables a todas las estructuras transitivas
+posibles. Por ejemplo, en una oración como \forma{María vio un avión}, el sujeto
+posee el papel temático de experimentante y no ejerce ninguna acción que pueda
+trasladarse al objeto.
+
+Definimos, entonces, un \termino{verbo transitivo} como aquel que selecciona su
+complemento y lo identifica con la marca de caso acusativo. Ese complemento
+cumple la función sintáctica de COD. Léxicamente, los verbos transitivos
+requieren la presencia de un complemento que complete su significado.
+
+Desde el punto de vista sintagmático, la relación estrecha entre el V y el COD
+puede observarse en el diagrama arbóreo \exref{ex:07-arbol-cod}.
+
+\begin{exe}
+  \ex\label{ex:07-arbol-cod}
+      \begin{forest} gramatica
+        [SV
+          [SN\\(Suj)\\\textit{los albañiles}]
+          [V\prima
+            [V\\\textit{construyeron}]
+            [SN\\(COD)\\\textit{la pared}]]]
+      \end{forest}
+\end{exe}
+
+\subsection{Objeto efectuado y objeto afectado}
+
+Existe otra distinción gramaticalmente relevante entre los casos en que el
+objeto es \termino{efectuado} por la acción expresada por el verbo y aquellos en
+que solamente es \termino{afectado} por ella, es decir, los casos en que la
+acción se aplica a un objeto ya existente. Veamos la diferencia con un ejemplo
+como \exref{ex:07-mesada}.
+
+\begin{exe}
+  \ex\label{ex:07-mesada}
+    \begin{xlist}
+      \ex\label{ex:07-mesada-a} Rubén construyó [la mesada].
+      \ex\label{ex:07-mesada-b} Rubén pintó [la mesada].
+    \end{xlist}
+\end{exe}
+
+En \exref{ex:07-mesada-a}, \forma{la mesada} refiere a un objeto que se
+materializa a través de la acción del verbo \forma{construir}; en
+\exref{ex:07-mesada-b}, en cambio, \forma{la mesada} señala un objeto
+preexistente, que se modifica por la acción indicada por el verbo.
+
+Los objetos directos admiten la presencia de un clítico acusativo (\forma{lo,
+la, los, las}) que sustituye o dobla el objeto directo, como se muestra en la
+paráfrasis siguiente:
+
+\begin{exe}
+  \ex Rubén [la] construyó.
+\end{exe}
+
+\subsection{El objeto directo animado y el marcado diferencial de objeto (MDO)}\label{sec:07-mdo}
+
+En español, algunos objetos directos poseen una marca especial \forma{a}. Veamos
+algunos ejemplos:
+
+\begin{exe}
+  \ex
+    \begin{xlist}
+      \ex Los docentes recibieron [a los alumnos] en el primer día de clase.
+          (OD \sig{animado})
+      \ex[*]{Los docentes recibieron [los alumnos] en el primer día de clase.}
+    \end{xlist}
+  \ex
+    \begin{xlist}
+      \ex Los empleados recibieron [la intimación]. (OD \sig{inanimado})
+      \ex[*]{Los empleados recibieron [a la intimación].}
+    \end{xlist}
+  \ex\label{ex:07-perro}
+    \begin{xlist}
+      \ex Mariano encontró [un perro abandonado]. (OD \sig{indeterminado})
+      \ex[?]{\label{ex:07-perro-b} Mariano encontró [a un perro abandonado].}
+      \ex Mariano encontró [al perro abandonado].
+    \end{xlist}
+\end{exe}
+
+En términos generales, el objeto directo lleva la marca de función \forma{a}
+cuando refiere a una entidad animada, determinada y específica, aunque puede
+haber excepciones, como \exref{ex:07-perro-b}. ¿Por qué \exref{ex:07-perro-b}
+nos resulta extraña o poco aceptable? La oración resulta anómala porque lleva la
+preposición \forma{a} un objeto directo inespecífico: \forma{un perro
+abandonado}.
+
+Algunos usos impersonales de verbos tales como \forma{haber} (\forma{No hay
+plata}) y \forma{hacer} (\forma{Hace más de treinta años}) seleccionan un
+complemento objeto directo de carácter marginal, ya que la sustitución por el
+clítico acusativo (\forma{lo, la}) es solo posible en ciertos contextos
+marcados.
+
+\begin{ejercicio}\label{ej:07-mdo}
+Señale en los textos siguientes las características de los objetos directos
+subrayados (± animado, ± específico). Fundamente su respuesta, según se muestra
+en los ejemplos resueltos de abajo.
+
+% Textos protegidos: se incorporan a mano desde el original.
+\textoaincorporar{Texto 1: el fragmento sobre Cantor y el infinito, con los COD
+subrayados \textit{el significado del infinito; precisión matemática; un solo
+infinito}. Texto 2: el fragmento de «Emma Zunz» que empieza «Recordó veraneos en
+una chacra», con los COD subrayados \textit{veraneos; a su madre; la casita de
+Lanús; los amarillos losanges de una ventana; el auto de prisión; el oprobio; los
+anónimos}}
+
+\begin{resuelto}[Ejemplos resueltos]
+\forma{El significado del infinito}: COD \sig{inanimado} y \sig{específico}.
+\forma{Un solo infinito}: COD \sig{inanimado} e \sig{inespecífico}, seleccionado
+por un verbo impersonal de significado \sig{existencial}.
+\end{resuelto}
+\end{ejercicio}
+
+\subsection{Los complementos preposicionales}\label{sec:07-regimen}
+
+Si bien las gramáticas tradicionales solían incluir los complementos
+preposicionales entre los circunstanciales, no todos ellos se comportan en
+forma análoga. En el caso del \termino{complemento de régimen}, se trata de un
+modificador seleccionado por el núcleo del predicado, es decir, tiene carácter
+argumental. Por otra parte, el núcleo del predicado selecciona también la
+preposición que lo encabeza. Veamos algunos ejemplos:
+
+\begin{exe}
+  \ex\label{ex:07-walmart} La marca Walmart se despide [del mercado argentino].
+  \ex\label{ex:07-discutio} El ministro discutió [con los empresarios].
+  \ex\label{ex:07-penso} Juan pensaba [en su madre].
+  \ex\label{ex:07-quejo} Juana se quejó [de su madre].
+\end{exe}
+
+El complemento de régimen preposicional no puede ser sustituido ni duplicado por
+un pronombre clítico acusativo o dativo. Algunos verbos, como \forma{despedir},
+\forma{pensar} y \forma{discutir}, se comportan como transitivos en oraciones
+tales como \forma{María despidió a su padre}, \forma{El ministro discutió sus
+argumentos} o \forma{Juan pensaba la solución del problema}, en las que
+seleccionan un COD, a diferencia de oraciones como \exref{ex:07-walmart},
+\exref{ex:07-discutio} y \exref{ex:07-penso}, en las que se construyen con un
+complemento de régimen. En cambio, el verbo \forma{quejar(se)}, en
+\exref{ex:07-quejo}, no posee esa alternancia y siempre se construye con un
+complemento encabezado por la preposición \forma{de}, aunque en ciertos
+contextos el complemento puede quedar implícito: \forma{Juana se quejó todo el
+tiempo}.
+
+\subsection{Otros complementos}
+
+Algunos verbos seleccionan complementos encabezados por una preposición cuyo
+significado determina el papel temático del complemento que lo acompaña. Es el
+caso de los \termino{complementos locativos} o \termino{de modo}:
+
+\begin{exe}
+  \ex\label{ex:07-volvia} Volvía [de Mar del Plata] por aquel entonces.
+  \ex\label{ex:07-conduce} Conduce [a su manera].
+\end{exe}
+
+Los complementos señalados en \exref{ex:07-volvia} y \exref{ex:07-conduce} están
+seleccionados por los verbos \forma{volver} y \forma{conducir}, respectivamente.
+Se trata de complementos circunstanciales y no debemos confundirlos con los
+adjuntos circunstanciales, que no son requeridos por el verbo, como, por
+ejemplo, en:
+
+\begin{exe}
+  \ex\label{ex:07-trabaja} Trabaja (en Mar del Plata) (durante el verano).
+  \ex\label{ex:07-pinto} Pintó la silla (a su manera).
+\end{exe}
+
+En \exref{ex:07-trabaja} y \exref{ex:07-pinto}, las construcciones entre
+paréntesis funcionan como adjuntos circunstanciales de lugar y modo,
+respectivamente.
+
+\subsection{Esquemas ditransitivos}\label{sec:07-ditransitivos}
+
+Son aquellos esquemas oracionales en los que el verbo selecciona dos argumentos
+internos: uno directo y otro indirecto. En una oración como \forma{Los
+socorristas pidieron [ayuda] [a los bomberos]}, los sintagmas entre corchetes
+constituyen los dos complementos de objeto: el primero, el directo, y el
+segundo, el indirecto. Típicamente, existen tres subclases de verbos que
+constituyen esquemas ditransitivos: los verbos de comunicación
+\exref{ex:07-anuncio}, los de transferencia \exref{ex:07-presto} y los de
+influencia \exref{ex:07-solicito}. Veamos los ejemplos siguientes:
+
+\begin{exe}
+  \ex\label{ex:07-anuncio} El directorio anunció las medidas [a sus miembros].
+  \ex\label{ex:07-presto} Prestó su bolsa de dormir [a su sobrino].
+  \ex\label{ex:07-solicito} Solicitó [a sus jefes] una licencia.
+\end{exe}
+
+Los objetos indirectos admiten la presencia de un clítico dativo (\forma{le} o
+\forma{les}), que sustituye o dobla el objeto indirecto, como se muestra en las
+paráfrasis siguientes:
+
+\begin{exe}
+  \ex {}[Les] anunció las medidas.
+  \ex {}[Le] prestó su bolsa de dormir.
+  \ex {}[Les] solicitó una licencia.
+\end{exe}
+
+En el diagrama que presentamos a continuación se muestra la configuración
+estructural del complemento objeto indirecto (COI) en el sintagma verbal y la
+diferencia con la configuración estructural del COD.
+
+\begin{exe}
+  \ex\label{ex:07-arbol-coi} El directorio anunció las medidas a sus miembros.\\
+      \begin{forest} gramatica
+        [SV
+          [V\prima
+            [V\prima
+              [V\\\textit{anunció}]
+              [SN\\(COD)\\\textit{las medidas}]]
+            [SP\\(COI)\\\textit{a sus miembros}]]]
+      \end{forest}
+\end{exe}
+
+Otra clase de verbos ditransitivos (diádicos o bivalentes) son los llamados
+verbos de «colocación», que seleccionan dos argumentos internos: un tema (COD) y
+un locativo (CCL), como se expresa en los ejemplos que presentamos a
+continuación:
+
+\begin{exe}
+  \ex Colocó estantes en la cocina.
+  \ex Colgó los cuadros en la pared del dormitorio.
+\end{exe}
+
+\begin{ejercicio}\label{ej:07-seleccion2}
+Lea atentamente el siguiente fragmento de «Emma Zunz» y responda lo pedido según
+se muestra en los ejemplos resueltos de abajo.
+
+\begin{consignas}
+  \item Señale qué verbos seleccionan los sintagmas y pronombres clíticos
+        subrayados.
+  \item Relacione los sintagmas y pronombres clíticos subrayados con los verbos
+        que los seleccionan.
+\end{consignas}
+
+% Fragmento literario protegido: se incorpora a mano desde el original.
+\textoaincorporar{los dos fragmentos de «Emma Zunz» que van de «Emma, desde
+1916, guardaba el secreto» hasta «\ldots{}el sabor de la victoria y de la
+justicia» y de «Dio al fin con hombres del Nordstjärnan» hasta «\ldots{}a una
+puerta que se cerró», con los subrayados: \textit{a nadie; a su mejor amiga,
+Elsa Urstein; le} (dos veces)\textit{; hombres del Nordstjärnan; por otro; a una
+puerta; a un turbio zaguán; a una escalera tortuosa; a un vestíbulo; a un
+pasillo; a una puerta que se cerró}}
+
+\begin{resuelto}[Ejemplos resueltos]
+\forma{A nadie} y \forma{a su mejor amiga, Elsa Urstein} son seleccionados por
+\forma{revelar}. a) El primer \forma{le} es seleccionado por \forma{inspirar}.
+El segundo \forma{le} es seleccionado por el verbo \forma{deparar}. b)
+\forma{Revelar} es un verbo de habla y selecciona un complemento objeto
+indirecto, y \forma{deparar} es un verbo psicológico y selecciona un complemento
+objeto indirecto.
+\end{resuelto}
+\end{ejercicio}
+
+\subsection{Esquemas intransitivos: inergativos e inacusativos}\label{sec:07-intransitivos}
+
+Los verbos intransitivos se han caracterizado tradicionalmente como aquellos que
+carecen de objeto directo y solo disponen de un argumento sujeto. Sin embargo,
+semánticamente, la estructura de los intransitivos es más compleja y hoy en día
+se reconocen dos subclases de intransitivos: inergativos e inacusativos.
+
+\subsubsection{Verbos inergativos}\label{sec:07-inergativos}
+
+Son aquellos en los que el sujeto desempeña el papel temático de agente. Se
+agrupan en diferentes clases:
+
+\begin{enumerate}[label=\alph*)]
+  \item Verbos que seleccionan un sujeto encargado de realizar la acción que
+        tiene lugar en el propio individuo: \forma{bromear, gesticular,
+        rezongar, temblar}.
+        \begin{exe}
+          \ex Los encargados de la seguridad gesticularon con muecas divertidas.
+        \end{exe}
+  \item Verbos que implican la emisión de un sonido o sustancia: \forma{gritar,
+        ladrar, llorar, sudar}.
+        \begin{exe}
+          \ex El cachorro ladró durante toda la noche.
+        \end{exe}
+  \item Verbos que señalan la manera de moverse, que pueden tener un uso
+        claramente inergativo: \forma{bailar, caminar, correr}.
+        \begin{exe}
+          \ex Los egresados bailaron hasta el amanecer.
+        \end{exe}
+\end{enumerate}
+
+\subsubsection{Verbos inacusativos}\label{sec:07-inacusativos}
+
+El segundo grupo de verbos intransitivos es el de los inacusativos; en ellos, el
+sujeto es tema o paciente. Los verbos inacusativos se agrupan en diversos tipos:
+
+\begin{enumerate}[label=\alph*)]
+  \item Verbos de causa interna, que nunca admiten la existencia de un agente o
+        causa externa, ya que refieren a un proceso en el que el sujeto puede
+        cambiar de manera innata: \forma{arder, madurar, estallar, florecer,
+        germinar}.
+        \begin{exe}
+          \ex La bomba molotov no estalló.
+          \ex Los cerezos florecieron durante la primavera.
+        \end{exe}
+  \item Verbos que denotan cambio de estado psíquico o físico y que poseen
+        también usos transitivos: \forma{adelgazar, engordar, hervir, encoger,
+        calentarse, congelarse}.
+        \begin{exe}
+          \ex Se congelaron las cañerías durante el invierno.
+          \ex La ropa encogió después del lavado.
+        \end{exe}
+  \item Verbos de movimiento de dirección inherente cuando se emplean con
+        sujetos \sig{inanimados}: \forma{acercarse, alejarse, partir,
+        aproximarse}.
+        \begin{exe}
+          \ex El auto blindado se alejó rápidamente.
+          \ex El avión partió con retraso.
+        \end{exe}
+  \item Otros verbos, como \forma{moverse, bambolearse, temblar}, también
+        presentan usos inacusativos.
+        \begin{exe}
+          \ex La silla se bamboleaba.
+          \ex El gatito temblaba por la anestesia.
+        \end{exe}
+  \item Verbos de existencia o aparición, que tienden a dar lugar a
+        construcciones de inversión locativa, es decir, el complemento de lugar
+        aparece en posición inicial, como se puede observar en los ejemplos
+        \exref{ex:07-bosque} y \exref{ex:07-alegria}.
+        \begin{exe}
+          \ex\label{ex:07-bosque} En el bosque aparecieron fantasmas.
+          \ex\label{ex:07-alegria} En esta casa falta alegría.
+        \end{exe}
+\end{enumerate}
+
+\paragraph{Comportamiento sintáctico de los verbos inacusativos.} Las pruebas
+para el reconocimiento de los verbos inacusativos se basan en la idea de que el
+sujeto de las estructuras inacusativas posee las mismas características
+semánticas del argumento objeto directo de un verbo transitivo, aunque
+sintácticamente adquiere rasgos de concordancia con el verbo que lo hacen
+funcionar como sujeto de la oración. Algunas de las pruebas que se han
+presentado para reconocer esta clase de verbos son las siguientes:
+
+\begin{itemize}
+  \item Los sujetos de los inacusativos, al igual que los objetos de los
+        transitivos, pueden aparecer en construcciones de participio absoluto,
+        \exref{ex:07-barco} y \exref{ex:07-avion}, lo cual no es posible para
+        los inergativos, \exref{ex:07-ladrado} y \exref{ex:07-caminado}.
+\end{itemize}
+
+\begin{exe}
+  \ex\label{ex:07-barco} {}[Llegado el barco al muelle], subimos rápidamente.
+  \ex\label{ex:07-avion} {}[Una vez aterrizado el avión], me tranquilicé.
+  \ex[*]{\label{ex:07-ladrado} [Ladrado el perro], advertimos que algo pasaba.}
+  \ex[*]{\label{ex:07-caminado} [Caminado Pedro], nos fuimos con los demás.}
+\end{exe}
+
+\begin{itemize}
+  \item La prueba anterior no es posible con los verbos que implican una
+        realización gradual, como \forma{aumentar, mejorar, crecer}, porque las
+        construcciones de participio absoluto exigen verbos que expresen el
+        estado final.\footnote{Los verbos que indican el estado final se conocen
+        como télicos y se estudian en el \capref{8}.}
+\end{itemize}
+
+\begin{exe}
+  \ex[*]{[Aumentada la nafta], disminuyó el tráfico.}
+  \ex[*]{[Crecidas las plantas], empezamos a disfrutar del jardín.}
+\end{exe}
+
+\begin{itemize}
+  \item Los verbos inacusativos nunca admiten objetos directos
+        cognados\footnote{Se denominan objetos o complementos cognados aquellos
+        que comparten la base léxica del verbo, como \forma{soñar un sueño
+        apacible} o \forma{vivir una vida armoniosa}.} \exref{ex:07-llegada}, a
+        diferencia de los inergativos, que sí los aceptan \exref{ex:07-carrera}.
+\end{itemize}
+
+\begin{exe}
+  \ex[*]{\label{ex:07-llegada} Llegó [una llegada fácil].}
+  \ex\label{ex:07-carrera} Corrió [una carrera asombrosa].
+\end{exe}
+
+\begin{itemize}
+  \item Los participios de los verbos transitivos e inacusativos pueden
+        funcionar como modificadores cercanos a los adjetivos: \forma{una
+        promesa rota, una obra acabada, una persona desaparecida, un bebé recién
+        nacido}, pero no sucede lo mismo con los participios de los inergativos:
+        \juicio{*}{\forma{una mujer sonreída}}. \textcite{bello2002} llamó
+        \termino{participios deponentes} a los de los verbos
+        inacusativos.\pendiente{El original cita «Bello (1928)»}
+  \item Los verbos inacusativos tienden a ser incompatibles con el sufijo
+        nominalizador \forma{-dor}, puesto que tiene valor agentivo:
+        \juicio{*}{\forma{desaparecedor}}, \juicio{*}{\forma{crecedor}},
+        \juicio{*}{\forma{moridor}}. Los inergativos, en cambio, aceptan bien
+        este sufijo: \forma{corredor, trabajador, caminador}.
+\end{itemize}
+
+\subsection{Verbos con alternancia causativa-anticausativa incoativa}\label{sec:07-alternancia}
+
+Existen verbos que denotan un cambio de estado físico o psicológico, que poseen
+usos inacusativos y provienen de verbos transitivos. Veamos algunos ejemplos:
+
+\begin{exe}
+  \ex
+    \begin{xlist}
+      \ex La inundación estropeó las cañerías.
+      \ex\label{ex:07-estropearon} Las cañerías se estropearon.
+    \end{xlist}
+  \ex
+    \begin{xlist}
+      \ex El calor derritió los helados.
+      \ex\label{ex:07-derritieron} Los helados se derritieron.
+    \end{xlist}
+\end{exe}
+
+En los ejemplos \exref{ex:07-estropearon} y \exref{ex:07-derritieron}, el
+sujeto tiene el papel temático de tema. Se trata de usos inacusativos en los que
+el propio objeto desencadena la acción que señala el verbo, sin que intervenga
+ningún agente \parencite{rodriguezramalle2005}. A los verbos que intervienen en
+este paradigma se los suele llamar verbos de \termino{alternancia
+causativa-anticausativa incoativa}. Se los denomina incoativos porque estas
+construcciones inacusativas señalan el comienzo de un proceso, aunque suelen
+terminar en un estado final o resultante. Esto sucede especialmente cuando
+proyectan un clítico \forma{se}.\footnote{Al incorporar el clítico \forma{se},
+estos verbos se convierten en pronominales cuasirreflejos. Estas construcciones
+se estudian en el \capref{10}.}
+
+\begin{recuadro}[Para ampliar]
+En otras lenguas romances, como el francés y el italiano, donde estos verbos
+fueron primeramente identificados, existen algunos diagnósticos para reconocer
+los verbos inacusativos. En primer lugar, para formar los tiempos compuestos,
+los verbos inacusativos seleccionan el auxiliar \forma{essere / être}
+(\sig{ser}). En cambio, los inergativos seleccionan \forma{avere / avoir}
+(\sig{haber}).
+
+\begin{exe}
+  \ex \gll Mara è partita alle dieci.\\
+           Mara es partida a.las diez\\
+      \glt \sig{Mara partió a las diez.}
+  \ex \gll I bimbi sono ormai cresciuti.\\
+           los niños son ya crecidos\\
+      \glt \sig{Los niños han crecido ya.}
+\end{exe}
+
+Ahora bien, cabe señalar que en italiano todos los verbos inacusativos
+seleccionan \forma{essere}, pero no todos los que seleccionan el auxiliar
+\forma{essere} son inacusativos. Por ejemplo, los reflexivos se construyen con
+\forma{essere}, pero no son inacusativos:
+
+\begin{exe}
+  \ex \gll Giovanni si era guardato allo specchio a lungo.\\
+           Juan se era mirado en.el espejo a largo\\
+      \glt \sig{Juan se miró en el espejo durante largo rato.}
+\end{exe}
+
+En segundo lugar, otra propiedad típica del objeto directo que el sujeto
+pospuesto de los verbos inacusativos presenta en italiano es la posibilidad de
+usar el pronombre partitivo \forma{ne}:
+
+\begin{exe}
+  \ex \gll Ne sono arrivati gli autori.\\
+           de.ellos son llegados los autores\\
+      \glt \sig{Llegaron los autores.}
+\end{exe}
+
+Pero este reemplazo no es posible con los verbos inergativos:
+
+\begin{exe}
+  \ex \gll {*}Ne hanno telefonato gli autori.\\
+           de.ellos han telefoneado los autores\\
+      \glt \sig{Llamaron por teléfono los autores.}
+\end{exe}
+
+En síntesis, podemos concluir que, en lenguas como el italiano y el francés, los
+diagnósticos de inacusatividad tienen un carácter claramente sintáctico. Esto no
+es tan evidente en el español actual. No obstante, sabemos que el español
+medieval seleccionaba el auxiliar \forma{ser} para los verbos inacusativos:
+
+\begin{exe}
+  \ex Los moços somos idos a comer y nos han dexado solos. (Juan de Valdés,
+      \textit{Diálogo de la lengua}, hacia 1535)\\
+      \sig{Los mozos se han ido a comer y nos han dejado solos.}
+\end{exe}
+\end{recuadro}
+
+\begin{ejercicio}\label{ej:07-inacusativos}
+Considere el siguiente texto (A) y las oraciones de (B). Luego, según se muestra
+en el ejemplo resuelto de abajo:
+
+\begin{consignas}
+  \item clasifique los verbos subrayados en transitivos, inergativos e
+        inacusativos. Fundamente su respuesta con las pruebas adecuadas;
+  \item analice las alternancias propuestas en (B) y explique qué cambios se
+        producen en relación con los esquemas transitivos, intransitivos e
+        inacusativos.
+\end{consignas}
+
+\textbf{A}
+
+% Fragmento literario protegido: se incorpora a mano desde el original.
+\textoaincorporar{los fragmentos de «Emma Zunz» que van de «De pronto,
+alarmada, se levantó» hasta «\ldots{}la empezó a leer y la rompió» y de «El
+hombre la condujo a una puerta» hasta «\ldots{}las partes que los forman», con
+los verbos subrayados: \textit{levantarse, correr, abrir, dejar, ver, leer,
+romper, conducir, haber, cerrarse, formar}}
+
+\textbf{B}
+
+\begin{exe}
+  \ex
+    \begin{xlist}
+      \ex Abrió el cajón de la cómoda.
+      \ex El cajón de la cómoda se abrió de repente.
+    \end{xlist}
+  \ex
+    \begin{xlist}
+      \ex El déficit empeoró la balanza comercial.
+      \ex Las condiciones meteorológicas empeoraron en las últimas horas.
+    \end{xlist}
+  \ex
+    \begin{xlist}
+      \ex Una puerta se cerró.
+      \ex Cerró la puerta con llave.
+    \end{xlist}
+\end{exe}
+
+\begin{resuelto}
+a) \forma{Levantarse} y \forma{correr} son verbos intransitivos. El sujeto de
+ambos es agente y el verbo pertenece al grupo de los que seleccionan un sujeto
+encargado de realizar la acción que tiene lugar en el propio individuo. b) La
+oración 1a es transitiva: el sujeto es agente y posee un complemento objeto
+directo tema. 1b es un caso de alternancia causativa inacusativa en la que el
+verbo es inacusativo, pero proviene de un verbo transitivo, \forma{abrir}.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{recuadro}[Reflexión final]
+En este capítulo nos hemos concentrado en la relación entre la semántica y la
+sintaxis. Hemos definido los conceptos de argumento y predicado; luego, nos
+hemos ocupado de la estructura temática y hemos definido las funciones
+semánticas o papeles temáticos. A partir de allí, presentamos las funciones
+sintácticas, específicamente aquellas incluidas en el sintagma verbal. Para
+finalizar, desarrollamos los esquemas verbales transitivo e intransitivo y,
+dentro de los últimos, hemos distinguido entre los inergativos y los
+inacusativos.
+\end{recuadro}
+
+% --- Secciones finales -------------------------------------------------
+\lecturasrecomendadas
+
+\solucionario
+
+\begin{solucion}{\ref{ej:07-agramatical}}
+3. Es agramatical porque faltan dos argumentos, referidos a \sig{lo colocado} y
+\sig{el lugar de colocación}. 4. Es agramatical porque falta un argumento
+referido a \sig{lo que provocó el viento}. 5. Hay una incompatibilidad
+léxico-semántica entre el verbo \forma{anunciar} y el argumento
+\forma{gelatina}. 6. Es ambigua: a) es gramatical en la interpretación de
+\sig{hizo un reclamo a los bancos}; b) es agramatical en la interpretación en
+que falta el argumento referido a \sig{lo que reclamó el presidente}. 7. Es
+agramatical porque falta un argumento referido al lugar. 8. Es agramatical
+porque falta un argumento referido al lugar.\pendiente{El original numera estas
+respuestas como (8) y (9)}
+\end{solucion}
+
+\begin{solucion}{\ref{ej:07-seleccion}}
+a) 2 es gramatical, aunque hay un argumento implícito. 3 es gramatical, aunque
+tiene dos argumentos implícitos. 5 es gramatical.\pendiente{Falta la preposición
+\textit{a} ante \textit{su casa}: revisar el juicio} 6 es agramatical porque
+\forma{a su aceituna} no constituye un argumento de lugar. b) \forma{Regresar}
+[Arg.~1 SN, Arg.~2 SP].
+\end{solucion}
+
+\begin{solucion}{\ref{ej:07-valencia}}
+a) Son bivalentes porque seleccionan dos argumentos: \forma{engañar, inquietar,
+ingerir, firmar} y \forma{dirigir(se)}. El único monovalente, que selecciona un
+solo argumento, es \forma{fallecer}. b) Los argumentos de \forma{engañar} son
+\forma{el sello y el sobre} (sujeto) y el pronombre personal en caso acusativo
+\forma{la} (COD). Los argumentos de \forma{inquietar} son \forma{la letra
+desconocida} (sujeto) y el pronombre personal en caso acusativo \forma{la}
+(COD). Los argumentos de \forma{ingerir} son \forma{el señor Maier} (sujeto) y
+\forma{una fuerte dosis de veronal} (COD). El argumento de \forma{fallecer} es el
+sujeto tácito, correferencial con el sujeto de \forma{ingerir}. Los argumentos
+de \forma{firmar} son \forma{un compañero de pensión de su padre} (sujeto) y
+\forma{la noticia} (COD). Los argumentos de \forma{dirigir(se)} son el sujeto
+tácito, correferencial con el sujeto de \forma{firmar}, y \forma{la hija del
+muerto} (COD).\pendiente{Revisar: \textit{a la hija del muerto} no es COD de
+\textit{dirigirse}}
+\end{solucion}
+
+\begin{solucion}{\ref{ej:07-compadj}}
+a) \forma{Preparó}: \forma{una sopa de tapioca} y \forma{unas legumbres}
+(complementos). \forma{Comió}: \forma{temprano} (adjunto). \forma{Se acostó} y
+\forma{se obligó a dormir}: no tienen complementos ni adjuntos. b) Los cuatro
+verbos tienen el sujeto tácito o implícito; \forma{comió} tiene también el COD
+implícito.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:07-papeles}}
+\forma{Una carta}: tema seleccionado por \forma{hallar}. \forma{El sello y el
+sobre}: causa seleccionada por \forma{engañar}.\pendiente{El original dice «Una
+carta y el sobre»} \forma{Su padre}: paciente seleccionado por \forma{morir}.
+\forma{La letra desconocida}: causa seleccionada por \forma{inquietar}.
+\forma{Emma}: agente seleccionado por \forma{leer}. \forma{El señor Maier}:
+agente seleccionado por \forma{ingerir}. \forma{Un compañero de pensión de su
+padre}: agente seleccionado por \forma{firmar}. \forma{La noticia}: tema
+seleccionado por \forma{firmar}. \forma{A la hija del muerto}: meta seleccionada
+por \forma{dirigir(se)}.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:07-agente}}
+\forma{Hilbert} no es agente porque rechaza la paráfrasis con \forma{hacer}
+(\juicio{*}{\forma{Lo que hizo Hilbert fue ser\ldots}}) y la construcción final
+(\juicio{*}{\forma{Hilbert era uno de los ponentes del Congreso para realizar su
+investigación}}). \forma{La legendaria lista} no es agente porque es inanimada y
+no admite la paráfrasis con \forma{hacer} (\juicio{*}{\forma{Lo que hizo la
+legendaria lista\ldots}}) ni la construcción final (\juicio{*}{\forma{La
+legendaria lista definió las matemáticas de la era moderna para lograr su
+propósito}}).
+\end{solucion}
+
+\begin{solucion}{\ref{ej:07-mdo}}
+Texto 1. \forma{Precisión matemática}: COD \sig{inanimado} y
+\sig{específico}.\pendiente{Como COD escueto, \textit{precisión matemática} es
+más bien inespecífico} Texto 2. \forma{Veraneos}: COD \sig{inanimado} e
+\sig{inespecífico}. \forma{A su madre}: \forma{a} es marca de función (MDO); COD
+\sig{animado} y \sig{específico}. \forma{La casita de Lanús}: COD
+\sig{inanimado} y \sig{específico}. \forma{Los amarillos losanges de una
+ventana}: COD \sig{inanimado} y \sig{específico}. \forma{El auto de prisión}:
+COD \sig{inanimado} y \sig{específico}. \forma{El oprobio}: COD \sig{inanimado}
+y \sig{específico}. \forma{Los anónimos}: COD \sig{inanimado} y
+\sig{específico}.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:07-seleccion2}}
+b) \forma{Dar con} = \sig{encontrar}; \forma{optar por} = \sig{elegir};
+\forma{conducir a}. \forma{Hombres del Nordstjärnan} está seleccionado por el
+verbo \forma{dar (con)}. \forma{Por otro} está seleccionado por el verbo de
+\sig{elección} \forma{optar}. \forma{A una puerta, a un turbio zaguán, a una
+escalera tortuosa, a un vestíbulo, a un pasillo} y \forma{a una puerta que se
+cerró} están seleccionados por el verbo de \sig{movimiento} \forma{conducir}.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:07-inacusativos}}
+a) \forma{Abrir, dejar, ver, leer, romper} y \forma{conducir} son verbos
+transitivos. Todos seleccionan dos argumentos: un agente y un tema o paciente.
+\forma{Haber} es un verbo impersonal transitivo que se construye con un COD con
+el papel temático de tema. \forma{Cerrarse} es la variante inacusativa
+pronominal del verbo transitivo \forma{cerrar}. \forma{Formar} es un verbo
+transitivo con un COD pronominal.
+
+b) 2. \forma{Empeorar}: alternancia transitiva / inacusativa sin incorporación
+del clítico \forma{se}. En a) el sujeto es causa y en b) es tema. 3. Alternancia
+transitiva / inacusativa \forma{cerrarse / cerrar}. El sujeto del verbo
+inacusativo de a) se convierte en COD del verbo transitivo en b).
+\end{solucion}
