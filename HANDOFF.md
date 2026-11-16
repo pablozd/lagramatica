@@ -26,8 +26,9 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 7 | `capitulos/cap07.tex` | cargado; faltan los textos de «Emma Zunz», Hilbert y Cantor |
 | Capítulo 8 | `capitulos/cap08.tex` | cargado; falta el fragmento de *Relato de un náufrago* |
 | Capítulo 9 | `capitulos/cap09.tex` | cargado; faltan los textos de Enriquez y Viñas |
-| Capítulos 10-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
-| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 9) |
+| Capítulo 10 | `capitulos/cap10.tex` | cargado; faltan imágenes y textos de Infobae, Shua, la revista de decoración y «Akasha» |
+| Capítulos 11-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
+| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 10) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
 | Versión online | — | no empezada |
 
@@ -204,6 +205,23 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
   → a, b, c.
 - Ej. 6 solucionario: la lista de i) omitía 1b; 2b figura como predicativo en iii).
 - Ej. 4 sol. 9: con *se lo veía*, *solo* se predica del objeto (marcado para revisar).
+
+### Capítulo 10
+- Imágenes: pintada y afiche (ejs. 40-42), meme del ej. 12.
+- Textos a incorporar a mano: Infobae (ej. 8), Shua, «Ejemplares raros» (ej. 14), copete de la
+  revista (ej. 18), «Akasha» de S. Fernández (ej. 21).
+- Correcciones marcadas: (12) «Me es COI» → *Te*; «a mí misma» → *a sí misma* en (17);
+  «Federico» → *Francisco* en las pruebas de reciprocidad; (36) COD → COI; remisiones (88)-(89)
+  → (92)-(93), (108b) → (104b), (107) → (113); «capítulo 9» → cap. 8; «De Miguel, 2009» → 1999;
+  «Fernández Soriano, 1990» → 1999; «Di Tullio (2010…)» → 2014; Reflexión final «COD o de COD».
+- Ej. 5 (factitivas): agente y causante instigador intercambiados en el original (resuelto y
+  solucionario); *se vacunó* figura como COI.
+- Ej. 11: las medias figuran con «3ra persona», contra lo dicho en el texto (paradigmáticas).
+- Ej. 21: el resuelto dice «estructura sintáctica»; el solucionario, «argumental».
+- Giammatteo (2019), citado por *correrse*, no figura en la bibliografía.
+- Notas editoriales para revisar: *Se me estafó* (impersonal aceptable en rioplatense);
+  *deberse* analizado como pasiva en el solucionario del ej. 14.
+- Tabla 1 (pronombres) escalada al ancho de caja; Tabla 2 en longtable.
 
 ### General
 
