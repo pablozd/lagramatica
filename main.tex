@@ -1,5 +1,5 @@
 % =====================================================================
-%  main.tex — Manual de gramática del español
+%  main.tex — La gramática: de las nociones teóricas al lenguaje de todos los días
 %  Compilar:  latexmk            (usa .latexmkrc: LuaLaTeX + biber)
 %         o:  latexmk -xelatex main.tex
 % =====================================================================
@@ -19,13 +19,14 @@
 \addbibresource{bib/referencias.bib}
 
 % --- Datos del libro --------------------------------------------------
-\newcommand*{\titulolibro}{Manual de gramática del español}
-\newcommand*{\subtitulolibro}{Teoría y ejercitación}
-\newcommand*{\responsables}{Compilación a cargo de \textellipsis}
+\newcommand*{\titulolibro}{La gramática}
+\newcommand*{\subtitulolibro}{De las nociones teóricas al lenguaje de todos los días}
+\newcommand*{\responsables}{Mabel Giammatteo y Laura Ferrari\\(coordinadoras)}
 \newcommand*{\editorial}{\textellipsis}
 \newcommand*{\aniolibro}{2026}
 
-\hypersetup{pdftitle={\titulolibro}, pdflang={es}}
+\hypersetup{pdftitle={\titulolibro. \subtitulolibro},
+            pdfauthor={Mabel Giammatteo y Laura Ferrari (coords.)}, pdflang={es}}
 
 % --- Capítulos a compilar ---------------------------------------------
 % Para trabajar en un solo capítulo, descomentar y listar solo ese:
@@ -42,7 +43,6 @@
 \input{preliminares/portada}
 \tableofcontents
 \include{preliminares/prologo}
-\include{preliminares/siglario}
 
 \mainmatter
 % Un \include por capítulo, en orden: la numeración del capítulo
@@ -64,6 +64,7 @@
 \include{capitulos/cap15}
 
 \backmatter
+\include{preliminares/siglario}
 \include{finales/glosario}
 \bibliografiageneral
 

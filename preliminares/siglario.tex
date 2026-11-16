@@ -1,8 +1,181 @@
 % preliminares/siglario.tex
-\addchap{Siglas y abreviaturas}
+% Fuente: 02-siglario.docx (autor: Fernando Carranza)
+\addchap{Siglario}
+\addtocontents{toc}{\protect\autorentoc{Fernando Carranza}}
+{\raggedright\normalfont\large\itshape Fernando Carranza\par}
+\bigskip
 
+A lo largo del libro, cuando se haga análisis sintáctico, se encerrarán los
+constituyentes entre corchetes. Cada encorchetado estará etiquetado con una
+etiqueta de la forma \textit{x/y}, de modo tal que la \textit{x} corresponderá a
+la clase de palabra o tipo de sintagma (sintaxis categorial), mientras que la
+\textit{y} corresponderá a la función sintáctica (sintaxis funcional). Por
+ejemplo,
+
+\begin{center}
+  [\etq{SC = SF/O} [\etq{SN/Suj} Juan\etq{N/n}] [\etq{SV/Pred} vino\etq{V/n}]]
+\end{center}
+
+\noindent significa (o se lee) que \forma{Juan vino} es un sintagma
+complementante / sintagma de flexión, que \forma{Juan} es un sintagma nominal
+que funciona como sujeto, en el cual \forma{Juan} es un nombre que funciona como
+núcleo, y que \forma{vino} es un sintagma verbal en el que \forma{vino} es un
+verbo que funciona como núcleo. Para especificar tipo de categoría y función
+sintáctica, se utilizan las abreviaturas que siguen.
+
+\newcommand*{\grupositlas}[1]{\par\medskip{\sffamily\bfseries #1}\par\smallskip}
+\newcommand*{\subgruposiglas}[1]{\par\smallskip{\itshape #1}\par}
+
+\grupositlas{Etiquetas categoriales}
+
+\subgruposiglas{Clases léxicas}
 \begin{siglario}
-  \item[DLE]  \textit{Diccionario de la lengua española}
-  \item[NGLE] \textit{Nueva gramática de la lengua española}
-  \item[\ldots] [Completar con el siglario.]
+  \item[N] Nombre / sustantivo (clase de palabra)
+  \item[V] Verbo (clase de palabra)
+  \item[A] Adjetivo (clase de palabra)
+  \item[Adv] Adverbio (clase de palabra)
+  \item[P] Preposición (clase de palabra)
+\end{siglario}
+
+\subgruposiglas{Clases funcionales}
+\begin{siglario}
+  \item[D] Determinante (clase de palabra, subtipo de determinativo)
+  \item[Q] Cuantificador (clase de palabra, subtipo de determinativo)
+  \item[F] Flexión (núcleo funcional, sintaxis categorial)
+  \item[Conj] Conjunción coordinante (clase de palabra)
+  \item[C] Complementante (núcleo funcional) y conjunciones subordinantes
+        \textit{que} y \textit{si}
+\end{siglario}
+
+\subgruposiglas{Proyecciones sintagmáticas}
+\begin{siglario}
+  \item[X] Vale por cualquier categoría (clase de palabra o núcleo funcional)
+  \item[X\prima] Proyección intermedia de cualquier categoría X (sintaxis
+        categorial; no es necesario marcarla en el análisis sintáctico)
+  \item[SX] Proyección máxima de una categoría X (sintaxis categorial)
+\end{siglario}
+
+\subgruposiglas{Categorías vacías}
+\begin{siglario}
+  \item[\textit{pro}] Pronombre silente valuado con caso (p.~ej., sujetos
+        tácitos, sujetos expletivos silentes de verbos meteorológicos e
+        impersonales, \textit{pro} arbitrario)
+  \item[PRO] Pronombre silente no valuado con caso (p.~ej., sujeto de verbos en
+        infinitivo)
+  \item[h] Huella (la posición de base desde la cual se desplaza un objeto
+        sintáctico)
+\end{siglario}
+
+\subgruposiglas{Otras etiquetas categoriales}
+\begin{siglario}
+  \item[Pr] Pronombre (clase de palabra)
+  \item[PrEx] Pronombre exclamativo (clase de palabra)
+  \item[PrInt] Pronombre interrogativo (clase de palabra)
+  \item[R] Pronombre relativo (clase de palabra)
+  \item[PRefl] Pronombre reflejo. Incluye los reflexivos puros y factitivos
+  \item[PRecipr] Pronombre recíproco
+  \item[IPCR] Índice pronominal cuasirreflejo. Incluye los pronombres
+        cuasirreflejos que modifican la estructura sintáctica (alternantes e
+        inherentes), los que modifican la estructura argumental (medio,
+        mediopasivo, pasivo e impersonal) y los que modifican la estructura
+        eventiva (delimitador e intensificador)
+  \item[IPN] Índice de polaridad negativa
+  \item[Ref] Reforzador (conector que refuerza a un coordinante, explícito o
+        nulo; p.~ej., \textit{además, también})
+  \item[Mat] Matizador (conector que matiza a un coordinante, explícito o nulo;
+        p.~ej., \textit{sin embargo}). Matizadores y reforzadores son las mismas
+        unidades, que funcionan como unos u otros según el coordinante al que se
+        adjuntan: \textit{y además} (reforzador), \textit{pero además}
+        (matizador)
+  \item[PV] Perífrasis verbal (sintaxis categorial)
+  \item[LV] Locución verbal
+  \item[LAdv] Locución adverbial
+  \item[LP] Locución preposicional
+\end{siglario}
+
+\grupositlas{Etiquetas funcionales}
+
+\subgruposiglas{Funciones sintácticas básicas}
+\begin{siglario}
+  \item[n] Núcleo (esquema X con barra / sintaxis funcional)
+  \item[Esp] Especificador (sintaxis funcional)
+  \item[Comp] Complemento (esquema X con barra)
+  \item[Adj] Adjunto
+  \item[AS] Adjunto especificativo (sintaxis funcional)
+  \item[AX] Adjunto explicativo (sintaxis funcional)
+  \item[M] Modificador (sintaxis funcional)
+  \item[ApR] Aposición restrictiva (sintaxis funcional)
+  \item[ApE] Aposición explicativa (sintaxis funcional)
+  \item[MF] Marca de función (sintaxis funcional). Es el caso de la \textit{a}
+        personal; en estos casos, no corresponde marcar ninguna categoría
+\end{siglario}
+
+\subgruposiglas{Funciones sintácticas específicas del predicado verbal}
+\begin{siglario}
+  \item[COD] Complemento objeto directo (sintaxis funcional)
+  \item[OI] Objeto indirecto no argumental. Incluye el dativo benefactivo, el
+        dativo posesivo y el dativo ético (sintaxis funcional)
+  \item[COI] Complemento objeto indirecto (sintaxis funcional)
+  \item[CPR] Complemento preposicional de régimen (sintaxis funcional)
+  \item[CAg] Complemento agente (sintaxis funcional)
+  \item[CSim] Complemento simétrico (sintaxis funcional)
+  \item[CC] Complemento circunstancial «a secas» (sintaxis funcional)
+  \item[CCT] Complemento circunstancial de tiempo (sintaxis funcional)
+  \item[CCL] Complemento circunstancial de lugar o complemento locativo
+        (sintaxis funcional)
+  \item[CCM] Complemento circunstancial de modo o complemento de manera
+        (sintaxis funcional)
+  \item[CCCant] Complemento circunstancial de cantidad (sintaxis funcional)
+  \item[CCF] Complemento circunstancial de fin (sintaxis funcional)
+  \item[AC] Adjunto circunstancial «a secas» (sintaxis funcional)
+  \item[ACT] Adjunto circunstancial de tiempo (sintaxis funcional)
+  \item[ACL] Adjunto circunstancial de lugar (sintaxis funcional)
+  \item[ACM] Adjunto circunstancial de modo (sintaxis funcional)
+  \item[ACC] Adjunto circunstancial de causa (sintaxis funcional)
+  \item[ACCant] Adjunto circunstancial de cantidad (sintaxis funcional)
+  \item[ACI] Adjunto circunstancial de instrumento (sintaxis funcional)
+  \item[ACF] Adjunto circunstancial de fin (sintaxis funcional)
+  \item[PSO] Predicativo subjetivo obligatorio (sintaxis funcional)
+  \item[PSNO] Predicativo subjetivo no obligatorio (sintaxis funcional)
+  \item[PO] Predicativo objetivo (sintaxis funcional)
+  \item[MNO] Modificador del núcleo oracional
+  \item[MMO] Modificador de modalidad oracional
+  \item[MTP] Modificador temporal puntual (subtipo de circunstancial de tiempo)
+  \item[MTD] Modificador temporal de duración (subtipo de circunstancial de
+        tiempo)
+  \item[MTPer] Modificador temporal de período (subtipo de circunstancial de
+        tiempo)
+  \item[MRep] Modificador temporal de repetición (subtipo de circunstancial de
+        tiempo)
+  \item[MFr] Modificador de frecuencia (subtipo de circunstancial de tiempo)
+\end{siglario}
+
+\subgruposiglas{Funciones sintácticas específicas del nivel de la oración}
+\begin{siglario}
+  \item[Suj] Sujeto (sintaxis funcional)
+  \item[Pred] Predicado (sintaxis funcional)
+  \item[O] Oración (sintaxis funcional)
+  \item[OC] Oración subordinada completiva
+  \item[OR] Oración subordinada de relativo
+  \item[Ocomp] Oración compuesta (sintaxis funcional): la integrada por
+        oraciones subordinadas o coordinadas
+  \item[Mod.F] Modificador oracional (modificador al nivel de la capa flexiva,
+        sintaxis funcional)
+  \item[Mod.M] Modificador de modalidad (sintaxis funcional)
+\end{siglario}
+
+\subgruposiglas{Funciones informativas}
+\begin{siglario}
+  \item[Top] Tópico
+  \item[Foc] Foco
+\end{siglario}
+
+\subgruposiglas{Otras etiquetas}
+\begin{siglario}
+  \item[ORed] Oración reducida (p.~ej., soporte para predicaciones secundarias)
+  \item[\textit{i, j, k}] Índices de correferencialidad
+  \item[\{\,/\,\}] Delimitación de opciones alternativas (p.~ej., \textit{tener
+        \{nada / algo\} que ver})%
+        \pendiente{Agregado a partir de la nota del original «AGREGAR LLAVES
+        PARA DELIMITACIÓN DE OPCIONES»: revisar la redacción}
 \end{siglario}

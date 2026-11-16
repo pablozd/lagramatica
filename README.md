@@ -1,4 +1,4 @@
-# Manual de gramática del español — fuente LaTeX
+# La gramática: de las nociones teóricas al lenguaje de todos los días — fuente LaTeX
 
 Compilación: LuaLaTeX (por defecto) o XeLaTeX, con biber.
 

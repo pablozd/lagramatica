@@ -1,4 +1,4 @@
-# Handoff — Manual de gramática del español
+# Handoff — La gramática: de las nociones teóricas al lenguaje de todos los días
 
 Última actualización: 2026-11-15 (capítulo 3).
 
@@ -312,6 +312,22 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 - Correcciones: [ˈah.co] → [ˈah.ko]; *cielo* con doble acento en el solucionario; imperativo de
   *ser* vacío en la tabla del voseo → *sé*; griego ἡ Μαρία transliterado; etiqueta de sección de
   cap03 §5 agregada (`sec:03-transcripcion`).
+
+### Preliminares y siglario
+- Título tomado de Prólogo.docx: *La gramática: de las nociones teóricas al lenguaje de todos los
+  días*, coord. Mabel Giammatteo y Laura Ferrari. Falta la editorial (portada: `\editorial`).
+- Página de créditos con la lista de autores; la del original omite a Natalia Giollo (cap. 12): se
+  agregó.
+- Cap. 11 retitulado «Perífrasis y locuciones verbales», como en el índice del prólogo (el docx del
+  capítulo dice «Las perífrasis verbales»).
+- Prólogo: retoques mínimos de puntuación y concordancia («tanto refleja… como las aplica»).
+  Se agregó chomsky1957 a la bibliografía.
+- Siglario (F. Carranza) movido al final, antes del glosario, como en el índice. Correcciones:
+  «Modificar del núcleo oracional» → Modificador; Ladv → LAdv. Se agregó la entrada de llaves
+  pedida en la nota del original.
+- **Conflicto de siglas**: el siglario define CCM = complemento circunstancial de modo; el cap. 13
+  usa CCM para «coda comparativa». OC / Ocomp coinciden con la decisión tomada en el cap. 13.
+  Faltan en el siglario siglas usadas en el libro (p. ej., CCN, CT, PSO ya está; APX, OS).
 
 ### General
 
