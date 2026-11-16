@@ -28,6 +28,7 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 9 | `capitulos/cap09.tex` | cargado; faltan los textos de Enriquez y Viñas |
 | Capítulo 10 | `capitulos/cap10.tex` | cargado; faltan imágenes y textos de Infobae, Shua, la revista de decoración y «Akasha» |
 | Capítulo 11 | `capitulos/cap11.tex` | cargado; faltan textos de Infobae (ej. 2) y Tato Bores (ej. 3) |
+| Capítulo 12 | `capitulos/cap12.tex` | cargado; falta la referencia de la nota sobre Meta (ej. 9) |
 | Capítulos 11-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
 | Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 10) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
@@ -240,6 +241,24 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
   sin transcribirlo.
 - Ej. 5: las respuestas que el original incluía en la consigna pasaron al solucionario.
 - Tabla 1 en longtable; tabla del ej. 12 escalada al ancho de caja.
+
+### Capítulo 12
+- Diagramas 1-3 (comentarios «cambiar el árbol» / «Numerar»): rehechos en forest como ejemplos
+  numerados (esquema X', esquema del SConj y árbol de *María llegó a la oficina y encendió…*).
+- Se conservan oraciones literarias sueltas (Casciari, Schweblin, De Santis, Enriquez) y el
+  fragmento breve de *Éste es el mar* (ej. 3). La nota sobre Meta (ej. 9) no tiene fuente.
+- Correcciones: doble §3.1 renumerado; dos series (38) → ejemplos distintos; «agramaticalidad de
+  (30)» → (31); (24b) «Entro … PS/PSO» → PSNO; (25a) corchete faltante; «a parte» → *aparte*,
+  «en vista de ellos» → *ello* (tabla); «Jiménez Julia» → Juliá; «Beijín» → Beijing.
+- Ensamble: el original dice que se mencionó en el cap. 6, pero no aparece allí.
+- *o sea* figura entre las conjunciones múltiples y en la tabla como marcador explicativo.
+- (34b) marcada con * para un orden posible con otra lectura: ¿#?; (42a/c) incoherentes → #.
+- Sujeto de *estar contento* caracterizado como PACIENTE (texto original, sin cambios).
+- Solucionarios: ej. 3 «dos auxiliares» (son auxiliados, V/Esp); ej. 5 (3) SF → SV, (6) SConj2
+  CCL → COD y «asimétrica: es posible cambiar el orden» → simétrica; resuelto del ej. 5 (1)
+  *no pueden escapar ni…* como asimétrica: revisar; ej. 7 respuestas 3 y 4 intercambiadas;
+  ej. 9 (2) segundo coordinando «SN/Esp» → Comp; (3) primer coordinando recortado; (5B) OComp.
+- Ej. 4 (Frodo/Sam/Gollum): se conservan las respuestas con asterisco del original.
 
 ### General
 
