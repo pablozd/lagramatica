@@ -24,8 +24,9 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 5 | `capitulos/cap05.tex` | cargado; faltan textos de Bioy Casares, Litvin, Saki, Cortázar y *La naturaleza* |
 | Capítulo 6 | `capitulos/cap06.tex` | cargado; faltan los textos de Peyrou y Asimov |
 | Capítulo 7 | `capitulos/cap07.tex` | cargado; faltan los textos de «Emma Zunz», Hilbert y Cantor |
-| Capítulos 8-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
-| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 7) |
+| Capítulo 8 | `capitulos/cap08.tex` | cargado; falta el fragmento de *Relato de un náufrago* |
+| Capítulos 9-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
+| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 8) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
 | Versión online | — | no empezada |
 
@@ -178,6 +179,16 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
   «llegó contento su casa»; ej. 3 analiza *a la hija del muerto* como COD; ej. 5 dice
   «una carta y el sobre»; ej. 7 da *precisión matemática* como específico.
 - La numeración repetida de ejemplos del original (32-33) se resolvió con la numeración automática.
+
+### Capítulo 8
+- Texto a incorporar a mano: fragmento de *Relato de un náufrago* (ej. 5).
+- Correcciones marcadas: «Stephen Spilberg» → Steven Spielberg; doble remisión a (16)
+  (colectivos → 15); logros con «–tél» en §3.3 → +tél; en ese párrafo se pasó «MTPer» a MTP.
+- Remisiones: «§4» (no existe) → §8.3.1; «§3.5.1» → §8.3.6.1.
+- Se omitió la llamada [^0] del original, que no tenía nota.
+- Ej. 1, solucionario: los rasgos de *vivir una serie de aventuras* no corresponden a una
+  actividad. Ej. 5: «COERSIÓN» → coerción.
+- La tabla del solucionario del ej. 5 va en longtable (corta entre páginas).
 
 ### General
 
