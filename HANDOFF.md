@@ -29,6 +29,7 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 10 | `capitulos/cap10.tex` | cargado; faltan imágenes y textos de Infobae, Shua, la revista de decoración y «Akasha» |
 | Capítulo 11 | `capitulos/cap11.tex` | cargado; faltan textos de Infobae (ej. 2) y Tato Bores (ej. 3) |
 | Capítulo 12 | `capitulos/cap12.tex` | cargado; falta la referencia de la nota sobre Meta (ej. 9) |
+| Capítulo 13 | `capitulos/cap13.tex` | cargado; faltan los paratextos periodísticos (ej. 8); siglas a confirmar |
 | Capítulos 11-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
 | Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 10) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
@@ -259,6 +260,26 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
   *no pueden escapar ni…* como asimétrica: revisar; ej. 7 respuestas 3 y 4 intercambiadas;
   ej. 9 (2) segundo coordinando «SN/Esp» → Comp; (3) primer coordinando recortado; (5B) OComp.
 - Ej. 4 (Frodo/Sam/Gollum): se conservan las respuestas con asterisco del original.
+
+### Capítulo 13
+- **Siglas (decisión a confirmar)**: el comentario «cambiar OS por OC» choca con OC = oración
+  compuesta. Se adoptó: Ocomp = oración compuesta; OC = completiva (incluidas interrogativas
+  indirectas e infinitivas argumentales, como en §4.3 del original); OR = relativa; OS =
+  subordinada genérica o adjunta sin encabezador/condicional (*si*, *como*, gerundios). «OC/C»
+  → OC/CT. Siglas CCM / CCN (coda comparativa / consecutiva): consultar a A. Trombetta.
+- Diagramas 1-7 rehechos en forest como ejemplos numerados (1, 2 y 5-6 desde la descripción del
+  original; 3, 4 y 7 sin imagen, reconstruidos).
+- Ej. 8: los diez paratextos de *La Razón* / *Infobae* van como `\textoaincorporar`; el
+  solucionario conserva solo las explicaciones (se omiten los textos con corchetes).
+- Ej. 1 no incluía el refrán *El salir de la posada* (sí en ejs. 2 y 6): agregado y renumerado.
+  Los ejs. 2 y 6 remiten a la lista del ej. 1 en lugar de repetirla.
+- Correcciones: §1 «no incluida en una estructura mayor» → incluida; doble §4.1/4.2 y «# 5.3»
+  renumerados; (11a) «SAV» → SAdv; (32c) remitía a (33c); «sí» condicional → *si*; «funcionario»
+  → funcionarios; recuadro *hacer*: «no pueden usarse independientemente» (Tipo I) contradice el
+  ejemplo; *hace* + *bien*/*así* en (25′); ej. 5 resueltos 1 y 2 hablan de «perífrasis» en *estoy
+  cansado*; ej. 7 (3) *para* «sociativo»; (10) «insrumental», (11) «maera»; ej. 6 (16) OS/AS →
+  OR/AS; ej. 8 (3) *comprometerse a* con «valor final».
+- Martínez García (1996) no figura en la bibliografía. Moreno Cabrera (1991) agregado a cap13.
 
 ### General
 
