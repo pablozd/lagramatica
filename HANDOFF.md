@@ -31,6 +31,7 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 12 | `capitulos/cap12.tex` | cargado; falta la referencia de la nota sobre Meta (ej. 9) |
 | Capítulo 13 | `capitulos/cap13.tex` | cargado; faltan los paratextos periodísticos (ej. 8); siglas a confirmar |
 | Capítulo 14 | `capitulos/cap14.tex` | cargado; faltan las letras de canciones (ej. 1) |
+| Capítulo 15 | `capitulos/cap15.tex` | cargado; faltan mapa (fig. 15.2) y esquema del pico tonal (fig. 15.3) |
 | Capítulos 11-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
 | Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 10) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
@@ -298,6 +299,19 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
   la bibliografía. Fuente de los ejemplos orales (41)-(43) sin consignar.
 - Ej. 4: el solucionario no resuelve la oración 3 y numera 2-5; ej. 5: juicio *tuviera que hacer;
   ej. 6: el solucionario repetía el resuelto 1 (comentario de la autora) y no resuelve la 6.
+
+### Capítulo 15
+- Bibliografía: el capítulo traía su propia lista de referencias; se cargaron ~40 entradas en
+  `bib/referencias.bib` (keyword cap15) y se integran a la bibliografía general.
+- Diagrama 1 (pirámide dialectal) rehecho en TikZ; mapa de Vidal de Battini (Wikimedia, CC BY-SA)
+  y figura del pico tonal quedan como `\figurapendiente`.
+- **Tabla 2 (doblado)**: da «No» para OD con «SN no pronominales», contra lo que dice el texto;
+  además el doblado de OD inanimados está atestiguado. Revisar con los autores.
+- Recuadro «¿Qué es el lunfardo?»: la cita de Conde (2004) (~120 palabras) se parafraseó; decidir
+  si se restituye como cita.
+- Correcciones: [ˈah.co] → [ˈah.ko]; *cielo* con doble acento en el solucionario; imperativo de
+  *ser* vacío en la tabla del voseo → *sé*; griego ἡ Μαρία transliterado; etiqueta de sección de
+  cap03 §5 agregada (`sec:03-transcripcion`).
 
 ### General
 
