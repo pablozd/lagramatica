@@ -27,6 +27,7 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 8 | `capitulos/cap08.tex` | cargado; falta el fragmento de *Relato de un náufrago* |
 | Capítulo 9 | `capitulos/cap09.tex` | cargado; faltan los textos de Enriquez y Viñas |
 | Capítulo 10 | `capitulos/cap10.tex` | cargado; faltan imágenes y textos de Infobae, Shua, la revista de decoración y «Akasha» |
+| Capítulo 11 | `capitulos/cap11.tex` | cargado; faltan textos de Infobae (ej. 2) y Tato Bores (ej. 3) |
 | Capítulos 11-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
 | Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 10) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
@@ -222,6 +223,23 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 - Notas editoriales para revisar: *Se me estafó* (impersonal aceptable en rioplatense);
   *deberse* analizado como pasiva en el solucionario del ej. 14.
 - Tabla 1 (pronombres) escalada al ancho de caja; Tabla 2 en longtable.
+
+### Capítulo 11
+- Textos a incorporar a mano: fragmento de *Infobae* sobre series (ej. 2), monólogos de Tato Bores
+  (ej. 3). Se conservan las oraciones de CORPES XXI, Davies y Saer.
+- Correcciones marcadas: análisis (8) «resolvió aplazar» vs. ejemplo «decidió posponer»; remisión
+  «capítulo 9» → cap. 10 (pasivas); «capítulo 12» → cap. 14 (modalidad); «(47a/b)» → ejemplos de
+  *andar* + gerundio; «voz activa» → *pasiva* (capa del SV); remisiones (86)/(88) → etiquetas
+  reales; solucionario del ej. 11 numerado (70)-(73); solucionario del ej. 15 «(1) hemos asimilado»
+  → (2); «forma no finita del auxiliar» → del auxiliado.
+- «Fernández García y Krivochen» → García Fernández & Krivochen (2019); Yllera citada sin año
+  (p. 3429) → 1999. Heine (1991) no figura en la bibliografía (queda dentro de la cita textual).
+- Ej. 3: *iremos a comprar* (PV) vs. *iremos a pagarle* (no PV) en el solucionario: revisar.
+- Ej. 13: *poder volver a ser atendido* analizado como epistémico con paráfrasis deóntica.
+- Ej. 6 y 9: los subrayados no se conservaron en el docx; ej. 2b remite al fragmento reescrito
+  sin transcribirlo.
+- Ej. 5: las respuestas que el original incluía en la consigna pasaron al solucionario.
+- Tabla 1 en longtable; tabla del ej. 12 escalada al ancho de caja.
 
 ### General
 
