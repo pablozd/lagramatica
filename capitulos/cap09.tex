@@ -256,14 +256,14 @@ que en \exref{ex:09-flechas-b} tenemos un \termino{predicativo objetivo}
           \end{tikzpicture}
           \vspace{3ex}
       \ex\label{ex:09-flechas-b}
-          \begin{tikzpicture}[baseline=(s.base), node distance=0pt,
-              every node/.style={inner sep=1pt, font=\small}]
+          {\small\begin{tikzpicture}[baseline=(s.base), node distance=0pt,
+              every node/.style={inner sep=1pt}]
             \node (s) {[\etq{Suj} La ciencia]};
             \node[right=2pt of s] (v) {[\etq{Pred} \etq{V}denominó};
             \node[right=3pt of v] (o) {\etq{OD}[a este espécimen]};
             \node[right=3pt of o] (p) {\etq{Pvo}[\textit{Patagosaurus fariasi}]]};
             \draw[->, >=Stealth] (p.south) .. controls +(0,-.5) and +(0,-.5) .. (o.south);
-          \end{tikzpicture}
+          \end{tikzpicture}}
           \vspace{3ex}
     \end{xlist}
 \end{exe}
