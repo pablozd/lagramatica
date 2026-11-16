@@ -44,6 +44,7 @@ incluyen en orden.
 | Ejemplo resuelto | `\begin{resuelto}[Aclaraciones]` | |
 | Recuadro | `\begin{recuadro}[Título]`, `\begin{destacado}` | |
 | Árbol | `\begin{arbol}[SV [V] [SD, roof]]\end{arbol}` | forest |
+| Corchetes etiquetados | `[\etq{SN} el\etq{D/Esp} libro\etq{N/n}]`, `N\prima` | en nodos de forest, encerrar entre llaves el texto con comas |
 | Cita en bloque | `\begin{cita}` | |
 | Cuadros +/– | `\mas`, `\menos`, `\masmenos`; columnas `C`, `L`, `Y{ancho}` | |
 | Glosario general | `\begin{glosariogeneral}\item[Término:] ...` | dos columnas |

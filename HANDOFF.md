@@ -22,8 +22,9 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 3 | `capitulos/cap03.tex` | cargado; faltan imágenes, audios y la letra de la canción |
 | Capítulo 4 | `capitulos/cap04.tex` | cargado; faltan imágenes, el texto de *El País* y la letra de la canción |
 | Capítulo 5 | `capitulos/cap05.tex` | cargado; faltan textos de Bioy Casares, Litvin, Saki, Cortázar y *La naturaleza* |
-| Capítulos 6-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
-| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 y 5) |
+| Capítulo 6 | `capitulos/cap06.tex` | cargado; faltan los textos de Peyrou y Asimov |
+| Capítulos 7-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
+| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4, 5 y 6) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
 | Versión online | — | no empezada |
 
@@ -152,6 +153,18 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
   ej. 19 c) acepciones de *pobre* invertidas; ej. 20 b) «con o por» para *conforme*;
   ej. 18 la locución *de punta a punta* aparece separada de *de*; ej. 25 «su gobierno».
 - Relativos: el original incluye *quien* entre los adverbios relativos.
+
+### Capítulo 6
+- Textos a incorporar a mano: Peyrou (ej. 3, oraciones numeradas 1-8) y Asimov (ej. 47 del original).
+- Árboles 4b, 9b y 34b: las imágenes no venían en el .docx; se rehicieron con forest.
+- Remisiones corregidas: «en (1) la oración está en pasado» → (3a); «étaint» → *étaient*;
+  (24b) «Te llamaron» → *Me llamaron*, como en (23b); dos secciones numeradas 4.1 (la segunda
+  pasó a 6.4.2); se quitó el resto «Con los nombres propios…» del ej. 1.
+- Ej. 6: la resolución no corresponde a la oración 1; el solucionario cambia «expedientes» por
+  «informes» y «guardó» por «puso».
+- Ej. 3: la numeración de oraciones del solucionario no coincide con la del texto.
+- «Cortázar, R.» → J. Cortázar (*Rayuela*). Peyrou figura como «Peyroú (2020)».
+- Glosario: se completó la definición de *Foco* con la del capítulo.
 
 ### General
 
