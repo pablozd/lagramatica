@@ -21,8 +21,9 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 2 | `capitulos/cap02.tex` | cargado; revisar marcas `\pendiente` |
 | Capítulo 3 | `capitulos/cap03.tex` | cargado; faltan imágenes, audios y la letra de la canción |
 | Capítulo 4 | `capitulos/cap04.tex` | cargado; faltan imágenes, el texto de *El País* y la letra de la canción |
-| Capítulos 5-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
-| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos del cap. 4) |
+| Capítulo 5 | `capitulos/cap05.tex` | cargado; faltan textos de Bioy Casares, Litvin, Saki, Cortázar y *La naturaleza* |
+| Capítulos 6-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
+| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 y 5) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
 | Versión online | — | no empezada |
 
@@ -136,6 +137,21 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 - Solucionario del ej. 10 (parasíntesis) no corresponde a las consignas.
 - Solucionario del ej. 11: temas de *cursada* invertidos; ej. 12: categoría de *espectador*.
 - Lecturas: verificar título del capítulo de Adelstein y Nercesián y URL de MORFORETEM.
+
+### Capítulo 5
+- Textos a incorporar a mano: Bioy Casares (ej. 7), Litvin (ejs. 15 y 17), Saki, *La naturaleza*
+  y Cortázar (ej. 24). Los titulares del ej. 16 y los ejemplos de una oración se conservaron.
+- Esquemas X' (ejs. 14b, 15, 18, 20, 44, 64, 66 del original): las imágenes no venían en el
+  .docx; se rehicieron con forest. Revisar contra los originales.
+- Ej. 1: la resolución no corresponde a la oración 1.
+- Ej. 3: los subrayados no se conservan; se reconstruyeron a partir de las respuestas.
+- Remisiones internas corregidas: abstractos (23) → (24); relacionales (47) → (46);
+  notas 28 y 19 → notas reales (se, cuantificadores); ej. 22 «cartera» → *casa*.
+- Bosque (1991) y Bosque (1990) citados; en la bibliografía figura Bosque (1989).
+- Solucionario: ej. 3 «cansados» → *cansadas*; ej. 5 «Aquellos fuertes temporales» → *Los*;
+  ej. 19 c) acepciones de *pobre* invertidas; ej. 20 b) «con o por» para *conforme*;
+  ej. 18 la locución *de punta a punta* aparece separada de *de*; ej. 25 «su gobierno».
+- Relativos: el original incluye *quien* entre los adverbios relativos.
 
 ### General
 

@@ -1,0 +1,2096 @@
+% =====================================================================
+%  capitulos/cap05.tex — Capítulo 5. Los constituyentes y la estructura
+%  sintagmática
+%  Autora: María Paula Bonorino
+%  Fuente: Capitulo_05_normalizado.docx
+% =====================================================================
+\capitulo[Los constituyentes y la estructura sintagmática]%
+  {Los constituyentes y la estructura sintagmática}{María Paula Bonorino}
+
+\section{Introducción}
+
+Este capítulo inicia el estudio de la sintaxis y para ello introduce una serie
+de conceptos clave para reflexionar sobre las relaciones entre las palabras que
+forman las oraciones, ya que, al igual que las unidades de la morfología, los
+ítems léxicos no solo se ordenan de manera lineal, sino que también establecen
+dependencias jerárquicas. En primer lugar, consideramos cómo se definen los
+constituyentes sintácticos y presentamos las pruebas formales que permiten
+identificarlos. En segundo lugar, nos centramos en las clases de palabras
+léxicas, entendidas como aquellas que poseen significado descriptivo inherente,
+y examinamos cómo se expanden en sintagmas, conformando así unidades intermedias
+de análisis, que exhiben una organización interna. Finalmente, nos enfocamos en
+las características de los diferentes tipos de sintagmas ---nominales (SSNN),
+adjetivales (SSAA), adverbiales (SSADV) y preposicionales
+(SSPP)\footnote{La duplicación de las siglas (SSNN, SSAA, etc.) indica
+plural.}--- y consideramos sus principales propiedades sintácticas y
+semánticas.
+
+\section{El concepto de constituyente y la estructura jerárquica}\label{sec:05-constituyente}
+
+Así como los morfemas se unen para formar palabras, también las palabras se
+combinan en unidades mayores. Consideremos, por ejemplo, la siguiente oración:
+
+\begin{exe}
+  \ex\label{ex:05-ministro} El ministro insistió en su declaración.
+\end{exe}
+
+Si bien en \exref{ex:05-ministro} las palabras se vinculan linealmente, también
+podemos reconocer ---al menos intuitivamente--- que la relación entre
+\forma{ministro} y \forma{el} es más estrecha que la que existe entre
+\forma{ministro} e \forma{insistió}, aunque estas dos últimas sean palabras
+contiguas. La diferencia radica en que \forma{ministro} y \forma{el} están en el
+mismo constituyente e \forma{insistió}, en cambio, se encuentra en otro. Pero
+¿qué es un constituyente? Un \termino{constituyente} es un grupo de palabras que
+funciona como una unidad «independientemente de si tiene una estructura interna
+simple o compleja» \parencite[88]{camacho2018}. Así, en
+\exref{ex:05-AB}, tenemos dos constituyentes mayores a los que llamaremos A y B:
+
+\begin{exe}
+  \ex\label{ex:05-AB} {}[El ministro]\etq{A} [insistió en su declaración]\etq{B}
+\end{exe}
+
+\begin{destacado}
+El concepto de constituyente es relacional: «algo es un constituyente de una
+determinada construcción si forma parte de esta\ldots{}»
+\parencite[69]{ditullio2014}.
+\end{destacado}
+
+En línea con lo que plantea Di Tullio, un constituyente puede, a su vez, estar
+integrado por constituyentes menores. El constituyente A está formado por el
+determinante \forma{el} y el sustantivo \forma{ministro}.
+
+\begin{exe}
+  \ex {}[\etq{A} El ministro]
+\end{exe}
+
+El constituyente B, por su parte, plantea una estructura más compleja. Cabe
+reconocer allí, en primer lugar, un constituyente formado por la combinación del
+sustantivo \forma{declaración} con el posesivo \forma{su}. Este constituyente se
+combina, a su vez, con la preposición \forma{en} para formar el constituyente
+\forma{en su declaración}. Finalmente, este constituyente se combina con el verbo
+\forma{insistió}, dando como resultado el constituyente B, \forma{insistió en su
+declaración}.
+
+\begin{exe}
+  \ex {}[\etq{B} insistió [en [su declaración]]]
+\end{exe}
+
+\begin{destacado}
+En síntesis, los constituyentes de una oración se relacionan entre sí de forma
+jerárquica y no simplemente por contigüidad.
+\end{destacado}
+
+La estructura de constituyentes se puede representar mediante corchetes, como en
+\exref{ex:05-corchetes}.
+
+\begin{exe}
+  \ex\label{ex:05-corchetes} {}[\etq{AB} [\etq{A} El ministro] [\etq{B} insistió
+      [en [su declaración]]]]
+\end{exe}
+
+\begin{ejercicio}\label{ej:05-segmentar}
+Segmente en constituyentes las siguientes oraciones, como se muestra en el
+ejemplo resuelto~1.
+
+\begin{exe}
+  \ex Sus conclusiones asombraron a los científicos.
+  \ex Nuestra tía traía regalos constantemente.
+  \ex Muchos estudiantes prefieren la virtualidad.
+  \ex Las medidas preocupan a la población.
+  \ex Los jugadores ganaron la copa en 2022.
+  \ex Aquellas profesoras incorporaron en sus clases herramientas tecnológicas.
+\end{exe}
+
+\begin{resuelto}
+1. [[Sus conclusiones [sobre [el tema]]] [asombraron [a [la comunidad
+científica]]]]\pendiente{La resolución no corresponde a la oración 1: «Sus
+conclusiones asombraron a los científicos»}
+\end{resuelto}
+\end{ejercicio}
+
+\subsection{Homonimia estructural}\label{sec:05-homonimia}
+
+En algunos casos,\footnote{Este tema se presentó en el \capref{2},
+§\ref{sec:02-ambiguedad}.} como se muestra en \exref{ex:05-salon}, la
+segmentación en constituyentes puede ofrecer más de una alternativa
+interpretativa: así, puede ser que \forma{el salón con flores} forme un solo
+constituyente \exref{ex:05-salon-b} o que se trate de dos constituyentes
+independientes, que pueden intercambiarse \exref{ex:05-salon-c}:
+
+\begin{exe}
+  \ex\label{ex:05-salon}
+    \begin{xlist}
+      \ex Redecoró el salón con flores.
+      \ex\label{ex:05-salon-b} Redecoró [el salón [con flores]].
+      \ex\label{ex:05-salon-c} Redecoró [el salón] [con flores]. / Redecoró [con
+          flores] [el salón].
+    \end{xlist}
+\end{exe}
+
+Las oraciones como \exref{ex:05-salon}, que admiten más de una segmentación en
+constituyentes, son ejemplos de \termino{homonimia estructural}, el fenómeno
+según el cual una oración presenta más de una descripción estructural (DE), cada
+una asociada a una interpretación diferente de la oración. Así, en
+\exref{ex:05-salon-b}, [\forma{el salón con flores}] constituye una unidad porque
+hace referencia a \sig{un salón que ya tenía flores, por ejemplo, en el
+empapelado}, y que fue redecorado, probablemente con otro diseño. En este caso,
+[\forma{con flores}] es un constituyente menor que modifica a [\forma{el salón}],
+por lo que, como constituyen una unidad, no admiten intercambiar sus posiciones.
+En \exref{ex:05-salon-c}, en cambio, en la que interpretamos que \sig{puso flores
+en el salón}, se puede considerar que [\forma{el salón}] y [\forma{con flores}]
+son dos modificadores independientes del verbo \forma{redecoró} y que, por lo
+tanto, sus posiciones son intercambiables.
+
+\begin{destacado}
+Dado que una misma oración puede recibir más de una descripción estructural,
+según como se interpreten sus constituyentes, se considera que las secuencias
+ambiguas establecen un argumento en favor de la teoría de que las construcciones
+sintácticas poseen una estructura jerárquica.
+\end{destacado}
+
+\begin{ejercicio}\label{ej:05-homonimia}
+Considere las siguientes oraciones y resuelva lo pedido, según se muestra en el
+ejemplo resuelto~1.
+
+\begin{consignas}
+  \item Segmente en constituyentes.
+  \item Proporcione las dos interpretaciones posibles de cada oración y explique
+        a qué se deben.
+  \item Luego de responder a los puntos a) y b), repase el
+        ejercicio~\ref{ej:02-ambiguedad} del \capref{2} y considere qué efecto
+        produce la doble posibilidad de segmentación que ofrecen estas
+        oraciones.
+\end{consignas}
+
+\begin{exe}
+  \ex Mi hermano trajo una foto de Egipto.
+  \ex Llenó la bolsa de papel.
+  \ex Encontraron el juguete roto.
+\end{exe}
+
+\begin{resuelto}
+1. a) i) [[Mi hermano] [trajo [una foto] [de Egipto]]] / ii) [[Mi hermano]
+[trajo [una foto de Egipto]]]. b) En i) se puede considerar que [una foto] y
+[de Egipto] son dos modificadores independientes del verbo \forma{trajo}. En
+ii), [de Egipto] modifica a [una foto], por lo que conforman un solo
+constituyente.
+\end{resuelto}
+\end{ejercicio}
+
+\subsection{Identificación de constituyentes}\label{sec:05-pruebas}
+
+Para el reconocimiento de constituyentes se pueden aplicar pruebas que permiten
+identificarlos. Las más habituales son las de sustitución, movimiento e
+interrogación. Veamos en qué consiste cada una de ellas.
+
+\subsubsection{Sustitución}\label{sec:05-sustitucion}
+
+Toda unidad sintáctica compleja, como la secuencia subrayada en
+\exref{ex:05-conicet-a}, puede concebirse como el desarrollo o expansión de otra
+más simple por la que puede ser sustituida, como en \exref{ex:05-conicet-b} y
+\exref{ex:05-conicet-c}, y toda unidad simple puede dar lugar a una expansión en
+un constituyente más complejo, como se muestra en \exref{ex:05-conicet-d} y
+\exref{ex:05-conicet-e}:
+
+\begin{exe}
+  \ex\label{ex:05-conicet}
+    \begin{xlist}
+      \ex\label{ex:05-conicet-a} \subrayado{Los investigadores del CONICET}
+          analizaron con gran cuidado la nueva variante del virus.
+      \ex\label{ex:05-conicet-b} \subrayado{Los investigadores} analizaron con
+          gran cuidado la nueva variante del virus.
+      \ex\label{ex:05-conicet-c} \subrayado{Ellos} analizaron con gran cuidado la
+          nueva variante del virus.
+      \ex\label{ex:05-conicet-d} \subrayado{Los investigadores más renombrados
+          del CONICET} analizaron con gran cuidado la nueva variante del virus.
+      \ex\label{ex:05-conicet-e} \subrayado{Los investigadores del CONICET
+          (Consejo Nacional de Investigaciones Científicas y Técnicas)}
+          analizaron con gran cuidado la nueva variante del virus.
+    \end{xlist}
+\end{exe}
+
+\begin{ejercicio}\label{ej:05-expansion}
+Proponga expansiones para los constituyentes subrayados, según se muestra en el
+ejemplo~1.
+
+\begin{exe}
+  \ex \subrayado{Susana} firmó \subrayado{los papeles}.
+  \ex \subrayado{El museo} recibió \subrayado{los ejemplares}.
+  \ex \subrayado{Mis primas} \subrayado{llegaron}.
+  \ex \subrayado{La temporada} trajo \subrayado{sorpresas}.
+  \ex \subrayado{Los vehículos} circulaban \subrayado{lentamente}.
+\end{exe}
+\pendiente{Los subrayados no se conservan en el original; se reconstruyeron a
+partir de las respuestas}
+
+\begin{resuelto}[Ejemplo 1. Respuesta posible]
+Susana, la directora del instituto, firmó los papeles necesarios para la
+presentación del proyecto.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-sustitucion}
+Sustituya en la oración los constituyentes subrayados. Proporcione para cada uno
+de ellos una versión mediante sustitución por reducción y otra por
+pronominalización, como se muestra para el ejemplo~1.
+
+\begin{exe}
+  \ex \subrayado{Los investigadores del CONICET} analizaron \subrayado{con gran
+      cuidado} \subrayado{la nueva variante del virus}.
+  \ex \subrayado{Varios ministros del gabinete} firmaron \subrayado{un acuerdo
+      bilateral} \subrayado{con el embajador de la Unión Europea}.
+\end{exe}
+
+\begin{resuelto}
+1. Reducción: Los investigadores analizaron con cuidado la variante.
+Pronominalización: Ellos la analizaron así.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-encorchetar}
+Considere las siguientes oraciones y resuelva las consignas a continuación,
+según se muestra en el ejemplo resuelto~1.
+
+\begin{consignas}
+  \item Encorchete los constituyentes.
+  \item Aplique la prueba de sustitución a todos los constituyentes
+        encorchetados en a).
+\end{consignas}
+
+\begin{exe}
+  \ex Sus tías enviaron los regalos por correo.
+  \ex Los egresados buscaron con entusiasmo un salón de fiestas.
+  \ex Nuestros candidatos presentaron sus propuestas a los contribuyentes.
+  \ex Los fuertes temporales provocaron inundaciones en toda la ciudad.
+\end{exe}
+
+\begin{resuelto}
+1. a) [[Sus tías] [enviaron [los regalos] [por correo]]]. b) Ellas enviaron los
+regalos por correo. Sus tías los enviaron por correo. Sus tías enviaron los
+regalos así. Ellas los enviaron así.
+\end{resuelto}
+\end{ejercicio}
+
+\subsubsection{Interrogación}\label{sec:05-interrogacion}
+
+Solo los constituyentes pueden funcionar como respuesta a preguntas formuladas
+con una palabra interrogativa como \forma{qué, quién, cómo, cuándo}, etc. Estas
+preguntas parciales\footnote{Las preguntas pueden ser totales o parciales:
+mientras las parciales se responden mediante un constituyente de la oración,
+como se muestra en §\ref{sec:05-interrogacion}, las preguntas totales son las
+que interrogan por todo el enunciado y se responden afirmativa o negativamente:
+\forma{¿Querés venir hoy al cine conmigo? Sí / No (quiero)}.} tienen que
+responderse mediante algún constituyente específico de la oración, lo que
+permite probar su condición de tal. Así, por ejemplo, respecto de
+\exref{ex:05-conicet-a}, podríamos preguntar:
+
+\begin{exe}
+  \ex\label{ex:05-preguntas}
+    \begin{xlist}
+      \ex \forma{¿Quiénes} analizaron con gran cuidado la nueva variante del
+          virus? Los investigadores del CONICET.
+      \ex \forma{¿Qué} hicieron los investigadores del CONICET? Analizaron con
+          gran cuidado la nueva variante del virus.
+      \ex \forma{¿Cómo} analizaron los investigadores del CONICET la nueva
+          variante del virus? Con gran cuidado.
+      \ex \forma{¿Qué} analizaron los investigadores del CONICET con gran
+          cuidado? La nueva variante del virus.
+    \end{xlist}
+\end{exe}
+
+Como se advierte en los ejemplos anteriores, cada pregunta parcial recibe como
+respuesta un constituyente de la oración.
+
+\begin{ejercicio}\label{ej:05-preguntas}
+¿Qué preguntas podríamos hacer para obtener cada uno de los constituyentes
+encorchetados en la descripción estructural de las siguientes oraciones?
+
+\begin{exe}
+  \ex {}[El cartero] [trajo [a mi casa] [la nueva tarjeta de crédito]]
+  \ex {}[Mis primos] [llegaron [ayer por la tarde] [a la ciudad] [para
+      visitarnos]]
+  \ex {}[La nueva profesora] es [muy exigente] [con los exámenes]
+\end{exe}
+
+\begin{resuelto}
+1. ¿Quién trajo a mi casa la nueva tarjeta de crédito? / ¿Qué hizo el cartero? /
+¿Adónde trajo el cartero la nueva tarjeta de crédito? / ¿Qué trajo a mi casa el
+cartero?
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-bioy}
+Recurra a la prueba de la interrogación para verificar que las partes subrayadas
+son constituyentes.
+
+% Fragmento literario protegido: se incorpora a mano desde el original.
+\textoaincorporar{el comienzo de «La salvación», de A.~Bioy Casares
+(\textit{La invención y la trama}, Tusquets, 1991), con los constituyentes
+subrayados: \textit{el escultor; con el tirano; por los jardines del palacio;
+más allá del laberinto para los extranjeros ilustres, en el extremo de la
+alameda de los filósofos decapitados; su última obra}}
+
+\begin{resuelto}
+¿Quién paseaba con el tirano por los jardines del palacio?
+\end{resuelto}
+\end{ejercicio}
+
+\subsubsection{Movimiento}\label{sec:05-movimiento}
+
+Los constituyentes se desplazan en bloque, por lo que solo un constituyente
+completo puede moverse a otra posición dentro de la oración. En
+\exref{ex:05-conicet-a}, que repetimos aquí como \exref{ex:05-mov-a}, los dos
+constituyentes mayores pueden intercambiar sus posiciones, dando lugar a
+\exref{ex:05-mov-b}:
+
+\begin{exe}
+  \ex\label{ex:05-mov}
+    \begin{xlist}
+      \ex\label{ex:05-mov-a} {}[[Los investigadores del CONICET] [analizaron con
+          gran cuidado la nueva variante del virus]].
+      \ex\label{ex:05-mov-b} {}[[Analizaron con gran cuidado la nueva variante
+          del virus] [los investigadores del CONICET]].
+    \end{xlist}
+\end{exe}
+
+Al realizar este movimiento, la oración sigue siendo gramatical. Asimismo,
+también se puede hacer la misma operación con otros constituyentes presentes en
+la oración:
+
+\begin{exe}
+  \ex {}[Con gran cuidado] [los investigadores del CONICET] [analizaron [la nueva
+      variante del virus]].
+\end{exe}
+
+Sin embargo, si se delimita erróneamente un constituyente, el movimiento puede
+dar lugar a una oración agramatical:
+
+\begin{exe}
+  \ex[*]{\label{ex:05-mov-agram} La nueva variante [los investigadores del
+      CONICET] [analizaron [del virus] [con gran cuidado]].}
+\end{exe}
+
+En \exref{ex:05-mov-agram}, el constituyente \forma{la nueva variante del virus}
+se ha fragmentado, lo que da como resultado una oración agramatical en español.
+
+\begin{ejercicio}\label{ej:05-pares}
+Compare los siguientes pares de oraciones y luego, según se muestra en el
+ejemplo resuelto~1:
+
+\begin{consignas}
+  \item indique mediante encorchetamiento si las expresiones en cursiva
+        conforman o no un único constituyente;
+  \item fundamente la respuesta a partir de las pruebas de reconocimiento
+        estudiadas.
+\end{consignas}
+
+\begin{exe}
+  \ex
+    \begin{xlist}
+      \ex Le regalaron \textit{un pasaje a Daniel}.
+      \ex Le regalaron \textit{un pasaje a México}.
+    \end{xlist}
+  \ex
+    \begin{xlist}
+      \ex Eliana encontró \textit{el auto de repente}.
+      \ex Eliana encontró \textit{el auto de su primo}.
+    \end{xlist}
+  \ex
+    \begin{xlist}
+      \ex El hombre tocó \textit{al perro con la mano}.
+      \ex El hombre tocó \textit{al perro con sarna}.
+    \end{xlist}
+  \ex
+    \begin{xlist}
+      \ex Juan abrió \textit{la puerta de una patada}.
+      \ex Juan abrió \textit{la puerta de la habitación}.
+    \end{xlist}
+\end{exe}
+
+\begin{resuelto}
+1. a) i. Le regalaron [un pasaje] [a Daniel] / ii. Le regalaron [un pasaje a
+México]. b) En i., \forma{un pasaje} y \forma{a Daniel} son dos constituyentes
+que admiten las tres pruebas propuestas: se mueven separadamente (\forma{A Daniel
+le regalaron un pasaje. Un pasaje le regalaron a Daniel}); responden a distintas
+preguntas (\forma{¿Qué le regalaron a Daniel? ¿A quién le regalaron un pasaje?});
+se pronominalizan independientemente (\forma{Le regalaron un pasaje. Se lo
+regalaron a Daniel}).\footnote{V. la nota~\ref{fn:05-se}.} En
+ii., \forma{un pasaje a México} es un solo constituyente porque se mueve
+conjuntamente (\forma{Un pasaje a México le regalaron}); responde a una única
+pregunta (\forma{¿Qué le regalaron?}); admite pronominalización conjunta
+(\forma{Se lo regalaron}).
+\end{resuelto}
+\end{ejercicio}
+
+\section{Los sintagmas}\label{sec:05-sintagmas}
+
+Como vimos cuando aplicamos la prueba de sustitución, un constituyente puede
+reducirse a un único elemento central: el núcleo. Por ejemplo, en
+\exref{ex:05-pedro}, ambos constituyentes de la oración están formados por un
+solo elemento:
+
+\begin{exe}
+  \ex\label{ex:05-pedro} {}[Pedro]\etq{A} [corre]\etq{B}
+\end{exe}
+
+Sin embargo, por lo general, los núcleos se expanden vinculándose con otras
+palabras y conformando unidades mayores denominadas \termino{sintagmas}. Desde
+esta perspectiva, \textcite[138]{bosque2009} definen los sintagmas como
+«expansiones de un elemento central o nuclear, en torno al que se articulan
+modificadores y complementos».
+
+\begin{destacado}
+Según vemos, entonces, todos los sintagmas tienen núcleo, es decir, son
+endocéntricos y, en todos ellos, es el elemento nuclear el que da nombre al
+sintagma.
+\end{destacado}
+
+\subsection{Las clases de palabras y su proyección sintagmática}\label{sec:05-clases}
+
+Las palabras de la lengua se agrupan en dos clases mayores: las léxicas, por un
+lado, y las gramaticales o funcionales, por el otro. Palabras como \forma{libro,
+alto, leer, fácilmente} o \forma{para} se consideran léxicas porque su contenido
+puede asociarse con ideas o conceptos \parencite[52]{rodriguezramalle2005}. Las
+\termino{palabras léxicas} o de contenido descriptivo inherente incluyen el
+sustantivo (N), el adjetivo (A), el verbo (V), el adverbio (Adv) y la
+preposición (P).\footnote{Respecto de la preposición como palabra léxica, v. más
+adelante §\ref{sec:05-sp}.} Pero, además de estas clases, también integran la
+lengua las que Bosque (1991)\pendiente{En la bibliografía figura Bosque (1989)}
+denominó «palabras engranaje», como \forma{y, mi, el} o \forma{que}, que no
+tienen significado en sí mismas, sino que se definen fundamentalmente por la
+función que cumplen en la oración. Son las llamadas \termino{palabras
+funcionales}, constituidas por los determinativos (artículos, demostrativos,
+posesivos, indefinidos, etc.) y las conjunciones (coordinantes y
+subordinantes).
+
+Aunque más adelante, en el \capref{6}, se verá que también las palabras y
+categorías funcionales proyectan sintagmas en los que funcionan como núcleos,
+aquí nos vamos a concentrar en los sintagmas formados por las categorías
+léxicas. Todas las palabras léxicas se expanden o proyectan en sintagmas de los
+que son núcleo, de modo que tenemos sintagmas nominales (SSNN), sintagmas
+adjetivales (SSAA), sintagmas adverbiales (SSADV), sintagmas preposicionales
+(SSPP) y sintagmas verbales (SSVV). En este capítulo nos ocupamos solo de las
+cuatro primeras clases de sintagmas, ya que, dada la complejidad del SV, sus
+particularidades se tratarán con más detalle en los capítulos
+siguientes.\footnote{En el \capref{6} se trata la oración y su estructura; en el
+\capref{7}, la estructura argumental y sintáctica, y en el \capref{8}, la
+estructura eventiva.}
+
+\begin{ejercicio}\label{ej:05-nucleo}
+En los siguientes sintagmas, según se muestra en el ejemplo resuelto~1:
+
+\begin{consignas}
+  \item identifique el núcleo (tenga en cuenta cuál es la palabra central a la
+        que las demás modifican o complementan);
+  \item indique la categoría del núcleo de cada sintagma y señale qué clase de
+        sintagma proyecta.
+\end{consignas}
+
+\begin{exe}
+  \ex Ayer por la tarde.
+  \ex Bueno con la gente.
+  \ex Cerca de la esquina.
+  \ex Directamente proporcional.
+  \ex Para mayores de edad.
+  \ex Profunda inquietud.
+  \ex Armario antiguo.
+  \ex Sin sentimientos negativos.
+\end{exe}
+
+\begin{resuelto}
+1. a) El núcleo es \forma{ayer}. b) \forma{Ayer} es un adverbio y proyecta un
+SAdv.
+\end{resuelto}
+\end{ejercicio}
+
+\subsection{La estructura del sintagma}\label{sec:05-xbarra}
+
+De acuerdo con el modelo de principios y parámetros propuesto por
+\textcite{chomsky1981} (v. \capref{1}, §\ref{sec:01-estructura}), la teoría
+X\prima{} o teoría de la X con barra, que se encarga de la buena formación de
+los sintagmas, plantea que todos los sintagmas de todas las lenguas poseen la
+misma estructura. No solo son siempre endocéntricos, es decir, poseen un núcleo
+que da la categoría a todo el sintagma, sino que también adoptan la misma
+configuración estructural. Veamos un ejemplo:
+
+\begin{exe}
+  \ex\label{ex:05-presidente} {}[El presidente de la república] inauguró las
+      sesiones legislativas.
+\end{exe}
+
+Si consideramos el SN \forma{el presidente de la república} y tenemos en cuenta
+cómo se conforman los constituyentes, podemos decir que, dado que \forma{ser
+presidente} exige \forma{presidir algo}, el núcleo \forma{presidente} primero se
+une a \forma{de la república}, que, al ser un constituyente exigido por el
+núcleo, funciona como su complemento (Comp). El tercer elemento que integra el
+SN es el artículo \forma{el}, también requerido para la buena formación de la
+oración, ya que \juicio{*}{\forma{Presidente de la república inauguró las
+sesiones legislativas}}\footnote{Dicha oración sería aceptable, pero en un
+registro muy particular, como son los titulares de diarios.} no sería gramatical
+en español. Por tanto, ambos, núcleo y complemento, deben ir precedidos del
+artículo \forma{el}, que los determina y cumple la función de especificador
+(Esp) dentro del sintagma. Podemos representar la estructura sintagmática que
+acabamos de describir mediante encorchetamiento \exref{ex:05-presidente-a} o a
+través de un diagrama arbóreo \exref{ex:05-presidente-b}:
+
+\begin{exe}
+  \ex\label{ex:05-presidente-de}
+    \begin{xlist}
+      \ex\label{ex:05-presidente-a} {}[\etq{SN} el\etq{D/Esp} [\etq{N\prima}
+          presidente\etq{N/n} [\etq{SP/Comp} de la república]]]
+      \ex\label{ex:05-presidente-b}
+          \begin{forest} gramatica
+            [SN
+              [D\\\textit{el}]
+              [N\prima
+                [N\\\textit{presidente}]
+                [SP [\textit{de la república}, roof]]]]
+          \end{forest}
+    \end{xlist}
+\end{exe}
+
+La estructura propuesta no es plana, es decir, no todos los elementos están en
+el mismo nivel. Según se puede ver en \exref{ex:05-presidente-b}, la estructura
+del sintagma es jerárquica e implica niveles que describen la relación entre los
+constituyentes. En primer lugar, en el grado X se ubica el núcleo, que es el
+elemento que no puede faltar, define la categoría del sintagma y selecciona los
+complementos y modificadores. En el segundo nivel, X\prima, el núcleo se une a
+su complemento, que es el elemento con el que tiene una relación más estrecha y,
+por último, en el tercer nivel, el especificador es un constituyente que, según
+su clase, determina ---\forma{el / este / mi presidente}--- o cuantifica
+---\forma{algún / varios / todos los presidentes}--- conjuntamente al núcleo y a
+su complemento. El sintagma es, pues, la máxima proyección del núcleo y
+constituye el nivel X\prima\prima{} o SX (sintagma de X):
+
+\begin{exe}
+  \ex\label{ex:05-esquema}
+      \begin{forest} gramatica
+        [SX (X\prima\prima)
+          [Esp]
+          [X\prima
+            [X\\(núcleo)]
+            [Comp]]]
+      \end{forest}
+\end{exe}
+
+\subsubsection{Complementos, especificadores y adjuntos}\label{sec:05-comp-esp-adj}
+
+Dado que todas las categorías presentan la misma estructura, este esquema puede
+aplicarse a cualquiera de ellas, si se sustituye la variable X por una etiqueta
+categorial, como podrían ser N, V, A, P o Adv.\footnote{En este capítulo nos
+centramos en los núcleos formados por palabras léxicas ---N, A, Adv y P---,
+excepto el V, que se verá en el \capref{6}. A partir del \capref{7} nos iremos
+adentrando en los sintagmas proyectados por palabras y categorías
+funcionales.}
+
+Es necesario remarcar que hay categorías transitivas, como algunos verbos y como
+todas las preposiciones, que siempre exigen un complemento, y categorías
+intransitivas, como los adverbios y algunos verbos. En las categorías
+intransitivas, la posición de complemento queda vacía, como se muestra en
+\exref{ex:05-sonrio}, en el que aparece el verbo intransitivo
+\forma{sonreír}.\footnote{Las distintas clases de verbos se presentan en el
+\capref{7}.} Asimismo, la posición de especificador también puede quedar vacía,
+como se muestra en \exref{ex:05-irene}, donde el núcleo del SN sujeto es un
+nombre propio, que no requiere especificador.\footnote{V. más adelante
+§\ref{sec:05-sn}.}
+
+\begin{exe}
+  \ex\label{ex:05-sonrio} El muchacho [\etq{SV} sonrió\etq{V/n}].
+  \ex\label{ex:05-irene} {}[\etq{SN} Irene\etq{N/n}] vendrá a visitarnos.
+\end{exe}
+
+Dentro de la estructura sintagmática, los \termino{complementos} son
+constituyentes seleccionados o exigidos por el núcleo en función de sus
+requerimientos léxicos y sintácticos. Así, por ejemplo, un verbo transitivo,
+como \forma{comer}, \forma{escribir} o \forma{leer}, exige un SN vinculado con
+su significado que lo complemente: \forma{comió torta, escribió una carta, leyó
+un libro}. Desde el punto de vista estructural, también las preposiciones exigen
+un complemento, ya que no pueden funcionar solas: \forma{de madera, por tu
+culpa, sin aliento}.
+
+Aunque los complementos son exigidos por el núcleo, esto no quiere decir que
+siempre tengan que estar explicitados en la sintaxis, ya que pueden quedar
+implícitos; por ejemplo, en \forma{Hoy comimos temprano} se sobreentiende que se
+ingirió \sig{algo comestible}, que no se desea especificar.
+
+Los \termino{especificadores} modifican conjuntamente al núcleo junto con sus
+complementos y modificadores. La posición del especificador suele estar ocupada
+por palabras funcionales o gramaticales, como los determinantes [D] (\forma{el /
+este / su libro}) o los cuantificadores [Q] (\forma{varias / ambas / algunas
+revistas}, \forma{bastante / muy desgastado}).\footnote{Esta información se
+amplía más adelante, en §\ref{sec:05-sn}.}
+
+Además, los sintagmas admiten constituyentes más externos, no exigidos por el
+núcleo, aunque compatibles con él, como los \termino{adjuntos}, que pueden
+modificar a cualquier tipo de unidad \parencite[49]{rodriguezramalle2005}. Con
+la incorporación del adjunto, la estructura sintagmática queda como se muestra
+en \exref{ex:05-adjunto}:
+
+\begin{exe}
+  \ex\label{ex:05-adjunto}
+      \begin{forest} gramatica
+        [SX
+          [Esp]
+          [X\prima
+            [X\prima
+              [X]
+              [Comp]]
+            [Adjunto]]]
+      \end{forest}
+\end{exe}
+
+Los adjuntos son opcionales, es decir, su presencia no es obligatoria dentro del
+sintagma, como es el caso de los circunstanciales dentro del SV (\forma{conversaron
+en la oficina / llovió torrencialmente / se encendió con alcohol}) o de los
+modificadores dentro del SN (\forma{camisa roja / mantel redondo / aulas pequeñas
+/ luces de colores / fragancias de París}).
+
+En \exref{ex:05-dibujo} el verbo \forma{hacer} está acompañado de dos
+constituyentes, [\forma{un dibujo}] y [\forma{en su cuaderno}], pero solo
+\forma{un dibujo}, que explicita \sig{lo hecho en el cuaderno}, es exigido por el
+núcleo verbal, ya que su ausencia (\juicio{*}{\forma{Hizo en su cuaderno}}) torna
+la secuencia agramatical. En cambio, si se omite \forma{en su cuaderno}, la
+oración «pierde» información, pero se mantiene bien formada, lo que indica que
+ese constituyente es un adjunto.
+
+\begin{exe}
+  \ex\label{ex:05-dibujo}
+    \begin{xlist}
+      \ex Hizo [un dibujo] [en su cuaderno].
+      \ex Hizo [un dibujo].
+      \ex[*]{Hizo [en su cuaderno].}
+    \end{xlist}
+\end{exe}
+
+\begin{ejercicio}\label{ej:05-de}
+Realice la descripción estructural (DE) de los siguientes sintagmas mediante
+encorchetamiento, según se muestra en el ejemplo resuelto~1.
+
+\begin{exe}
+  \ex Muy afecto al baile.
+  \ex Varios colaboradores expertos.
+  \ex Arriba de la heladera.
+  \ex Sin comentarios.
+\end{exe}
+
+\begin{resuelto}
+1. [\etq{SA} muy\etq{Q/Esp} afecto\etq{A/n} [\etq{SP/Comp} a\etq{P/n}
+[\etq{SN/Comp} el\etq{D/Esp} baile\etq{N/n}]]]
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-comp-adj}
+Considere los siguientes sintagmas y luego, según se muestra en el ejemplo
+resuelto~1:
+
+\begin{consignas}
+  \item identifique el núcleo e indique el tipo de sintagma que proyecta;
+  \item distinga si los constituyentes que acompañan a los núcleos son
+        complementos o adjuntos. Justifique su respuesta de acuerdo con la clase
+        de palabra a la que pertenece cada núcleo y sus requerimientos para que
+        la secuencia quede bien formada.
+\end{consignas}
+
+\begin{exe}
+  \ex Orgullosa de sus logros.
+  \ex La feria del libro.
+  \ex Similar a los demás casos.
+  \ex Por la izquierda.
+  \ex Bajo la mesada.
+  \ex Antes de las diez.
+\end{exe}
+
+\begin{resuelto}
+1. a) El núcleo del sintagma es \forma{orgullosa} y proyecta un SA. b) \forma{De
+sus logros} es un SP exigido por \forma{orgullosa} y funciona como Comp.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-titulos}
+Considere los títulos de las obras que se presentan a continuación y resuelva
+las consignas siguientes, según se muestra en los ejemplos resueltos:
+
+\begin{consignas}
+  \item identifique el núcleo y clasifique cada sintagma;
+  \item determine la función que cumplen los constituyentes que acompañan al
+        núcleo (especificador, complemento o adjunto). Justifique su respuesta
+        considerando lo visto anteriormente.
+\end{consignas}
+
+\begin{exe}
+  \ex \textit{Caos} (Magalí Tajes)
+  \ex \textit{Un mundo feliz} (Aldous Huxley)
+  \ex \textit{El jardín de los cerezos} (Antón Chéjov)
+  \ex \textit{Cien años de soledad} (Gabriel García Márquez)
+  \ex \textit{Ágilmente} (Estanislao Bachrach)
+  \ex \textit{Ese verano a oscuras} (Mariana Enriquez)
+  \ex \textit{Terrenal} (Mauricio Kartun)
+  \ex \textit{Desde la ventana} (Carmen Martín Gaite)
+\end{exe}
+
+\begin{resuelto}[Ejemplos resueltos]
+1. a) Es un SN porque el núcleo es el sustantivo \forma{caos}. b) El núcleo no
+presenta complementos ni modificadores. 2. a) Es un SN porque el núcleo es el
+sustantivo \forma{mundo}. b) \forma{Feliz} es un modificador adjunto porque no
+está seleccionado por el núcleo.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-vf}
+Integre los conocimientos incorporados hasta ahora y decida si las siguientes
+afirmaciones son verdaderas o falsas, según se muestra en el ejemplo
+resuelto~1. Fundamente sus respuestas.
+
+\begin{exe}
+  \ex Las palabras léxicas ---N, A, Adv, V y P--- se expanden o proyectan en
+      SSXX.
+  \ex El núcleo de un sintagma es siempre una palabra gramatical.
+  \ex Todos los constituyentes de un sintagma se vinculan de la misma forma con
+      el núcleo.
+  \ex Los complementos son requeridos por el núcleo y se diferencian de los
+      adjuntos, que son opcionales.
+\end{exe}
+
+\begin{resuelto}
+1. V(erdadero). Las palabras léxicas son los núcleos de los sintagmas que
+proyectan.
+\end{resuelto}
+\end{ejercicio}
+
+\section{Las clases de sintagmas}\label{sec:05-clasesintagmas}
+
+En los apartados que siguen, analizamos con mayor detenimiento las
+características de los distintos tipos de sintagmas.
+
+\subsection{El sintagma nominal (SN) y su estructura interna}\label{sec:05-sn}
+
+Como ya hemos visto, el SN es aquel que tiene por núcleo a un sustantivo. En
+cuanto a su estructura interna, como sostiene \textcite[153]{ditullio2014},
+«resulta muy compleja debido a las múltiples posibilidades de realización que
+presentan sus dependencias y a la estrecha conexión entre estas y el tipo de
+sustantivo que funciona como núcleo».
+
+De acuerdo con la teoría X\prima, que presentamos en §\ref{sec:05-xbarra}, el SN
+posee la siguiente estructura:
+
+\begin{exe}
+  \ex\label{ex:05-esquema-sn}
+      \begin{forest} gramatica
+        [SN
+          [Esp\\D / Q]
+          [N\prima
+            [N\prima
+              [N]
+              [Comp\\SP]]
+            [Mod\\SA / SP / SN]]]
+      \end{forest}
+\end{exe}
+
+\paragraph{El núcleo.} Cualquier clase semántica de sustantivo puede ser núcleo
+de un SN, tanto común \exref{ex:05-armario} como propio \exref{ex:05-martin},
+colectivo \exref{ex:05-bandada}, individual concreto \exref{ex:05-armario} o
+abstracto \exref{ex:05-ilusion}.\pendiente{El original remite a (23) para los
+abstractos}
+
+\begin{exe}
+  \ex\label{ex:05-armario}
+    \begin{xlist}
+      \ex El \textit{armario} del fondo.
+      \ex Un \textit{edificio} muy alto del centro de la ciudad.
+    \end{xlist}
+  \ex\label{ex:05-martin}
+    \begin{xlist}
+      \ex \textit{Martín}, mi primo de Catamarca.
+      \ex \textit{Luisa}, la profesora de música.
+    \end{xlist}
+  \ex\label{ex:05-bandada}
+    \begin{xlist}
+      \ex Una \textit{bandada} de pájaros.
+      \ex\label{ex:05-arboleda} Esa lejana \textit{arboleda} de mi infancia.
+    \end{xlist}
+  \ex\label{ex:05-ilusion}
+    \begin{xlist}
+      \ex Una \textit{ilusión} pasajera como el verano.
+      \ex El \textit{consentimiento} mutuo de la pareja.
+    \end{xlist}
+\end{exe}
+
+En el SN, el núcleo determina los rasgos de género y número de los modificadores
+y especificadores. Así, en \exref{ex:05-arboleda}, tanto \forma{lejana} como
+\forma{esa} están en femenino singular para concordar con el núcleo
+\forma{arboleda}.
+
+\paragraph{Los complementos.} Si bien la mayor parte de los nombres, como
+\forma{mesa} o \forma{cuaderno}, no tienen como requisito semántico la exigencia
+de un complemento que complete su significación, hay algunos sustantivos
+específicos que requieren un SP como complemento, como los siguientes:
+
+\begin{itemize}
+  \item Los \termino{nombres eventivos}, que son aquellos que por su sentido
+        implican la ocurrencia de un suceso, que se desarrolla en un tiempo y
+        lugar. Muchos nombres eventivos son deverbales, es decir, provienen de
+        verbos (\forma{construcción, agasajo, reunión}), pero otros no
+        (\forma{fiesta, batalla, partido}). Se reconocen porque pueden ser
+        sujeto de \forma{tener lugar} \exref{ex:05-lugar} y complemento de la
+        preposición \forma{durante} \exref{ex:05-durante}:
+\end{itemize}
+
+\begin{exe}
+  \ex\label{ex:05-lugar} {}[La \textit{formulación} de una nueva teoría] tuvo
+      lugar en la Universidad de Buenos Aires.
+  \ex\label{ex:05-durante} El suceso ocurrió durante [la \textit{guerra} de los
+      seis días].
+\end{exe}
+
+\begin{itemize}
+  \item Los \termino{nombres relacionales}, que son los que establecen un vínculo
+        semántico con lo designado por el complemento, como ser \forma{padre de
+        alguien, alumno de algún profesor} o \forma{especialista en alguna
+        disciplina}. Son ejemplos de SSNN con nombres relacionales los
+        siguientes:
+\end{itemize}
+
+\begin{exe}
+  \ex {}[El \textit{hijo} de Susana] vino a visitarnos.
+  \ex {}[El \textit{autor} de esa novela] vive en Francia.
+\end{exe}
+
+\begin{itemize}
+  \item Los \termino{nombres de representación}, que son los que designan una
+        imagen o descripción de lo manifestado por el complemento. Son ejemplos
+        de SSNN de representación:
+\end{itemize}
+
+\begin{exe}
+  \ex Esa es [la \textit{foto} de la abuela] cuando era joven.
+  \ex {}[La \textit{imagen} de un héroe de Malvinas] me impactó.
+\end{exe}
+
+En todos los casos, los complementos seleccionados también pueden quedar
+implícitos:
+
+\begin{exe}
+  \ex Puse en un marco plateado [el \textit{retrato} (de la
+      abuela)\footnote{Convencionalmente, los elementos opcionales se colocan
+      entre paréntesis.}].
+\end{exe}
+
+\paragraph{Los modificadores adjuntos.} Son constituyentes opcionales que
+aportan características del nombre y permiten restringirlo a un subconjunto
+determinado de la clase general de entidades que abarca. Los modificadores
+típicos del nombre son los adjetivos, tanto los calificativos, que indican
+propiedades, \exref{ex:05-hojas} y \exref{ex:05-fornidos}, como los
+relacionales, que vinculan al nombre con un ámbito determinado. Dado que los
+relacionales son derivados de sustantivos, la relación también puede expresarse
+mediante un SP, \exref{ex:05-tambera} y \exref{ex:05-lunar}
+(v.~§\ref{sec:05-sa}):
+
+\begin{exe}
+  \ex\label{ex:05-hojas} Las hojas \textit{rayadas} de mi cuaderno \textit{azul}.
+  \ex\label{ex:05-fornidos} Los \textit{fornidos} trabajadores de las minas.
+  \ex\label{ex:05-tambera} Una rica zona \textit{tambera / de tambos}.
+  \ex\label{ex:05-lunar} El inmenso cráter de la superficie \textit{lunar / de la
+      luna}.
+\end{exe}
+
+Otro tipo de modificador del nombre es la \termino{aposición}, formada por un
+sustantivo que pertenece a la misma clase semántica del núcleo cuando está en
+relación de adyacencia directa con él, como vemos en \exref{ex:05-gregorio} y
+\exref{ex:05-gomez}.
+
+\begin{exe}
+  \ex\label{ex:05-gregorio} {}[Gregorio, \textit{mi gato},] está todo el día
+      tirado en la cocina.
+  \ex\label{ex:05-gomez} {}[El comisario \textit{Gómez}] ya está retirado del
+      servicio activo.
+\end{exe}
+
+\begin{recuadro}[Para ampliar: modificadores restrictivos y explicativos]
+Los modificadores adjetivos y las aposiciones pueden ser restrictivos o
+explicativos. Los restrictivos, también llamados especificativos, acotan la
+referencia del nombre \exref{ex:05-andino}; los explicativos, en cambio, agregan
+información complementaria, por lo que van marcados prosódicamente por una
+figura tonal propia, lo que se refleja en la escritura porque se colocan entre
+comas y se pueden suprimir \exref{ex:05-emilce}.
+
+\begin{exe}
+  \ex\label{ex:05-andino}
+    \begin{xlist}
+      \ex {}[El paisaje \textit{andino}] me pareció espectacular.
+      \ex {}[Los hermanos \textit{Grimm}] le agregaron un final \textit{feliz} a
+          la historia. (Adaptado de A.~Litvin, \textit{El libro de los
+          villanos}, V\&R, 2015)
+    \end{xlist}
+  \ex\label{ex:05-emilce}
+    \begin{xlist}
+      \ex {}[Emilce, \textit{agitada},] señaló con su dedito de tres años la
+          puerta abierta de su cuarto. (M.~Di Marco, \textit{El fantasma del
+          Reich}, Sudamericana, 1995)
+      \ex {}[Jacobo, \textit{el niño tonto},] solía subirse a la azotea y espiar
+          la vida de los vecinos. (E.~Anderson Imbert, \textit{El gato de
+          Cheshire}, Losada, 1965)
+    \end{xlist}
+\end{exe}
+
+También los SSPP pueden modificar al nombre y son, en general, modificadores
+restrictivos:
+
+\begin{exe}
+  \ex
+    \begin{xlist}
+      \ex Ahora trabaja en [una escuela \textit{con ruralidad}].
+      \ex {}[La entrevista \textit{de mañana}] va a ser fundamental para el
+          proyecto.
+    \end{xlist}
+\end{exe}
+\end{recuadro}
+
+\paragraph{Los especificadores.} Los sustantivos comunes suelen ir precedidos
+por un determinativo en la posición de especificador. Los determinativos son
+palabras funcionales que se definen por su relación con otra u otras palabras de
+las que delimitan su alcance o a las que cuantifican al indicar «cuáles o
+cuántos de los elementos incluidos en la clase denotada [\ldots] se deben
+considerar» \parencite[93]{rodriguezramalle2005}. La clase de los determinativos
+está formada por los determinantes [D] y los cuantificadores [Q], que son
+palabras que carecen de contenido descriptivo específico y no establecen una
+relación semántica con el sustantivo al que preceden, por lo que pueden
+anteponerse a cualquier tipo de sustantivo, del que anticipan el género y el
+número:
+
+\begin{exe}
+  \ex {}[\textit{El / nuestro / este / algún} pueblo] no debe estar lejos de
+      aquí.
+  \ex {}[\textit{Mis / estas / varias} amigas] vendrán a visitarme para mi
+      cumpleaños.
+\end{exe}
+
+La subclase de los determinantes está formada por los artículos (\forma{el, los,
+la, las, lo}), los demostrativos (\forma{este, esos, aquella}) y los posesivos
+(\forma{mi, nuestros, tus}). Los cuantificadores, por su parte, están conformados
+por los numerales cardinales (\forma{cinco, ocho, cien}), los numerales ordinales
+(\forma{primero, segundo, decimoquinto}) y los indefinidos (\forma{mucho/s,
+poco/s, varios/as, ambos/as, sendos/as, cualquiera, todo/s, bastante,
+demasiado}).
+
+A diferencia de los sustantivos comunes, que requieren un determinativo para
+funcionar oracionalmente, los propios, por lo general, se emplean solos como
+núcleo del SN. Los nombres propios no necesitan especificador porque ya están
+determinados; así, en español no es necesario especificar \forma{la Irene, el
+Pedro}. Sin embargo, en varios dialectos los hablantes colocan un especificador
+delante de los nombres propios para indicar familiaridad o que se trata de
+alguien conocido:
+
+\begin{exe}
+  \ex
+    \begin{xlist}
+      \ex La Frida\ldots{} Qué linda estás. (R.~Cossa, \textit{Gris de
+          ausencia}, 1981)
+      \ex ¿Y vos sabés cómo sufren los yanquis por eso? ¡Uf! Todos los días se
+          reúnen dos horas a llorar porque la Yoly de Lanús los tiene acá.
+          (N.~Fernández Tiscornia, \textit{Made in Lanús}, Cántaro, 1986)
+    \end{xlist}
+\end{exe}
+
+\begin{ejercicio}\label{ej:05-buenaformacion}
+Considere la buena o mala formación de los SSNN siguientes. Tenga en cuenta la
+clase semántica de los sustantivos que funcionan como núcleo y sus posibilidades
+y exigencias combinatorias, según se muestra en el ejemplo resuelto~1.
+
+\begin{exe}
+  \ex Trajo un regalo para novio.
+  \ex El Mario.
+  \ex Los ingredientes de la receta.
+  \ex Compraron arena.
+  \ex Vive con alegría.
+\end{exe}
+
+\begin{resuelto}
+1. Es agramatical porque \forma{novio} es un sustantivo común y, por lo tanto,
+debe ir precedido por un determinativo.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-ratones}
+Lea detenidamente el siguiente texto, considere los SSNN subrayados y señale sus
+constituyentes mediante corchetes, según se muestra en el ejemplo resuelto.
+
+% Texto de divulgación protegido: se incorpora a mano desde el original.
+\textoaincorporar{«A los ratones no les gusta el queso», de A.~Litvin
+(\textit{El libro de las mentiras}, V\&R, 2015), con los SSNN subrayados:
+\textit{los ratones; el queso; una compañía de control de plagas; los alimentos
+con alto contenido de azúcares}}
+
+\begin{resuelto}
+{}[\etq{SN} los\etq{D/Esp} ratones\etq{N/n}]
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-titulares}
+Lea con atención los siguientes titulares de diarios con sus respectivas
+volantas\footnote{La volanta o copete es el texto que se ubica sobre el título
+de un artículo o nota periodística.} y algunos fragmentos del cuerpo de la
+noticia. Luego analice los SSNN subrayados, según se muestra en el ejemplo
+resuelto.
+
+\begin{consignas}
+  \item Realice el encorchetamiento indicando el núcleo y las funciones de los
+        restantes constituyentes.
+  \item Indique si los modificadores son restrictivos o no.
+\end{consignas}
+
+\textbf{Noticia 1}
+
+\begin{quote}\small
+\textit{La diva vuelve a Sudamérica}\\
+\textbf{(1)~\subrayado{Madonna} ofrecerá un concierto gratuito en
+(2)~\subrayado{la playa de Copacabana}}\\
+La reina del pop se presentaría en el mes de mayo. Este lunes, los organizadores
+del evento anunciarán todos los detalles.
+
+(3)~\subrayado{El columnista Lauro Jardim del diario O Globo} dijo este mes que
+el concierto estaba previsto para el 4 de mayo, fecha aún no confirmada por las
+autoridades. (4)~\subrayado{Madonna, de 65 años}, inició su gira
+\textit{Celebration} el pasado mes de octubre.
+\end{quote}
+
+\textbf{Noticia 2}
+
+\begin{quote}\small
+\textit{Es (1)~\subrayado{la primera teatrista latinoamericana} y la segunda
+mujer en obtenerlo}\\
+\textbf{(2)~\subrayado{Lola Arias, ganadora del Premio Internacional Ibsen
+2024}}\\
+El jurado destacó la «dimensión ética» y (3)~\subrayado{el carácter
+«transnacional» de la obra de la artista multidisciplinaria}.
+(\url{www.pagina12.com.ar})
+\end{quote}
+
+\begin{resuelto}
+Noticia 1. (1) a) [\etq{SN} Madonna\etq{N/n}]. b) El núcleo no presenta
+modificadores ni complementos. (2) a) [\etq{SN} la\etq{D/Esp} playa\etq{N/n}
+[\etq{SP/M} de\etq{P/n} [\etq{SN/Comp} Copacabana]]]. b) \forma{De Copacabana}
+es un modificador restrictivo.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-lobos}
+Lea atentamente el siguiente texto y resuelva las consignas que se presentan a
+continuación, según se muestra en el ejemplo resuelto:
+
+\begin{consignas}
+  \item analice la estructura interna de los SSNN subrayados;
+  \item determine en qué casos sería posible o no, dentro de este texto,
+        alterar el orden de los constituyentes del sintagma;
+  \item fundamente su respuesta teniendo en cuenta los efectos de esos posibles
+        cambios (si se produce una modificación del significado o si el
+        resultado es agramatical).
+\end{consignas}
+
+% Texto de divulgación protegido: se incorpora a mano desde el original.
+\textoaincorporar{«Lobos. Dato real», adaptado de A.~Litvin (\textit{El libro de
+los villanos}, V\&R, 2015), con los SSNN subrayados: \textit{el lobo, un
+mamífero carnívoro; varias subespecies; el famoso aullido; los miembros de su
+grupo; muy raras ocasiones}}
+
+\begin{resuelto}
+a) [\etq{SN} el\etq{D/Esp} lobo\etq{N/n} [\etq{SN/ApE} un\etq{D/Esp}
+mamífero\etq{N/n} carnívoro\etq{SA/Mod}]]. b) Dado que el SN \forma{un mamífero
+carnívoro} es una aposición explicativa, puede permutarse por el núcleo al que
+modifica ---\forma{un mamífero carnívoro, el lobo}--- sin alterar ni la
+gramaticalidad ni el sentido de la estructura que integra.
+\end{resuelto}
+\end{ejercicio}
+
+\subsection{El sintagma adjetival (SA) y su estructura interna}\label{sec:05-sa}
+
+La estructura del SA puede representarse de la siguiente manera:
+
+\begin{exe}
+  \ex\label{ex:05-esquema-sa}
+      \begin{forest} gramatica
+        [SA
+          [Esp\\Q / SAdv]
+          [A\prima
+            [A\prima
+              [A]
+              [Comp\\SP]]
+            [Mod\\SP]]]
+      \end{forest}
+\end{exe}
+
+\paragraph{El núcleo.} El núcleo del SA es un adjetivo que puede ser de
+distintas subclases: calificativo \exref{ex:05-calif}, relacional
+\exref{ex:05-relac} o adverbial \exref{ex:05-adverb}:
+
+\begin{exe}
+  \ex\label{ex:05-calif}
+    \begin{xlist}
+      \ex Fue un accidente \textit{estremecedor}.
+      \ex Esta semana se estrenó una \textit{interesante} película de aventuras.
+    \end{xlist}
+  \ex\label{ex:05-relac}
+    \begin{xlist}
+      \ex\label{ex:05-relac-a} La reforma \textit{educativa} impulsa un cambio
+          de planes.
+      \ex\label{ex:05-relac-b} Un escritor \textit{italiano} ganó el premio de
+          novela este año.
+    \end{xlist}
+  \ex\label{ex:05-adverb}
+    \begin{xlist}
+      \ex Sus \textit{frecuentes} quejas me desesperan.
+      \ex El \textit{actual} rey de Inglaterra es Carlos III.
+    \end{xlist}
+\end{exe}
+
+Los adjetivos \termino{calificativos} conforman el grupo focal o central de la
+clase. Son los que expresan propiedades del nombre (\forma{alto, linda, rojo,
+amable}). Estos adjetivos admiten graduación (\forma{muy alto, bastante linda,
+poco amable}) y suelen tener valores opositivos (\forma{lindo/feo; alto/bajo}).
+En cuanto a su posición, pueden ubicarse antes del nombre o después de él
+(\forma{un lindo recuerdo / un recuerdo lindo; esa amable mujer / esa mujer
+amable}). A diferencia de los calificativos, los adjetivos \termino{relacionales}
+no expresan propiedades, sino que restringen el alcance del sustantivo a un
+ámbito determinado (\forma{consejo académico, reforma constitucional, educación
+cívica}). Como no denotan propiedades, no admiten graduación
+(\juicio{*}{\forma{reforma muy constitucional}}), ni manifiestan valores polares,
+por lo que no suelen poseer un opuesto. Los relacionales solo pueden aparecer
+pospuestos al sustantivo al que modifican (\juicio{*}{\forma{constitucional
+reforma}}, \juicio{*}{\forma{cívica educación}}). Como se vio en
+\exref{ex:05-relac}, algunos relacionales designan pertenencia a un ámbito
+(\forma{político, económico, educativo, sexual}, etc.; v.~\exref{ex:05-relac-a})
+o a un lugar determinado (\forma{francés, argentino, bonaerense};
+v.~\exref{ex:05-relac-b}); estos últimos son los que se conocen como
+\termino{gentilicios}.\pendiente{El original remite a (47) para los
+relacionales} Por su parte, los adjetivos \termino{adverbiales} se vinculan con
+determinados adverbios referidos a la localización o a la cuantificación
+(\forma{antiguo, próximo, habitual, propio, único, simple, último}) y suelen
+anteponerse al nombre (\forma{sus frecuentes reclamos / reclama
+frecuentemente}). Al igual que los relacionales, no admiten graduación
+(\juicio{*}{\forma{su muy / bastante último libro}}).
+
+Los SSAA pueden estar formados por el núcleo solamente (\forma{estaba
+\textbf{feliz}, seguía \textbf{triste}}), o bien combinarse con modificadores
+(\forma{\textbf{triste} por la noticia}) o complementos (\forma{\textbf{carente}
+de recursos, \textbf{apto} para el servicio}) y también pueden recibir
+especificadores (\forma{plenamente \textbf{feliz} / muy \textbf{triste}}).
+
+\paragraph{Los complementos.} Como vimos que sucede con los sustantivos, la
+mayoría de los adjetivos (\forma{alto, grande, fugaz}, etc.) no necesita
+complemento. No obstante, algunos, en función de su significado, exigen un
+complemento que se manifiesta mediante un SP encabezado por una preposición
+determinada, que puede ser:
+
+\begin{itemize}
+  \item \forma{a} (\forma{aficionado, equivalente, propicio, relativo});
+  \item \forma{de} (\forma{deseoso, digno, orgulloso, cansado});
+  \item \forma{con} (\forma{conforme, contradictorio, satisfecho});
+  \item \forma{en} (\forma{experto, abundante, rico});
+  \item \forma{para} (\forma{necesario, adecuado, disponible}).
+\end{itemize}
+
+Veamos algunos ejemplos:
+
+\begin{exe}
+  \ex Mi tío Juan es [muy \textit{aficionado a} la pesca deportiva].
+  \ex Todos estaban [\textit{deseosos de} recibir al nuevo integrante de la
+      familia].
+  \ex El cliente quedó [sumamente \textit{conforme con} la atención].
+  \ex Un profesional [\textit{experto en} informática] preparó la encuesta.
+  \ex Lea detenidamente el instructivo con los requisitos [\textit{necesarios
+      para} el proceso].
+\end{exe}
+
+\paragraph{Los modificadores.} Dado que, salvo en los casos que vimos más arriba,
+la mayoría de los adjetivos no exige complemento, los SSPP que los acompañan se
+consideran modificadores:
+
+\begin{exe}
+  \ex Lo vi [feliz \textit{por el encuentro}].
+  \ex El vaso está [lleno \textit{hasta la mitad}].
+  \ex Estaba [loco \textit{de amor}] por esa mujer.
+  \ex Pedrito está [inmenso \textit{de alto}].
+\end{exe}
+
+Aunque no es exigido, el SP cuyo complemento es otro adjetivo o un sustantivo
+usualmente restringe el alcance del núcleo del SA \parencite{ditullio2014}.
+
+\paragraph{Los especificadores.} Los especificadores del núcleo del SA están
+realizados por distintos tipos de cuantificadores, que pueden ser de grado,
+\exref{ex:05-muy} y \exref{ex:05-bastante}, o algunos de los terminados en
+\forma{-mente} con valor cuantificacional, \exref{ex:05-excesivamente} y
+\exref{ex:05-sumamente}.
+
+\begin{exe}
+  \ex\label{ex:05-muy} Quedó [\textit{muy} herido por el accidente].
+  \ex\label{ex:05-bastante} Es [\textit{bastante} inmaduro para resolver sus
+      problemas].
+  \ex\label{ex:05-excesivamente} Milena es [\textit{excesivamente} prolija para
+      todo], pero su hermano es [\textit{terriblemente} desprolijo].
+  \ex\label{ex:05-sumamente} Los inversores estaban [\textit{sumamente}
+      interesados en el proyecto].
+\end{exe}
+
+También modifican al adjetivo otros adverbios en \forma{-mente}, que pueden
+indicar punto de vista \exref{ex:05-pv}, modalidad \exref{ex:05-modalidad} o foco
+\exref{ex:05-foco}:
+
+\begin{exe}
+  \ex\label{ex:05-pv} Algunos países son [\textit{lingüísticamente /
+      étnicamente} heterogéneos].
+  \ex\label{ex:05-modalidad} Muchos barrios periféricos son
+      [\textit{lamentablemente / indudablemente} peligrosos].
+  \ex\label{ex:05-foco} Ese es un riesgo [\textit{específicamente /
+      principalmente} económico].
+\end{exe}
+
+\begin{ejercicio}\label{ej:05-slogans}
+Analice la estructura interna del sintagma de estos viejos eslóganes
+publicitarios, según se muestra en el ejemplo resuelto~1.
+
+\begin{exe}
+  \ex Demasiado rico para tomarlo despacito. (Nesquik)
+  \ex Único en el mundo. / Único. (Fernet Branca)
+  \ex Buenos de punta a punta. (Cigarrillos Imparciales)
+  \ex Juntos. (Telefé)
+\end{exe}
+
+\begin{resuelto}
+1. [\etq{SA} demasiado\etq{Q/Esp} [\etq{A\prima} rico\etq{A/n} [\etq{SP/M}
+para\etq{P/n} [tomarlo despacito]]]]
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-posicion}
+Según se muestra en los ejemplos resueltos, en las siguientes series de SSNN
+cuyos núcleos son modificados por SSAA:
+
+\begin{consignas}
+  \item cambie la posición del modificador;
+  \item explique si el cambio produce agramaticalidad, altera el significado o
+        si solo produce un efecto estilístico;
+  \item en los casos en que cambia el significado, especifique en qué consiste
+        la modificación.
+\end{consignas}
+
+\begin{exe}
+  \ex el funcionario alto
+  \ex la crisis económica
+  \ex una tarde estupenda
+  \ex el discurso político
+  \ex ese pobre hombre
+  \ex un rico chico
+  \ex una enfermedad terrible
+  \ex la educación sexual
+\end{exe}
+
+\begin{consignas}[resume]
+  \item Teniendo en cuenta la resolución de los puntos anteriores, ¿puede
+        establecer alguna relación entre lo observado y las subclases del
+        adjetivo?
+\end{consignas}
+
+\begin{resuelto}[Ejemplos resueltos]
+1. a) i) \forma{el funcionario alto} / ii) \forma{el alto funcionario}. b) El
+cambio de posición no produce agramaticalidad, pero cambia el significado del A.
+c) i) \sig{de elevada estatura} / ii) \sig{importante}. 2. a) i) \forma{la crisis
+económica} / ii) \juicio{*}{\forma{la económica crisis}}. b) Si se cambia de
+posición, la construcción se vuelve agramatical.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-expansionA}
+\begin{consignas}
+  \item Realice las expansiones de los siguientes núcleos adjetivos para formar
+        sintagmas (considere las respuestas posibles que se muestran abajo para
+        el ejemplo~1).
+\end{consignas}
+
+\begin{exe}
+  \ex \textit{inteligente}
+  \ex \textit{propenso}
+  \ex \textit{habitual}
+  \ex \textit{conforme}
+  \ex \textit{deseoso}
+\end{exe}
+
+\begin{resuelto}[Respuestas posibles]
+1. \forma{sumamente inteligente / muy inteligente para su edad}.
+\end{resuelto}
+
+\begin{consignas}[resume]
+  \item Teniendo en cuenta la resolución del punto anterior, ¿qué particularidad
+        presenta la expansión sintagmática de los adjetivos \forma{propenso,
+        conforme} y \forma{deseoso}?
+\end{consignas}
+\end{ejercicio}
+
+\subsection{El sintagma preposicional (SP) y su estructura interna}\label{sec:05-sp}
+
+La estructura sintagmática del SP puede esquematizarse como sigue:
+
+\begin{exe}
+  \ex\label{ex:05-esquema-sp}
+      \begin{forest} gramatica
+        [SP
+          [Esp\\Q]
+          [P\prima
+            [P]
+            [Comp\\SN / SAdv / SP / O]]]
+      \end{forest}
+\end{exe}
+
+\paragraph{El núcleo.} De todas las clases de palabras que hemos visto, sin duda
+la preposición resulta «la clase más conflictiva, en el sentido de que se ha
+discutido y se sigue discutiendo su carácter de palabra léxica»
+\parencite[56]{giammatteo2009}. Aunque aquí adherimos a este último criterio, no
+dejamos de reconocer, como señalan las mencionadas autoras, el carácter atípico
+de esta clase de palabras. Para la gramática tradicional, que la preposición no
+funcione en forma independiente, es decir, que siempre requiera un complemento,
+fue una pauta determinante para considerar que no podía funcionar como núcleo de
+un sintagma. Sin embargo, también algunos verbos transitivos y otras palabras,
+como los sustantivos eventivos o relacionales, que ya hemos visto en
+§\ref{sec:05-sn}, exigen un complemento. Así, por ejemplo, verbos como
+\forma{tener} o \forma{regalar}, entre muchos otros, no admiten ir solos:
+\juicio{*}{\forma{Yo tengo}}, \juicio{*}{\forma{Juan regaló}}.\footnote{La
+omisión del complemento es posible como respuesta a una pregunta, que supone un
+contexto previo en el que el complemento ya ha sido mencionado: \forma{¿Quién
+trajo bebidas para la reunión? Luis trajo}. Igualmente, algunas preposiciones
+permiten la omisión cuando el complemento ya ha sido nombrado: \forma{¿Compraste
+té con hierbas? No, sin}.} Por tanto, el hecho de que la preposición siempre
+deba ir acompañada por un complemento no impide que sea el núcleo del sintagma
+que encabeza. Y esto es así porque, al menos en la mayoría de los casos, las
+preposiciones tienen contenido léxico inherente ---\forma{por} (causa),
+\forma{para} (fin), \forma{hacia} (dirección), etc.---, por lo que se ubican
+dentro de las clases léxicas y funcionan como núcleos de SSPP. No obstante,
+también debemos señalar que, en algunos usos que veremos más
+adelante,\footnote{El funcionamiento gramatical de la preposición como marca de
+función se trata en el \capref{7}.} las preposiciones tienen un funcionamiento
+solamente gramatical y poseen escaso significado. En estos casos se considera
+que son meras marcas de función que no actúan como núcleos ni determinan la
+categoría del sintagma que introducen.
+
+Por último, otra característica que destaca el carácter nuclear de la
+preposición es que, al igual que los verbos, restringe semánticamente a su
+complemento. Así, por ejemplo, como el complemento de un verbo como
+\forma{comer} debe referir a \sig{algo comestible} (\forma{comí pan / postre /
+verduras}), una preposición como \forma{hacia} exige que su complemento refiera
+a lugar o tiempo ---\forma{hacia el río / el oeste / la noche}---.
+
+Establecido el carácter léxico de la preposición, al menos para la mayoría de
+ellas, podemos añadir que son palabras invariables y que, por otra parte, la
+característica que las acerca a las palabras funcionales es su carácter
+eminentemente relacional. Los SSPP sirven para establecer vínculos de
+dependencia con distintas clases de palabras a las que modifican:
+
+\begin{itemize}
+  \item sustantivos: \forma{mesa de madera / planta sin flores / estante con
+        libros};
+  \item adjetivos: \forma{capaz de todo / bueno para nada / sobresaliente en
+        matemáticas};
+  \item adverbios: \forma{lejos de casa / antes de la madrugada / siempre en
+        invierno};
+  \item verbos: \forma{estudia en Madrid / piensa en su familia / depende de tu
+        decisión / llegó con amigos};\footnote{En el \capref{7} se plantea que
+        algunos verbos, como \forma{pensar} y \forma{depender}, exigen
+        complementos encabezados por determinadas preposiciones, que se conocen
+        como complementos de régimen (CR).}
+  \item preposiciones: \forma{por sobre el mar / desde entre los matorrales}.
+\end{itemize}
+
+\paragraph{El complemento.} Según ya hemos dicho, dado que las preposiciones
+poseen contenido léxico propio, el complemento que seleccionan debe estar acorde
+con su significado. Además, la preposición también impone restricciones
+formales a su complemento: este no solo es obligatorio, sino que ocupa una
+posición fija dentro del sintagma, siempre inmediatamente después del núcleo:
+\forma{de colores} / \juicio{*}{\forma{colores de}}.\footnote{Para las
+particularidades de la acentuación de la mayor parte de las preposiciones puede
+consultarse el \capref{3}, §\ref{sec:03-suprasegmentales}.} Asimismo, al igual
+que el verbo exige caso\footnote{La categoría de caso se presentó en el
+\capref{4}, §\ref{sec:04-categorias}.} acusativo a su COD, la preposición impone
+caso oblicuo o terminal a su complemento cuando este está representado por un
+pronombre (\forma{de mí} / \juicio{*}{\forma{de yo}}).
+
+\paragraph{Los especificadores.} Además del complemento, opcionalmente los SSPP
+admiten cuantificadores en la posición de especificador:
+
+\begin{exe}
+  \ex
+    \begin{xlist}
+      \ex Poné el cuadro [\textit{más} hacia la derecha].
+      \ex {}[\textit{Muy} desde el fondo de mi corazón] debo decir gracias.
+    \end{xlist}
+\end{exe}
+
+\begin{ejercicio}\label{ej:05-sp-modifica}
+Identifique el núcleo al que modifica cada SP y señale a qué clase de palabra
+pertenece, según se muestra en el ejemplo resuelto~1.
+
+\begin{exe}
+  \ex Plantas sin flores.
+  \ex Lo eligieron por sobre los demás.
+  \ex Cerca de la oficina.
+  \ex Salir con viejos amigos.
+  \ex Feliz por sus logros académicos.
+\end{exe}
+
+\begin{resuelto}
+1. El SP encabezado por \forma{sin} modifica a \forma{plantas}, que es un N.
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-de-sp}
+Observe los SSPP subrayados de las siguientes oraciones y resuelva las consignas
+de abajo, según se muestra en el ejemplo resuelto~1.
+
+\begin{consignas}
+  \item Haga la descripción estructural mediante encorchetamiento.
+  \item Determine, en función de la palabra a la que modifica el SP, el
+        funcionamiento y significado que adopta en cada caso la preposición
+        \forma{de}.
+\end{consignas}
+
+\begin{exe}
+  \ex La casa \subrayado{de mi abuela} es antigua.
+  \ex El libro \subrayado{de gramática} resultó útil.
+  \ex Me encantan los caramelos \subrayado{de menta}.
+  \ex No supieron \subrayado{de aquella mujer} por varios días.
+  \ex Los niños, ávidos \subrayado{de conocimiento}, concurrieron al instituto.
+\end{exe}
+
+\begin{resuelto}
+1. a) [\etq{SP} de\etq{P/n} [\etq{SN/Comp} mi\etq{D/Esp} abuela\etq{N/n}]]. b)
+\forma{De} modifica al N \forma{casa} e indica \sig{posesión}.\pendiente{El
+original dice «cartera»}
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-preposiciones}
+Determine los significados de las preposiciones de los SSPP de la lista de
+abajo. Use paráfrasis para completar la columna de la derecha, según se muestra
+en el ejemplo resuelto.
+
+\begin{center}
+\begin{tabular}{@{}r l p{45mm}@{}}
+  \toprule
+  & SSPP & Significado de la preposición \\
+  \midrule
+  1.  & asombrados por la noticia & \respuesta{\sig{a causa de}} \\
+  2.  & cien metros sobre el nivel del mar & \\
+  3.  & el sapo entre los matorrales & \\
+  4.  & los problemas sin solución & \\
+  5.  & remedios caseros para el empacho & \\
+  6.  & el camino hasta su casa & \\
+  7.  & tu opinión sobre las instituciones & \\
+  8.  & el edicto contra la guerra & \\
+  9.  & un viaje hacia bellos lugares & \\
+  10. & un pago mediante transferencia bancaria & \\
+  11. & la verdad tras su reacción & \\
+  \bottomrule
+\end{tabular}
+\end{center}
+\end{ejercicio}
+
+\subsection{El sintagma adverbial (SAdv) y su estructura interna}\label{sec:05-sadv}
+
+De acuerdo con la teoría X\prima, podemos representar la estructura del SAdv
+mediante un esquema arbóreo como el siguiente:
+
+\begin{exe}
+  \ex\label{ex:05-esquema-sadv}
+      \begin{forest} gramatica
+        [SAdv
+          [Esp\\Q / SN]
+          [Adv\prima
+            [Adv\prima
+              [Adv]
+              [Comp\\SP]]
+            [Mod\\SN / SP / O]]]
+      \end{forest}
+\end{exe}
+
+\paragraph{El núcleo.} A diferencia de otras clases léxicas, como el
+sustantivo, el adjetivo o el verbo, que manifiestan categorías morfológicas, los
+adverbios, al igual que las preposiciones, son palabras invariables. Esto
+implica que, cuando se proyectan en estructuras más complejas y funcionan como
+núcleo del SAdv, no manifiestan concordancias. Por otra parte, mientras la
+preposición, según hemos visto en §\ref{sec:05-sp}, siempre exige complemento
+(\forma{por la ruta, sobre el tejado}), el adverbio, por lo general, no lleva
+modificadores obligatorios, aunque, opcionalmente, algunos adverbios pueden
+admitirlos (\forma{antes de la época actual, ayer por la tarde}).
+
+Desde el punto de vista sintáctico y semántico, los adverbios se presentan como
+una extensa y sumamente heterogénea clase, difícil de sistematizar por la
+imposibilidad de determinar características comunes a todos sus miembros. Por
+eso aquí presentamos clasificaciones que tienen en cuenta distintos criterios,
+ya sean semánticos, categoriales o sintácticos.
+
+Semánticamente se distinguen adverbios de:
+
+\begin{itemize}
+  \item lugar: \forma{alrededor, cerca, debajo};
+  \item tiempo: \forma{siempre, ya, enseguida};
+  \item modo: \forma{bien, peor, lentamente};
+  \item afirmación: \forma{sí, cierto, obvio};
+  \item negación: \forma{no, jamás, tampoco};
+  \item duda:\footnote{\label{fn:05-cuantificadores}No incluimos en esta lista a
+        los adverbios de cantidad porque hoy día se considera que palabras como
+        \forma{muy, poco, bastante} o \forma{demasiado} integran la clase de los
+        cuantificadores \parencite{leonetti2007,bosque2009}.}
+        \forma{acaso, quizás, posiblemente}.
+\end{itemize}
+
+Desde el punto de vista de su naturaleza categorial, la \textit{NGLE}
+\parencite[§\,30.2j]{rae2025} distingue dos subclases: adverbios de base léxica
+y adverbios gramaticales.
+
+\begin{itemize}
+  \item Los \termino{adverbios de base léxica} incluyen la mayoría de los
+        terminados en \forma{-mente} (\forma{rápidamente, estrepitosamente}) y
+        otros no derivados, como \forma{bien} o \forma{temprano}. Los adverbios
+        en \forma{-mente} provienen de adjetivos calificativos y admiten la
+        paráfrasis mediante el SP \forma{de modo / de manera} + el A base:
+        \forma{astuto > astutamente / de manera astuta}. Algunos adverbios en
+        \forma{-mente} tienen una forma corta, sin el sufijo \forma{-mente}:
+        \forma{trabajaron duramente / trabajaron duro; habló claramente / habló
+        claro; aprendió rápidamente / aprendió rápido}. Estas variantes cortas
+        se conocen también como \termino{adverbios adjetivales}, porque tienen la
+        forma del adjetivo del que provienen, aunque se diferencian de ellos por
+        la ausencia de flexión en género (\forma{Pedro habló claro / Julia habló
+        claro}) (v. \capref{4}, §\ref{sec:04-conversion}). El empleo de estos
+        adverbios cortos tiene algunas restricciones, ya que no aparecen con
+        cualquier tipo de verbo, sino con algunos (\forma{Se portó genial,
+        apuntó alto, jugaron sucio, hiló fino}). Varios de estos adverbios son
+        propios del español de América: \forma{breve} (= \sig{pronto}),
+        \forma{sabroso}, (\forma{oler}) \forma{lindo / rico},
+        (\forma{equivocarse}) \forma{feo / fiero}; mientras que otros pertenecen
+        al registro peninsular: (\forma{sentar algo}) \forma{fatal},
+        (\forma{saberse algo}) \forma{fenomenal} (Bosque,
+        1990).\pendiente{En la bibliografía figura Bosque (1989)}
+  \item Los \termino{adverbios gramaticales} forman grupos cerrados. Se
+        reconocen distintas subclases: \termino{demostrativos} (\forma{aquí,
+        hoy, así}); \termino{identificativos} o \termino{referenciales}
+        (\forma{antes / después, encima / debajo}); \termino{relativos}
+        (\forma{cuando, como, donde}); \termino{enfáticos}\footnote{La subclase
+        de adverbios enfáticos incluye los que la \textit{NGLE}
+        \parencite[§\,30.2j]{rae2025} distribuye en dos subclases:
+        interrogativos y exclamativos.} (\forma{cuándo, cómo, adónde}) y
+        \termino{focales} (\forma{precisamente, también, solo, concretamente,
+        incluso}).\footnote{Según lo explicado en la
+        nota~\ref{fn:05-cuantificadores}, tampoco incluimos entre los adverbios
+        gramaticales a los cuantificacionales.}\pendiente{El original da
+        \textit{quien} entre los relativos}
+\end{itemize}
+
+Según su funcionamiento sintáctico, \textcite[724]{kovacci1999} distinguió dos
+grupos de adverbios:
+
+\begin{itemize}
+  \item los \termino{adverbios nucleares}, que son los que modifican a un
+        adjetivo \exref{ex:05-nucleares-a}, a otro adverbio
+        \exref{ex:05-nucleares-b} o tienen funciones circunstanciales dentro del
+        SV\footnote{Las funciones sintácticas dentro del SV se estudian en el
+        \capref{7}.} \exref{ex:05-nucleares-c}:
+\end{itemize}
+
+\begin{exe}
+  \ex\label{ex:05-nucleares}
+    \begin{xlist}
+      \ex\label{ex:05-nucleares-a} Es \textit{relativamente} alto.
+      \ex\label{ex:05-nucleares-b} Vive \textit{extremadamente} lejos.
+      \ex\label{ex:05-nucleares-c} Llegaron muy \textit{rápidamente}.
+    \end{xlist}
+\end{exe}
+
+\begin{itemize}
+  \item los \termino{adverbios periféricos}, que modifican a toda la oración o a
+        la modalidad\footnote{La modalidad y el funcionamiento de los adverbios
+        periféricos se tratan en el \capref{14}.} \exref{ex:05-perifericos}:
+\end{itemize}
+
+\begin{exe}
+  \ex\label{ex:05-perifericos} \textit{Probablemente / Lamentablemente}, no
+      esperaba esa noticia.
+\end{exe}
+
+\paragraph{Los complementos.} Pocos adverbios reciben complementos. Los que
+derivan de adjetivos que exigen un complemento, por lo general, no lo heredan
+(\forma{propenso a enfermarse} / \juicio{*}{\forma{propensamente a enfermarse}},
+\forma{digno de admiración} / \juicio{*}{\forma{dignamente de admiración}})
+\parencite{giammatteo2023a}. En cambio, los locativos que provienen de la unión
+de un nombre y una preposición (\forma{de-bajo / a-bajo, de-lante / a-delante,
+a-dentro, a-fuera, en-cima, a-rriba, al-rededor, en-frente, de-trás}) y algunos
+temporales (\forma{antes, después}), que por su naturaleza categorial se ubican
+entre los adverbios identificativos o referenciales que vimos más arriba, pueden
+recibir complementos. La particularidad de estos adverbios, que son también
+conocidos como \termino{adverbios preposicionales}, es que, al igual que las
+preposiciones y a diferencia de otros adverbios, son transitivos
+\parencite{giammatteo2013}:
+
+\begin{exe}
+  \ex
+    \begin{xlist}
+      \ex Unos amigos de mi hermana se mudaron [\textit{enfrente} de nuestra
+          casa].
+      \ex Llegaron muy puntuales, [\textit{antes} de la cena].
+    \end{xlist}
+\end{exe}
+
+No obstante, la relación del adverbio con su complemento es más laxa que la que
+mantiene una preposición, con la que el complemento no es omisible; con el
+adverbio, en cambio, el complemento puede quedar implícito:
+
+\begin{exe}
+  \ex
+    \begin{xlist}
+      \ex El equipo quedó [afuera (del torneo)].
+      \ex No sé lo que pasó porque yo llegué [después (del suceso)].
+    \end{xlist}
+\end{exe}
+
+\paragraph{Los modificadores.} Un subgrupo de adverbios temporales, locativos y
+algunos modales aceptan ser modificados por aposiciones nominales y
+preposicionales (\forma{hoy, lunes; allá, en la esquina}), así como también por
+oraciones subordinadas introducidas por un pronombre relativo\footnote{Las
+subordinadas relativas, que son las introducidas por pronombres relativos como
+\forma{que, cuando, donde}, etc., se introducen en el \capref{13}.}
+(\forma{ayer, cuando nos vimos; allí, donde nos encontramos}).
+
+\paragraph{Los especificadores.} Operan como especificadores de los adverbios
+los cuantificadores de grado (\forma{muy lentamente, sumamente mal}), SSNN con
+valor de grado o medida, que van siempre antepuestos (\forma{dos horas más tarde
+de la reunión, tres metros delante de la marca}), y los focalizadores
+(\forma{solo hoy, recién ahora}). Sin embargo, no todas las subclases de
+adverbios admiten especificadores; así, por ejemplo, solo los graduables
+aceptan cuantificadores de grado, de modo que podemos decir \forma{muy
+lentamente}, pero no \juicio{*}{\forma{muy históricamente}}; \forma{bastante
+lejos}, pero no \juicio{*}{\forma{bastante siempre}}.
+
+\begin{ejercicio}\label{ej:05-adverbios}
+Lea atentamente los siguientes fragmentos y resuelva las consignas a
+continuación, según se muestra en el ejemplo resuelto:
+
+\begin{consignas}
+  \item identifique los adverbios, indique su estatus categorial y
+        clasifíquelos semánticamente;
+  \item indique si son núcleos o modificadores dentro de los sintagmas en los
+        que aparecen.
+\end{consignas}
+
+% Fragmentos literarios protegidos: se incorporan a mano desde el original.
+\textoaincorporar{1. fragmento de Saki, adaptado de \textit{Cuentos escogidos}
+(Claridad, 2007), con los adverbios \textit{débilmente, definidamente, más bien,
+elaboradamente}; 2. fragmento sobre el percebe de \textit{La naturaleza}
+(Sopena, 1981), con \textit{sumamente, dentro}; 3. fragmento de
+«Instrucciones para subir una escalera», de J.~Cortázar (\textit{Historias de
+cronopios y de famas}, 1962), con \textit{de frente, atrás,
+particularmente}}
+
+\begin{resuelto}
+a) \forma{débilmente}: adverbio de base léxica de modo. b) Modifica al adjetivo
+\forma{iluminado} dentro del SA [\forma{débilmente iluminado}].
+\end{resuelto}
+\end{ejercicio}
+
+\begin{ejercicio}\label{ej:05-p12}
+Analice en forma completa mediante encorchetamiento los siguientes SSNN
+extraídos de distintas noticias del diario \textit{Página/12} de Buenos Aires,
+según se muestra en el ejemplo resuelto~1. Tenga en cuenta que los nombres
+eventivos, relacionales y de representación llevan complemento.
+
+\begin{exe}
+  \ex El desecho de otros minerales potencialmente comercializables.
+  \ex Una constante dolarización de excedentes económicos.
+  \ex Una corriente de presión sobre este segmento del mercado de cambio.
+  \ex El ministro de Turismo, un destacado empresario.
+  \ex Un dólar financiero para el turista extranjero.
+  \ex Un punto de inflexión en ese estilo de funcionamiento político de la
+      coalición de gobierno.
+\end{exe}
+
+\begin{resuelto}
+1. [\etq{SN} el\etq{D/Esp} desecho\etq{N/n} [\etq{SP/M} de\etq{P/n}
+[\etq{SN/Comp} otros\etq{D/Esp} minerales\etq{N/n} [\etq{SA/M}
+potencialmente\etq{Adv/M} comercializables\etq{A/n}]]]]
+\end{resuelto}
+\end{ejercicio}
+
+\begin{recuadro}[Reflexión final]
+En este capítulo vimos que las palabras, al igual que otras unidades de la
+lengua, no solo se disponen de manera lineal, sino que se organizan en
+estructuras jerárquicas que reflejan dependencias y relaciones internas. La
+identificación de constituyentes sintácticos y la distinción entre palabras
+léxicas y funcionales y sus posibilidades de proyección nos permitió
+caracterizar a los sintagmas como unidades intermedias, así como también
+describir y explicar su conformación estructural. Para ello, nos basamos en la
+teoría X\prima, que sostiene que todos los sintagmas comparten una
+configuración estructural endocéntrica, en la que el núcleo selecciona
+complementos y admite adjuntos y especificadores, en función de factores tanto
+léxicos como sintácticos. Nos detuvimos particularmente en la caracterización de
+los SSNN, SSAA, SSPP y SSADV, lo cual se ampliará en los próximos capítulos con
+la presentación del SV. El ámbito de la sintaxis, en conclusión, no solo aporta
+criterios para definir, describir, analizar y fundamentar el funcionamiento y
+la organización interna de sus unidades, sino que también ofrece un marco
+teórico que permite establecer una conexión entre forma y significado, lo cual,
+sin duda, enriquece nuestra comprensión del funcionamiento del sistema de la
+lengua.
+\end{recuadro}
+
+% --- Secciones finales -------------------------------------------------
+\lecturasrecomendadas
+
+\solucionario
+
+\begin{solucion}{\ref{ej:05-segmentar}}
+2. [[Nuestra tía] [traía regalos constantemente]]. 3. [[Muchos estudiantes]
+[prefieren [la virtualidad]]]. 4. [[Las medidas] [preocupan [a [la
+población]]]]. 5. [[Los jugadores] [ganaron [la copa] [en 2022]]]. 6. [[Aquellas
+profesoras] [incorporaron [en [sus clases]] [herramientas tecnológicas]]].
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-homonimia}}
+En este ejercicio los constituyentes se identifican, pero no se analizan
+exhaustivamente. a) 2. i) [Llenó [la bolsa] [de papel]]; ii) [Llenó [la bolsa
+de papel]]. 3. i) [Encontraron [el juguete] [roto]]; ii) [Encontraron [el
+juguete roto]]. b) 2. En i) se puede considerar que [la bolsa] y [de papel] son
+dos constituyentes independientes. Se interpreta que \sig{la bolsa se llenó con
+papel}. En ii), [de papel] modifica a [la bolsa], por lo que conforman un solo
+constituyente. Se interpreta que \sig{la bolsa está hecha de papel}. 3. En i) se
+puede considerar que [el juguete] y [roto] son dos constituyentes
+independientes. Se interpreta que \sig{el juguete fue encontrado roto, pero
+antes no lo estaba}. En ii), [roto] modifica a [el juguete], por lo que
+conforman un solo constituyente. Se interpreta que \sig{se encontró el juguete
+que ya estaba roto}. c) El efecto que produce la homonimia estructural es el de
+ambigüedad, en este caso, de tipo sintáctico.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-expansion}}
+Respuestas posibles. 2. El renombrado museo de Ciencias Naturales de la ciudad
+de La Plata recibió los nuevos ejemplares de restos fósiles encontrados por los
+paleontólogos. / El museo de Arte Moderno de Buenos Aires, una institución
+pública dependiente del Gobierno de la Ciudad de Buenos Aires, recibió los
+ejemplares de las producciones artísticas más recientes. 3. Mis primas llegaron
+el sábado a la noche muy cansadas por el viaje.\pendiente{El original dice
+«cansados»} / Mis primas llegaron inmediatamente. 4. La última temporada de mi
+serie preferida trajo sorpresas que no esperaba. / La temporada de invierno
+trajo numerosas sorpresas referidas a la moda. 5. Los vehículos sin el
+dispositivo de TelePASE circulaban muy lentamente. / Los vehículos antiguos
+circulaban más lentamente.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-sustitucion}}
+2. Reducción: Varios ministros firmaron un acuerdo con el embajador.
+Pronominalización: Ellos lo firmaron con él.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-encorchetar}}
+2. [[Los egresados] [buscaron [con entusiasmo] [un salón de fiestas]]]. Ellos
+buscaron con entusiasmo un salón de fiestas. Los egresados lo buscaron con
+entusiasmo. Los egresados buscaron así un salón de fiestas. Ellos lo buscaron
+así. 3. [[Nuestros candidatos] [presentaron [sus propuestas] [a los
+contribuyentes]]]. Ellos presentaron sus propuestas a los contribuyentes.
+Nuestros candidatos las presentaron a los contribuyentes. Nuestros candidatos
+les presentaron sus propuestas. Ellos se\footnote{\label{fn:05-se}La forma
+\forma{se} delante de \forma{lo / la} es una variante de realización del clítico
+\forma{le}, es decir, es un alomorfo (v. \capref{10}).} las presentaron. 4. [[Los
+fuertes temporales] [provocaron [inundaciones] [en toda la ciudad]]].
+Provocaron inundaciones en toda la ciudad. Aclaración: al tratarse de un sujeto
+no animado, usualmente no se reemplaza por la forma pronominal \forma{ellos},
+sino que se prefiere dejar el sujeto tácito.\footnote{La información sobre el
+sujeto tácito se desarrolla en el \capref{6}.} Los fuertes temporales las
+provocaron en toda la ciudad. Los fuertes temporales provocaron inundaciones
+allí.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-preguntas}}
+2. ¿Quiénes llegaron ayer por la tarde a la ciudad para visitarnos? ¿Qué
+hicieron mis primos? ¿Cuándo llegaron mis primos a la ciudad para visitarnos?
+¿Adónde llegaron mis primos ayer por la tarde para visitarnos? ¿Para qué
+llegaron mis primos a la ciudad ayer por la tarde? 3. ¿Quién es muy exigente con
+los exámenes? ¿Cómo es la nueva profesora? ¿Con qué es muy exigente la nueva
+profesora?
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-bioy}}
+¿Con quién paseaba el escultor? ¿Por dónde paseaba el escultor con el tirano?
+¿Dónde presentó el escultor su última obra? ¿Quién presentó su última obra más
+allá del laberinto para los extranjeros ilustres, en el extremo de la alameda de
+los filósofos decapitados? ¿Qué presentó el escultor más allá del laberinto para
+los extranjeros ilustres, en el extremo de la alameda de los filósofos
+decapitados?
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-pares}}
+a) 2. i. Eliana encontró [el auto] [de repente] / ii. Eliana encontró [el auto
+de su primo]. 3. i. El hombre tocó [al perro] [con la mano] / ii. El hombre tocó
+[al perro con sarna]. 4. i. Juan abrió [la puerta] [de una patada] / ii. Juan
+abrió [la puerta de la habitación].
+
+b) 2. En i., \forma{de repente} y \forma{el auto} son dos constituyentes porque
+se mueven separadamente (\forma{De repente Eliana encontró el auto. Eliana
+encontró el auto de repente}); se pronominalizan independientemente
+(\forma{Eliana lo encontró de repente. Eliana lo encontró así}); responden a
+diferentes preguntas (\forma{¿Qué encontró Eliana de repente? ¿Cómo encontró
+Eliana el auto?}). En ii., \forma{el auto de su primo} es un solo constituyente
+porque se mueve conjuntamente (\forma{El auto de su primo encontró Eliana});
+admite una única pronominalización (\forma{Eliana lo encontró}); responde a una
+única pregunta (\forma{¿Qué auto encontró Eliana?}). 3. En i., \forma{al perro} y
+\forma{con la mano} son dos constituyentes porque admiten las tres pruebas
+propuestas: se mueven separadamente (\forma{El hombre tocó con la mano al perro.
+Con la mano el hombre tocó al perro}); se pronominalizan independientemente
+(\forma{El hombre lo tocó con la mano. El hombre tocó al perro así}); responden
+a diferentes preguntas (\forma{¿A quién tocó el hombre con la mano? ¿Con qué tocó
+el hombre al perro?}). En ii., \forma{al perro con sarna} es un solo
+constituyente porque se mueve conjuntamente (\forma{Al perro con sarna tocó el
+hombre}); admite una sola pronominalización (\forma{El hombre lo tocó}); responde
+a una única pregunta (\forma{¿A quién tocó el hombre?}). 4. En i., \forma{la
+puerta} y \forma{de una patada} son diferentes constituyentes porque admiten las
+tres pruebas propuestas: se mueven separadamente (\forma{De una patada Juan abrió
+la puerta. La puerta abrió Juan de una patada}); responden a distintas preguntas
+(\forma{¿Qué abrió Juan de una patada? ¿Cómo abrió Juan la puerta?}); se
+pronominalizan independientemente (\forma{Juan abrió la puerta así. Juan la
+abrió de una patada}). En ii., \forma{la puerta de la habitación} es un
+constituyente porque se mueve conjuntamente (\forma{La puerta de la habitación
+abrió Juan}), admite una única pronominalización (\forma{Juan la abrió}) y
+responde a una única pregunta (\forma{¿Qué abrió Juan?}).
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-nucleo}}
+2. a) El núcleo es \forma{bueno}. b) \forma{Bueno} es un A y proyecta un SA. 3.
+a) El núcleo es \forma{cerca}. b) \forma{Cerca} es un Adv y proyecta un SAdv. 4.
+a) El núcleo es \forma{proporcional}. b) \forma{Proporcional} es un A y proyecta
+un SA. 5. a) El núcleo es \forma{para}. b) \forma{Para} es una P y proyecta un
+SP. 6. a) El núcleo es \forma{inquietud}. b) \forma{Inquietud} es un N y
+proyecta un SN. 7. a) El núcleo es \forma{armario}. b) \forma{Armario} es un N y
+proyecta un SN. 8. a) El núcleo es \forma{sin}. b) \forma{Sin} es una P y
+proyecta un SP.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-de}}
+2. [\etq{SN} varios\etq{Q/Esp} colaboradores\etq{N/n} expertos\etq{A/M}]. 3.
+[\etq{SAdv} arriba\etq{Adv/n}\footnote{\forma{Arriba} pertenece al subgrupo de
+adverbios denominados identificativos o referenciales, que son transitivos y
+llevan un complemento. Los tratamos en §\ref{sec:05-sadv}.} [\etq{SP/Comp}
+de\etq{P/n} [\etq{SN/Comp} la\etq{D/Esp} heladera\etq{N/n}]]]. 4. [\etq{SP}
+sin\etq{P/n} [\etq{SN/Comp} comentarios\etq{N/n}]].
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-comp-adj}}
+2. a) El núcleo es \forma{feria} y proyecta un SN. b) \forma{Del libro} es un SP
+no exigido por el núcleo, que funciona como M. 3. a) El núcleo es
+\forma{similar} y proyecta un SA. b) \forma{A los demás casos} es un SP exigido
+por el núcleo y funciona como Comp. 4. a) El núcleo es \forma{por} y proyecta un
+SP. b) \forma{La izquierda} es un SN exigido por el núcleo y funciona como Comp.
+5. a) El núcleo es \forma{bajo} y proyecta un SP. b) \forma{La mesada} es un SN
+que funciona como Comp, ya que es exigido por el núcleo. 6. a) El núcleo es
+\forma{antes} y proyecta un SAdv. b) \forma{De las diez} es un SP exigido por el
+núcleo y funciona como Comp.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-titulos}}
+3. a) Es un SN porque el núcleo es el sustantivo \forma{jardín}. b) El D
+\forma{el} es un especificador y \forma{de los cerezos} es un SP no requerido
+por el núcleo, un modificador adjunto. 4. a) Es un SN porque el núcleo es el
+sustantivo \forma{años}. b) El Q \forma{cien} es un especificador y \forma{de
+soledad} es un SP no requerido por el núcleo, un modificador adjunto. 5. a) Es
+un SAdv porque el núcleo es el adverbio \forma{ágilmente}. b) El núcleo no
+presenta modificadores ni complementos. 6. a) Es un SN porque el núcleo es el
+sustantivo \forma{verano}. b) El D \forma{ese} es un especificador y \forma{a
+oscuras} es un SP no requerido por el núcleo, un modificador adjunto. 7. a) Es
+un SA porque el núcleo es el adjetivo \forma{terrenal}. b) El núcleo no presenta
+modificadores ni complementos. 8. a) Es un SP porque el núcleo es la preposición
+\forma{desde}. b) \forma{La ventana} es un SN exigido por el núcleo, un Comp.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-vf}}
+2. F(also). Tanto las palabras léxicas como las gramaticales pueden ser núcleos
+de sintagmas. 3. F(also). El núcleo mantiene diferentes relaciones con los
+constituyentes del sintagma: los complementos son los exigidos por el núcleo,
+pero los adjuntos son opcionales y los especificadores determinan o cuantifican
+al núcleo y a sus complementos y modificadores. 4. V(erdadero). Los complementos
+tienen una relación de dependencia estructural con el núcleo y, además,
+completan su significado.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-buenaformacion}}
+2. Aunque los sustantivos propios no necesitan ir precedidos de un
+determinativo, un sintagma como \forma{el Mario} puede ser aceptable en ciertas
+variedades dialectales para referirse a alguien conocido por todos. 3. Es
+gramatical porque el sustantivo común \forma{ingredientes} va precedido de un
+determinante que lo especifica y del complemento que requiere por su carácter
+relacional. 4. Es gramatical porque los nombres de materia o incontables no
+requieren ir precedidos por un determinativo en ciertas posiciones sintácticas,
+como la de COD. 5. Los nombres abstractos tienen un comportamiento sintáctico
+que se asimila al de los de materia, de modo que pueden ir sin determinativo en
+ciertas posiciones sintácticas, como la de complemento
+preposicional.\footnote{Para ampliar sobre las diferencias de funcionamiento de
+las distintas subclases de sustantivos se puede consultar
+\textcite{giammatteo2009}.}
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-ratones}}
+{}[\etq{SN} el\etq{D/Esp} queso\etq{N/n}] / [\etq{SN} una\etq{Q} compañía\etq{N/n}
+[\etq{SP/Comp} de\etq{P/n} [\etq{SN/Comp} control\etq{N/n} [\etq{SP/Comp}
+de\etq{P/n} [\etq{SN/Comp} plagas\etq{N/n}]]]]] / [\etq{SN} los\etq{D/Esp}
+alimentos\etq{N/n} [\etq{SP/M} con\etq{P/n} [\etq{SN/Comp} alto\etq{A/M}
+contenido\etq{N/n} [\etq{SP/Comp} de\etq{P/n} [\etq{SN/Comp} azúcares]]]]].
+Aclaración: \forma{compañía} y \forma{contenido} exigen complemento porque son
+nombres relacionales; \forma{control} exige un complemento porque es un nombre
+eventivo.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-titulares}}
+a) Noticia 1. (3) [\etq{SN} el\etq{D/Esp} columnista\etq{N/n} [\etq{SN/ApR}
+[\etq{N/n} Lauro Jardim]] [\etq{SP/Comp} de\etq{P/n} [\etq{SN/Comp}
+el\etq{D/Esp} diario\etq{N/n} [\etq{SN/ApR} O Globo]]]]. \forma{Columnista} exige
+complemento porque es un nombre relacional. (4) [\etq{SN} Madonna\etq{N/n},
+[\etq{SP/M} de\etq{P/n} [\etq{SN/Comp} 65\etq{Q/Esp} años\etq{N/n}]]].
+Noticia 2. (1) [\etq{SN} la\etq{D/Esp} primera\etq{A/M} teatrista\etq{N/n}
+latinoamericana\etq{A/M}]. (2) [\etq{SN} [\etq{N/n} Lola Arias], [\etq{SN/ApE}
+ganadora\etq{N/n} [\etq{SP/Comp} de\etq{P/n} [\etq{SN/Comp} el\etq{D/Esp}
+Premio\etq{N/n} Internacional\etq{A/M} Ibsen\etq{SN/ApR}
+2024\etq{SN/ApR}]]]].\footnote{La secuencia \forma{Premio Internacional Ibsen
+2024} también podría considerarse un compuesto sintagmático que actúa como un
+nombre propio (v. \capref{4}, §\ref{sec:04-composicion}).} (3) [\etq{SN}
+el\etq{D/Esp} carácter\etq{N/n} transnacional\etq{SA/M} [\etq{SP/M} de\etq{P/n}
+[\etq{SN/Comp} la\etq{D/Esp} obra\etq{N/n} [\etq{SP/M} de\etq{P/n}
+[\etq{SN/Comp} la\etq{D/Esp} artista\etq{N/n} multidisciplinaria\etq{SA/M}]]]]].
+
+b) \forma{Lauro Jardim}, \forma{del diario O Globo}: restrictivos; \forma{de 65
+años}: explicativo; \forma{primera} y \forma{latinoamericana}: restrictivos;
+\forma{ganadora del Premio Internacional Ibsen 2024}: explicativo;
+\forma{transnacional}: restrictivo; \forma{multidisciplinaria}: restrictivo.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-lobos}}
+a) 2. [\etq{SN} varias\etq{Q/Esp} subespecies\etq{N/n}]. 3. [\etq{SN}
+el\etq{D/Esp} famoso\etq{SA/M} aullido\etq{N/n}]. 4. [\etq{SN} los\etq{D/Esp}
+miembros\etq{N/n} [\etq{SP/Comp} de\etq{P/n} [\etq{SN/Comp} su\etq{D/Esp}
+grupo\etq{N/n}]]]. 5. [\etq{SN} [\etq{SA/M} muy\etq{Q/Esp} raras\etq{A/n}]
+ocasiones\etq{N/n}].
+
+b) 2. El Q \forma{varias} puede posponerse al núcleo \forma{subespecies} sin
+alterar la gramaticalidad del sintagma, aunque aporta un ligero cambio
+estilístico. 3. El A \forma{famoso} puede posponerse al N sin alterar la
+gramaticalidad del sintagma, aunque pasa a tener valor restrictivo. 4. El D
+\forma{los} no puede posponerse al núcleo por razones
+fonológicas\footnote{V. \capref{3}, §\ref{sec:03-acento}.} y la anteposición del
+complemento \forma{de su grupo} al núcleo produce un
+hipérbaton.\footnote{Figura retórica en la que se altera la sintaxis habitual de
+una oración.} 5. El SA puede posponerse al núcleo (\forma{ocasiones muy raras}),
+adoptando valor restrictivo.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-slogans}}
+2. [\etq{SA} único\etq{A/n} [\etq{SP/M} en\etq{P/n} [\etq{SN/Comp} el\etq{D/Esp}
+mundo\etq{N/n}]]] / [\etq{SA} único\etq{A/n}]. 3. [\etq{SA} buenos\etq{A/n}
+[\etq{SP/M} de\etq{P/n} [\etq{SAdv/Comp} [\etq{LAdv/n} punta a
+punta]]]].\footnote{\forma{De punta a punta} funciona como una unidad porque es
+una locución adverbial. Las locuciones adverbiales se tratan en el
+\capref{11}.}\pendiente{El análisis separa \textit{de} de la locución que la
+nota declara unitaria} 4. [\etq{SA} juntos\etq{A/n}].
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-posicion}}
+a) 3. i) \forma{una tarde estupenda} / ii) \forma{una estupenda tarde}. 4. i)
+\forma{el discurso político} / ii) \juicio{*}{\forma{el político discurso}}. 5.
+i) \forma{ese pobre hombre} / ii) \forma{ese hombre pobre}. 6. i) \forma{un rico
+chico} / ii) \forma{un chico rico}. 7. i) \forma{una enfermedad terrible} / ii)
+\forma{una terrible enfermedad}. 8. i) \forma{la educación sexual} / ii)
+\juicio{*}{\forma{la sexual educación}}.
+
+b) En 2, 4 y 8, el cambio de posición produce agramaticalidad; en 3 y 7, el
+cambio de posición no produce ni agramaticalidad ni cambio de significado del A,
+solo aporta un matiz estilístico; en 5 y 6, el cambio de posición no produce
+agramaticalidad, pero cambia el significado del A.
+
+c) 5. i) \sig{sin importancia, insignificante} / ii) \sig{sin
+dinero}.\pendiente{El original invierte i y ii} 6. i) \sig{lindo} / ii)
+\sig{adinerado}.
+
+d) Los A calificativos pueden anteponerse o posponerse al núcleo al que
+modifican. Por este motivo, en ninguna de las series que los contienen los
+sintagmas se convierten en agramaticales. En 5 y 6 el cambio de posición altera
+el significado del adjetivo, pero en 3 y 7 no lo altera y solo manifiesta un
+matiz estilístico. Los A relacionales no admiten cambio de posición y siempre
+deben posponerse al nombre.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-expansionA}}
+a) Respuestas posibles: 2. \forma{propenso a enfermarse / propenso a decir
+mentiras}. 3. \forma{muy habitual por las mañanas / sumamente habitual}. 4.
+\forma{conforme con su calificación / conforme a la ley}. 5. \forma{deseoso de
+verte / deseoso de comer algo dulce}. b) Los adjetivos \forma{propenso,
+conforme} y \forma{deseoso} exigen un complemento encabezado por una
+preposición: respectivamente, \forma{a}; \forma{con} o \forma{a}; y
+\forma{de}.\pendiente{El original dice «con o por» para
+\textit{conforme}}
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-sp-modifica}}
+2. El SP encabezado por \forma{por} modifica a \forma{eligieron}, que es un
+verbo; el SP encabezado por \forma{sobre} es complemento de \forma{por}, que es
+una preposición. 3. El SP encabezado por \forma{de} modifica a \forma{cerca},
+que es un Adv. 4. El SP encabezado por \forma{con} modifica a \forma{salir}, que
+es un V. 5. El SP encabezado por \forma{por} modifica a \forma{feliz}, que es un
+A.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-de-sp}}
+a) 2. [\etq{SP} de\etq{P/n} [\etq{SN/Comp} gramática\etq{N/n}]]. 3. [\etq{SP}
+de\etq{P/n} [\etq{SN/Comp} menta\etq{N/n}]]. 4. No supieron [\etq{SP/Comp}
+de\etq{P/n} [\etq{SN/Comp} aquella\etq{D/Esp} mujer\etq{N/n}]] por varios días.
+5. [\etq{SP} de\etq{P/n} [\etq{SN/Comp} conocimiento]].
+
+b) 2. \forma{De} modifica al N \forma{libro} e indica \sig{tema}. 3. \forma{De}
+modifica al N \forma{caramelos} e indica \sig{materia o sustancia}. 4.
+\forma{De} es una preposición exigida por el V \forma{saber}. La P introduce un
+complemento que modifica el significado del V: \forma{saber de (alguien)} es
+\sig{tener información sobre esa persona}. 5. \forma{De} es una P exigida por el
+adjetivo \forma{ávidos}, que introduce su complemento.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-preposiciones}}
+Respuestas posibles: 2. \sig{por encima de}. 3. \sig{en medio de}. 4.
+\sig{carentes de}. 5. \sig{con el fin de}. 6. \sig{en dirección a}. 7.
+\sig{acerca de}. 8. \sig{en oposición a}. 9. \sig{con destino a}. 10. \sig{con,
+a través de}. 11. \sig{luego de}.
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-adverbios}}
+1. \forma{definidamente}: a) adverbio de base léxica de modo; b) es núcleo del
+SAdv [\forma{definidamente}], que modifica al V dentro del SV. \forma{más bien}:
+a) locución adverbial de modo; b) especificador del Adv \forma{elaboradamente}
+en el SAdv [\forma{más bien elaboradamente}]. \forma{elaboradamente}: a)
+adverbio de base léxica de modo; b) modifica al A \forma{rígida} en el SA
+[\forma{más bien elaboradamente rígida}]. 2. \forma{sumamente}: a) adverbio de
+base léxica de modo; b) es especificador del A en el SA [\forma{sumamente
+interesante}]. \forma{dentro}: a) adverbio gramatical referencial de lugar; b)
+es núcleo del SAdv [\forma{dentro del caparazón del animal adulto}]. 3.
+\forma{frente}: a) adverbio gramatical referencial de lugar; b) complemento de
+la P \forma{de} en el SP [\forma{de frente}]. \forma{atrás}: a) adverbio
+gramatical referencial de lugar; b) complemento de la P \forma{hacia} en el SP
+[\forma{hacia atrás}]. \forma{particularmente}: a) adverbio de base léxica de
+modo; b) es especificador del A en el SA [\forma{particularmente incómodas}].
+\end{solucion}
+
+\begin{solucion}{\ref{ej:05-p12}}
+2. [\etq{SN} una\etq{Q/Esp} constante\etq{A/M} dolarización\etq{N/n} [\etq{SP/M}
+de\etq{P/n} [\etq{SN/Comp} excedentes\etq{N/n} económicos\etq{A/M}]]].
+3. [\etq{SN} una\etq{Q/Esp} corriente\etq{N/n} [\etq{SP/Comp} de\etq{P/n}
+[\etq{SN/Comp} presión\etq{N/n} [\etq{SP/Comp} sobre\etq{P/n} [\etq{SN/Comp}
+este\etq{D/Esp} segmento\etq{N/n} [\etq{SP/Comp} de\etq{P/n} [\etq{SN/Comp}
+el\etq{D/Esp} mercado\etq{N/n} [\etq{SP/Comp} de\etq{P/n} [\etq{SN/Comp}
+cambio]]]]]]]]].
+4. [\etq{SN} el\etq{D/Esp} ministro\etq{N/n} [\etq{SP/Comp} de\etq{P/n}
+[\etq{SN/Comp} Turismo]], [\etq{SN/Ap} un\etq{Q/Esp} destacado\etq{A/M}
+empresario\etq{N/n}]].
+5. [\etq{SN} un\etq{Q/Esp} dólar\etq{N/n} financiero\etq{A/M} [\etq{SP/M}
+para\etq{P/n} [\etq{SN/Comp} el\etq{D/Esp} turista\etq{N/n}
+extranjero\etq{A/M}]]].
+6. [\etq{SN} un\etq{Q/Esp} punto\etq{N/n} [\etq{SP/M} de\etq{P/n} [\etq{SN/Comp}
+inflexión\etq{N/n} [\etq{SP/Comp} en\etq{P/n} [\etq{SN/Comp} ese\etq{D/Esp}
+estilo\etq{N/n} [\etq{SP/Comp} de\etq{P/n} [\etq{SN/Comp} funcionamiento\etq{N/n}
+político\etq{A/M} [\etq{SP/Comp} de\etq{P/n} [\etq{SN/Comp} la\etq{D/Esp}
+coalición\etq{N/n} [\etq{SP/M} de\etq{P/n} [\etq{SN/Comp}
+gobierno\etq{N/n}]]]]]]]]]]].\pendiente{El original dice «su gobierno»}
+\end{solucion}
