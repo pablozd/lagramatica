@@ -3,6 +3,26 @@
 %  Autores: Pablo Zdrojewski y Fernando Carranza
 %  Fuente: Capitulo_09_normalizado.docx
 % =====================================================================
+% Esquemas con flechas de (ex:09-flechas): se definen como macros para que
+% la sintaxis de TikZ quede leída fuera del entorno gb4e.
+\newcommand*{\flechasA}{%
+\begin{tikzpicture}[baseline=(s.base), node distance=0pt,
+              every node/.style={inner sep=1pt}]
+            \node (s) {[\etq{Suj} Pedro]};
+            \node[right=4pt of s] (v) {[\etq{Pred} \etq{V}es};
+            \node[right=3pt of v] (p) {\etq{Pvo}[un arquitecto muy renombrado]]};
+            \draw[->, >=Stealth] (p.south) .. controls +(0,-.5) and +(0,-.5) .. (s.south);
+          \end{tikzpicture}}
+\newcommand*{\flechasB}{%
+{\small\begin{tikzpicture}[baseline=(s.base), node distance=0pt,
+              every node/.style={inner sep=1pt}]
+            \node (s) {[\etq{Suj} La ciencia]};
+            \node[right=2pt of s] (v) {[\etq{Pred} \etq{V}denominó};
+            \node[right=3pt of v] (o) {\etq{OD}[a este espécimen]};
+            \node[right=3pt of o] (p) {\etq{Pvo}[\textit{Patagosaurus fariasi}]]};
+            \draw[->, >=Stealth] (p.south) .. controls +(0,-.5) and +(0,-.5) .. (o.south);
+          \end{tikzpicture}}}
+
 \capitulo{Los predicativos}{Pablo Zdrojewski y Fernando Carranza}
 
 \section{Introducción}
@@ -247,23 +267,10 @@ que en \exref{ex:09-flechas-b} tenemos un \termino{predicativo objetivo}
   \ex\label{ex:09-flechas}
     \begin{xlist}
       \ex\label{ex:09-flechas-a}
-          \begin{tikzpicture}[baseline=(s.base), node distance=0pt,
-              every node/.style={inner sep=1pt}]
-            \node (s) {[\etq{Suj} Pedro]};
-            \node[right=4pt of s] (v) {[\etq{Pred} \etq{V}es};
-            \node[right=3pt of v] (p) {\etq{Pvo}[un arquitecto muy renombrado]]};
-            \draw[->, >=Stealth] (p.south) .. controls +(0,-.5) and +(0,-.5) .. (s.south);
-          \end{tikzpicture}
+          \flechasA
           \vspace{3ex}
       \ex\label{ex:09-flechas-b}
-          {\small\begin{tikzpicture}[baseline=(s.base), node distance=0pt,
-              every node/.style={inner sep=1pt}]
-            \node (s) {[\etq{Suj} La ciencia]};
-            \node[right=2pt of s] (v) {[\etq{Pred} \etq{V}denominó};
-            \node[right=3pt of v] (o) {\etq{OD}[a este espécimen]};
-            \node[right=3pt of o] (p) {\etq{Pvo}[\textit{Patagosaurus fariasi}]]};
-            \draw[->, >=Stealth] (p.south) .. controls +(0,-.5) and +(0,-.5) .. (o.south);
-          \end{tikzpicture}}
+          \flechasB
           \vspace{3ex}
     \end{xlist}
 \end{exe}
