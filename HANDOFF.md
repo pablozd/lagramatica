@@ -25,8 +25,9 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 | Capítulo 6 | `capitulos/cap06.tex` | cargado; faltan los textos de Peyrou y Asimov |
 | Capítulo 7 | `capitulos/cap07.tex` | cargado; faltan los textos de «Emma Zunz», Hilbert y Cantor |
 | Capítulo 8 | `capitulos/cap08.tex` | cargado; falta el fragmento de *Relato de un náufrago* |
-| Capítulos 9-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
-| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 8) |
+| Capítulo 9 | `capitulos/cap09.tex` | cargado; faltan los textos de Enriquez y Viñas |
+| Capítulos 10-15 | `capitulos/capNN.tex` | pendientes, se cargan de a uno |
+| Glosario | `finales/glosario.tex` | único, alfabético, a dos columnas (18-glosario.docx + términos de los caps. 4 a 9) |
 | Bibliografía final | `\bibliografiageneral` en `main.tex` | única, al final del libro |
 | Versión online | — | no empezada |
 
@@ -189,6 +190,20 @@ originales: los .docx normalizados del proyecto de Claude «LIBRO ONLINE».
 - Ej. 1, solucionario: los rasgos de *vivir una serie de aventuras* no corresponden a una
   actividad. Ej. 5: «COERSIÓN» → coerción.
 - La tabla del solucionario del ej. 5 va en longtable (corta entre páginas).
+
+### Capítulo 9
+- Textos a incorporar a mano: Enriquez, «Alguien camina sobre tu tumba» (ej. 8), y Viñas,
+  *Un dios cotidiano* (ej. 14).
+- Árboles de oración reducida (20c-23c): las imágenes no venían en el .docx; se rehicieron con
+  forest. Flechas de (9) en TikZ, con etiquetas abreviadas (Suj, Pred, V, OD, Pvo).
+- Remisiones corregidas: «(5)» → (4) copulativos; «cap. 2: §4» → cap. 6, §6.4 (predicados no
+  verbales); «§5» → §9.3.3 (pruebas); «como (20)» → (21); notas de homonimia, adverbios
+  adjetivales y pruebas de constituencia → \ref. Se eliminó la nota 9, vacía.
+- (24): los análisis decían «Los entrenadores»; se unificó con *Los preparadores físicos*.
+- Ej. 13 resuelto: etiquetas PO/PSNO intercambiadas respecto de las paráfrasis; rótulos a, b, b
+  → a, b, c.
+- Ej. 6 solucionario: la lista de i) omitía 1b; 2b figura como predicativo en iii).
+- Ej. 4 sol. 9: con *se lo veía*, *solo* se predica del objeto (marcado para revisar).
 
 ### General
 
